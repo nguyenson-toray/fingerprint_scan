@@ -1,0 +1,6518 @@
+[
+    {
+        "name": "TIQN-28-0001",
+        "employee_name": "scsaascf",
+        "employee": "TIQN-28-0001",
+        "attendance_device_id": "2222",
+        "custom_group": null,
+        "designation": null,
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1466",
+        "employee_name": "Nguyễn Thị Quỳnh Nga",
+        "employee": "TIQN-1466",
+        "attendance_device_id": "1524",
+        "custom_group": "0",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1465",
+        "employee_name": "Lê Thị Tiên",
+        "employee": "TIQN-1465",
+        "attendance_device_id": "1523",
+        "custom_group": "Trainees",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1464",
+        "employee_name": "Lê Hữu Nghĩa",
+        "employee": "TIQN-1464",
+        "attendance_device_id": "1522",
+        "custom_group": "Preparation",
+        "designation": "0",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1463",
+        "employee_name": "Cao Thị Huyền Sâm",
+        "employee": "TIQN-1463",
+        "attendance_device_id": "1521",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1462",
+        "employee_name": "Nguyễn Thị Mỹ Sang",
+        "employee": "TIQN-1462",
+        "attendance_device_id": "1520",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1461",
+        "employee_name": "Phạm Thị Thảo",
+        "employee": "TIQN-1461",
+        "attendance_device_id": "1519",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1460",
+        "employee_name": "Phạm Thị Thanh Hảo",
+        "employee": "TIQN-1460",
+        "attendance_device_id": "1518",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1459",
+        "employee_name": "Nguyễn Hồng Tài",
+        "employee": "TIQN-1459",
+        "attendance_device_id": "1517",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1458",
+        "employee_name": "Lê Thị Quá",
+        "employee": "TIQN-1458",
+        "attendance_device_id": "1516",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1457",
+        "employee_name": "Nguyễn Thị Thu Nhi",
+        "employee": "TIQN-1457",
+        "attendance_device_id": "1515",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1456",
+        "employee_name": "Trần Thanh Viên",
+        "employee": "TIQN-1456",
+        "attendance_device_id": "1514",
+        "custom_group": "Utilities",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1455",
+        "employee_name": "Nguyễn Thị Ánh",
+        "employee": "TIQN-1455",
+        "attendance_device_id": "1513",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1454",
+        "employee_name": "Lê Thị Kim Thúy",
+        "employee": "TIQN-1454",
+        "attendance_device_id": "1509",
+        "custom_group": "Warehouse",
+        "designation": "Warehouse Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1452",
+        "employee_name": "Nguyễn Tấn Đức",
+        "employee": "TIQN-1452",
+        "attendance_device_id": "1511",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1451",
+        "employee_name": "Trần Thị Minh Mẫn",
+        "employee": "TIQN-1451",
+        "attendance_device_id": "1510",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1450",
+        "employee_name": "Trần Minh Quang",
+        "employee": "TIQN-1450",
+        "attendance_device_id": "1074",
+        "custom_group": "Preparation",
+        "designation": "Preparation Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1449",
+        "employee_name": "Trương Thị Thúy Hằng",
+        "employee": "TIQN-1449",
+        "attendance_device_id": "1508",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1448",
+        "employee_name": "Phùng Hữu Hạnh",
+        "employee": "TIQN-1448",
+        "attendance_device_id": "1507",
+        "custom_group": "Line 12",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1445",
+        "employee_name": "Mai Ngọc Dinh",
+        "employee": "TIQN-1445",
+        "attendance_device_id": "1504",
+        "custom_group": "Maintainance",
+        "designation": "Mechanic",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1444",
+        "employee_name": "Trần Tuấn",
+        "employee": "TIQN-1444",
+        "attendance_device_id": "1503",
+        "custom_group": "Warehouse",
+        "designation": "Warehouse Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1443",
+        "employee_name": "Hồ Văn Điệp",
+        "employee": "TIQN-1443",
+        "attendance_device_id": "1502",
+        "custom_group": "Warehouse",
+        "designation": "Warehouse Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1441",
+        "employee_name": "Trần Thị Phương",
+        "employee": "TIQN-1441",
+        "attendance_device_id": "1500",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1440",
+        "employee_name": "Phan Thị Tuấn",
+        "employee": "TIQN-1440",
+        "attendance_device_id": "1499",
+        "custom_group": "Utilities",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1439",
+        "employee_name": "Trà Xuân Quốc",
+        "employee": "TIQN-1439",
+        "attendance_device_id": "1498",
+        "custom_group": "Technical B",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1437",
+        "employee_name": "Dương Thị Thu Vi",
+        "employee": "TIQN-1437",
+        "attendance_device_id": "1496",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1435",
+        "employee_name": "Đặng Võ Kim Thiên",
+        "employee": "TIQN-1435",
+        "attendance_device_id": "1494",
+        "custom_group": "Canteen",
+        "designation": "Canteen Supporter",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1434",
+        "employee_name": "Phạm Thị My",
+        "employee": "TIQN-1434",
+        "attendance_device_id": "1493",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1433",
+        "employee_name": "Đỗ Thị Hường",
+        "employee": "TIQN-1433",
+        "attendance_device_id": "1492",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1432",
+        "employee_name": "Nguyễn Thành Linh",
+        "employee": "TIQN-1432",
+        "attendance_device_id": "1491",
+        "custom_group": "Maintainance",
+        "designation": "Mechanic",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1430",
+        "employee_name": "Nguyễn Thị Minh Vương",
+        "employee": "TIQN-1430",
+        "attendance_device_id": "1489",
+        "custom_group": "Technical B",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1429",
+        "employee_name": "Vũ Thị Thùy Vân",
+        "employee": "TIQN-1429",
+        "attendance_device_id": "1488",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1428",
+        "employee_name": "Kiều Thị Tin",
+        "employee": "TIQN-1428",
+        "attendance_device_id": "1487",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1427",
+        "employee_name": "Nguyễn Thị Bích Viên",
+        "employee": "TIQN-1427",
+        "attendance_device_id": "1486",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1426",
+        "employee_name": "Lê Thị Thùy Trang",
+        "employee": "TIQN-1426",
+        "attendance_device_id": "1485",
+        "custom_group": "EU/USA",
+        "designation": "Merchandiser",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1425",
+        "employee_name": "Võ Duy Thư",
+        "employee": "TIQN-1425",
+        "attendance_device_id": "1484",
+        "custom_group": "Preparation",
+        "designation": "Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1424",
+        "employee_name": "Nguyễn Duy Đức",
+        "employee": "TIQN-1424",
+        "attendance_device_id": "1483",
+        "custom_group": "Preparation",
+        "designation": "Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1423",
+        "employee_name": "Bùi Thị Ngọc Hưng",
+        "employee": "TIQN-1423",
+        "attendance_device_id": "1482",
+        "custom_group": "Technical B",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1422",
+        "employee_name": "Phạm Thị Hiền",
+        "employee": "TIQN-1422",
+        "attendance_device_id": "1481",
+        "custom_group": "Technical B",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1418",
+        "employee_name": "Phạm Thị Út Kim",
+        "employee": "TIQN-1418",
+        "attendance_device_id": "1477",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1417",
+        "employee_name": "Trần Thị Kim Liên",
+        "employee": "TIQN-1417",
+        "attendance_device_id": "1476",
+        "custom_group": "Warehouse",
+        "designation": "Warehouse Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1416",
+        "employee_name": "Trần Ngọc Du",
+        "employee": "TIQN-1416",
+        "attendance_device_id": "1475",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1415",
+        "employee_name": "Nguyễn Văn Linh",
+        "employee": "TIQN-1415",
+        "attendance_device_id": "1474",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1414",
+        "employee_name": "Đỗ Thái Nhân",
+        "employee": "TIQN-1414",
+        "attendance_device_id": "1473",
+        "custom_group": "Technical B",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1411",
+        "employee_name": "Nguyễn Quốc Tiến",
+        "employee": "TIQN-1411",
+        "attendance_device_id": "1470",
+        "custom_group": "Preparation",
+        "designation": "Cutter-Trainee",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1409",
+        "employee_name": "Phạm Thị Thu Nhi",
+        "employee": "TIQN-1409",
+        "attendance_device_id": "1468",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1408",
+        "employee_name": "Phạm Thị Viễn",
+        "employee": "TIQN-1408",
+        "attendance_device_id": "1467",
+        "custom_group": "Preparation",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1407",
+        "employee_name": "Nguyễn Thị Tánh",
+        "employee": "TIQN-1407",
+        "attendance_device_id": "1466",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1406",
+        "employee_name": "Đặng Nghĩa",
+        "employee": "TIQN-1406",
+        "attendance_device_id": "1465",
+        "custom_group": "Maintainance",
+        "designation": "Mechanic",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1405",
+        "employee_name": "Nguyễn Thành Vinh",
+        "employee": "TIQN-1405",
+        "attendance_device_id": "1464",
+        "custom_group": "IT",
+        "designation": "IT Engineer",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1404",
+        "employee_name": "Nguyễn Thị Sương",
+        "employee": "TIQN-1404",
+        "attendance_device_id": "1463",
+        "custom_group": "Canteen",
+        "designation": "Canteen Supporter",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1403",
+        "employee_name": "Phạm Thị Phúc",
+        "employee": "TIQN-1403",
+        "attendance_device_id": "1462",
+        "custom_group": "Technical B",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1401",
+        "employee_name": "Lưu Quốc Tính",
+        "employee": "TIQN-1401",
+        "attendance_device_id": "1460",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1399",
+        "employee_name": "Trần Thị Kim Đông",
+        "employee": "TIQN-1399",
+        "attendance_device_id": "1458",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1398",
+        "employee_name": "Nguyễn Thị Thanh Tuyền",
+        "employee": "TIQN-1398",
+        "attendance_device_id": "1457",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1396",
+        "employee_name": "Nguyễn Thị Hồng Vy",
+        "employee": "TIQN-1396",
+        "attendance_device_id": "1455",
+        "custom_group": "Technical B",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1395",
+        "employee_name": "Cao Nhất Một",
+        "employee": "TIQN-1395",
+        "attendance_device_id": "1454",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1394",
+        "employee_name": "Nguyễn Thị Tùng",
+        "employee": "TIQN-1394",
+        "attendance_device_id": "1453",
+        "custom_group": "Technical B",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1393",
+        "employee_name": "Quách Thị Bích Ngọc",
+        "employee": "TIQN-1393",
+        "attendance_device_id": "1452",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1392",
+        "employee_name": "Trần Thị Ly Ly",
+        "employee": "TIQN-1392",
+        "attendance_device_id": "1451",
+        "custom_group": "Technical B",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1389",
+        "employee_name": "Mai Thị Cẩm Minh",
+        "employee": "TIQN-1389",
+        "attendance_device_id": "1448",
+        "custom_group": "EU/USA",
+        "designation": "Merchandiser",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1388",
+        "employee_name": "Đỗ Thị Cúc",
+        "employee": "TIQN-1388",
+        "attendance_device_id": "1447",
+        "custom_group": "Technical B",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1387",
+        "employee_name": "Phạm Thị Điền",
+        "employee": "TIQN-1387",
+        "attendance_device_id": "1446",
+        "custom_group": "Technical B",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1386",
+        "employee_name": "Võ Thị Kim Thùy",
+        "employee": "TIQN-1386",
+        "attendance_device_id": "1445",
+        "custom_group": "Technical B",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1385",
+        "employee_name": "Cao Thị Kiều Trinh",
+        "employee": "TIQN-1385",
+        "attendance_device_id": "1444",
+        "custom_group": "Technical B",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1384",
+        "employee_name": "Nguyễn Thị Kim Chi",
+        "employee": "TIQN-1384",
+        "attendance_device_id": "1443",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1383",
+        "employee_name": "Bùi Thị Thương Mến",
+        "employee": "TIQN-1383",
+        "attendance_device_id": "1442",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1382",
+        "employee_name": "Huỳnh Thị Ánh Nhi",
+        "employee": "TIQN-1382",
+        "attendance_device_id": "1441",
+        "custom_group": "Technical A",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1381",
+        "employee_name": "Trần Thị Phương",
+        "employee": "TIQN-1381",
+        "attendance_device_id": "1440",
+        "custom_group": "Technical A",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1380",
+        "employee_name": "Bùi Anh Tuấn",
+        "employee": "TIQN-1380",
+        "attendance_device_id": "1439",
+        "custom_group": "Line 07",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1379",
+        "employee_name": "Lê Văn Nguyên",
+        "employee": "TIQN-1379",
+        "attendance_device_id": "1438",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1378",
+        "employee_name": "Nguyễn Thị Phú",
+        "employee": "TIQN-1378",
+        "attendance_device_id": "1437",
+        "custom_group": "Technical A",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1377",
+        "employee_name": "Đặng Thị Thảo",
+        "employee": "TIQN-1377",
+        "attendance_device_id": "1436",
+        "custom_group": "Technical A",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1376",
+        "employee_name": "Kiều Thị Kim Thủy",
+        "employee": "TIQN-1376",
+        "attendance_device_id": "1435",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1375",
+        "employee_name": "Nguyễn Thị Thùy Vy",
+        "employee": "TIQN-1375",
+        "attendance_device_id": "1434",
+        "custom_group": "Technical A",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1374",
+        "employee_name": "Nguyễn Thị Kim Hoa",
+        "employee": "TIQN-1374",
+        "attendance_device_id": "1433",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1372",
+        "employee_name": "Nguyễn Thị Thanh Nga",
+        "employee": "TIQN-1372",
+        "attendance_device_id": "1431",
+        "custom_group": "Technical A",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1371",
+        "employee_name": "Phan Thị Hoanh",
+        "employee": "TIQN-1371",
+        "attendance_device_id": "1430",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1370",
+        "employee_name": "Hồ Thị Trang",
+        "employee": "TIQN-1370",
+        "attendance_device_id": "1429",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1367",
+        "employee_name": "Đặng Thị Mỹ Hạnh",
+        "employee": "TIQN-1367",
+        "attendance_device_id": "1426",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1366",
+        "employee_name": "Lê Thị Mỹ Xuyên",
+        "employee": "TIQN-1366",
+        "attendance_device_id": "1425",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1363",
+        "employee_name": "Nguyễn Thị Thúy Vân",
+        "employee": "TIQN-1363",
+        "attendance_device_id": "1422",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1362",
+        "employee_name": "Lương Thị Hiền",
+        "employee": "TIQN-1362",
+        "attendance_device_id": "1421",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1361",
+        "employee_name": "Nguyễn Hồng Cẩm",
+        "employee": "TIQN-1361",
+        "attendance_device_id": "1420",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1360",
+        "employee_name": "Mai Thị Hiền",
+        "employee": "TIQN-1360",
+        "attendance_device_id": "1419",
+        "custom_group": "Trainees",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1358",
+        "employee_name": "Lê Thị Đông",
+        "employee": "TIQN-1358",
+        "attendance_device_id": "1417",
+        "custom_group": "Utilities",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1357",
+        "employee_name": "Hồ Thị Lệ",
+        "employee": "TIQN-1357",
+        "attendance_device_id": "1416",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1355",
+        "employee_name": "Trần Thị Như Ý",
+        "employee": "TIQN-1355",
+        "attendance_device_id": "1414",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1354",
+        "employee_name": "Lê Trần Trưởng",
+        "employee": "TIQN-1354",
+        "attendance_device_id": "1413",
+        "custom_group": "Line 11",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1353",
+        "employee_name": "Nguyễn Tấn Cảnh",
+        "employee": "TIQN-1353",
+        "attendance_device_id": "1412",
+        "custom_group": "Line 06",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1352",
+        "employee_name": "Nguyễn Ngọc Tuấn Anh",
+        "employee": "TIQN-1352",
+        "attendance_device_id": "1411",
+        "custom_group": "Line 02",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1350",
+        "employee_name": "Đỗ Thị Hồng Nhị",
+        "employee": "TIQN-1350",
+        "attendance_device_id": "1409",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1349",
+        "employee_name": "Nguyễn Thị Phương",
+        "employee": "TIQN-1349",
+        "attendance_device_id": "1408",
+        "custom_group": "Technical A",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1348",
+        "employee_name": "Trần Thị Diệu",
+        "employee": "TIQN-1348",
+        "attendance_device_id": "1407",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1347",
+        "employee_name": "Nguyễn Thị Nhị",
+        "employee": "TIQN-1347",
+        "attendance_device_id": "1406",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1346",
+        "employee_name": "Nguyễn Thị Cẩm Duyên",
+        "employee": "TIQN-1346",
+        "attendance_device_id": "1405",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1345",
+        "employee_name": "Nguyễn Quốc Tuấn",
+        "employee": "TIQN-1345",
+        "attendance_device_id": "1404",
+        "custom_group": "Line 11",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1344",
+        "employee_name": "Nguyễn Văn Ninh",
+        "employee": "TIQN-1344",
+        "attendance_device_id": "1403",
+        "custom_group": "Line 08",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1342",
+        "employee_name": "Võ Thị Mỹ Ngà",
+        "employee": "TIQN-1342",
+        "attendance_device_id": "1401",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1340",
+        "employee_name": "Phạm Văn Lương",
+        "employee": "TIQN-1340",
+        "attendance_device_id": "1399",
+        "custom_group": "Warehouse",
+        "designation": "Warehouse Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1338",
+        "employee_name": "Lê Thị Nhị",
+        "employee": "TIQN-1338",
+        "attendance_device_id": "1397",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1337",
+        "employee_name": "Huỳnh Thị Như Ý",
+        "employee": "TIQN-1337",
+        "attendance_device_id": "1396",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1336",
+        "employee_name": "Phạm Thị Chi",
+        "employee": "TIQN-1336",
+        "attendance_device_id": "1395",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1335",
+        "employee_name": "Lê Thị Hồng Tuyết",
+        "employee": "TIQN-1335",
+        "attendance_device_id": "1394",
+        "custom_group": "Trainees",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1334",
+        "employee_name": "Đặng Thị Thanh Tâm",
+        "employee": "TIQN-1334",
+        "attendance_device_id": "1393",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1332",
+        "employee_name": "Trần Thanh Tân",
+        "employee": "TIQN-1332",
+        "attendance_device_id": "1391",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1331",
+        "employee_name": "Trần Thị Thoa",
+        "employee": "TIQN-1331",
+        "attendance_device_id": "1390",
+        "custom_group": "Trainees",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1330",
+        "employee_name": "Huỳnh Thị Lệ Phụ",
+        "employee": "TIQN-1330",
+        "attendance_device_id": "1389",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1328",
+        "employee_name": "Lê Ngọc Tiền",
+        "employee": "TIQN-1328",
+        "attendance_device_id": "1387",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1327",
+        "employee_name": "Mai Thị Lệ Huyền",
+        "employee": "TIQN-1327",
+        "attendance_device_id": "1386",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1326",
+        "employee_name": "Trương Thị Minh Hòa",
+        "employee": "TIQN-1326",
+        "attendance_device_id": "1385",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1323",
+        "employee_name": "Lê Thị Như Ý",
+        "employee": "TIQN-1323",
+        "attendance_device_id": "1382",
+        "custom_group": "Technical A",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1320",
+        "employee_name": "Lư Thị Việt Lý",
+        "employee": "TIQN-1320",
+        "attendance_device_id": "1379",
+        "custom_group": "Technical A",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1319",
+        "employee_name": "Đặng Thị Trường",
+        "employee": "TIQN-1319",
+        "attendance_device_id": "1378",
+        "custom_group": "Technical A",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1318",
+        "employee_name": "Nguyễn Thanh Tịnh",
+        "employee": "TIQN-1318",
+        "attendance_device_id": "1377",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1316",
+        "employee_name": "Võ Đức Hiếu",
+        "employee": "TIQN-1316",
+        "attendance_device_id": "1375",
+        "custom_group": "Line 12",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1314",
+        "employee_name": "Chu Trần Hồng Phúc",
+        "employee": "TIQN-1314",
+        "attendance_device_id": "1373",
+        "custom_group": "Trainees",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1313",
+        "employee_name": "Lê Thị Diễm",
+        "employee": "TIQN-1313",
+        "attendance_device_id": "1372",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1310",
+        "employee_name": "Nguyễn Thị Thu",
+        "employee": "TIQN-1310",
+        "attendance_device_id": "1369",
+        "custom_group": "Technical B",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1309",
+        "employee_name": "Hồ Thị Tam Nữ",
+        "employee": "TIQN-1309",
+        "attendance_device_id": "1368",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1308",
+        "employee_name": "Nguyễn Thị Thủy",
+        "employee": "TIQN-1308",
+        "attendance_device_id": "1367",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1307",
+        "employee_name": "Nguyễn Hoàng Phúc",
+        "employee": "TIQN-1307",
+        "attendance_device_id": "1366",
+        "custom_group": "Technical A",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1305",
+        "employee_name": "Nguyễn Quốc Duy",
+        "employee": "TIQN-1305",
+        "attendance_device_id": "1364",
+        "custom_group": "Technical B",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1304",
+        "employee_name": "Trần Thị Bích Phụng",
+        "employee": "TIQN-1304",
+        "attendance_device_id": "1363",
+        "custom_group": "Technical A",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1302",
+        "employee_name": "Phạm Thị Anh Thư",
+        "employee": "TIQN-1302",
+        "attendance_device_id": "1361",
+        "custom_group": "General supporting",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1301",
+        "employee_name": "Lê Thị Diễm",
+        "employee": "TIQN-1301",
+        "attendance_device_id": "1360",
+        "custom_group": "Japan",
+        "designation": "Merchandiser",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1300",
+        "employee_name": "Nguyễn Thị Nở",
+        "employee": "TIQN-1300",
+        "attendance_device_id": "1359",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1294",
+        "employee_name": "Nguyễn Thị Mỹ Lệ",
+        "employee": "TIQN-1294",
+        "attendance_device_id": "1353",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1293",
+        "employee_name": "Nguyễn Thị Kim Ngân",
+        "employee": "TIQN-1293",
+        "attendance_device_id": "1352",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1289",
+        "employee_name": "Nguyễn Thị Trang",
+        "employee": "TIQN-1289",
+        "attendance_device_id": "1348",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1288",
+        "employee_name": "Đặng Thị Thanh Thúy",
+        "employee": "TIQN-1288",
+        "attendance_device_id": "1347",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1287",
+        "employee_name": "Đinh Thị Bảo Trang",
+        "employee": "TIQN-1287",
+        "attendance_device_id": "1346",
+        "custom_group": "Preparation",
+        "designation": "Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1285",
+        "employee_name": "Vương Mai Thanh Tuyền",
+        "employee": "TIQN-1285",
+        "attendance_device_id": "1344",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1284",
+        "employee_name": "Vũ Thị Hồng Giang",
+        "employee": "TIQN-1284",
+        "attendance_device_id": "1343",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1283",
+        "employee_name": "Trần Thị Linh",
+        "employee": "TIQN-1283",
+        "attendance_device_id": "1342",
+        "custom_group": "Trainees",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1281",
+        "employee_name": "Phạm Thị Hòa",
+        "employee": "TIQN-1281",
+        "attendance_device_id": "1340",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker-Trainee",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1279",
+        "employee_name": "Võ Thị Hồng Viễn",
+        "employee": "TIQN-1279",
+        "attendance_device_id": "1338",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1278",
+        "employee_name": "Nguyễn Thị Tường Vy",
+        "employee": "TIQN-1278",
+        "attendance_device_id": "1337",
+        "custom_group": "Trainees",
+        "designation": "Sewing Worker-Trainee",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1274",
+        "employee_name": "Phạm Thị Hương",
+        "employee": "TIQN-1274",
+        "attendance_device_id": "1333",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1273",
+        "employee_name": "Lương Thị Bích Vi",
+        "employee": "TIQN-1273",
+        "attendance_device_id": "1332",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1272",
+        "employee_name": "Võ Thị Ái Thi",
+        "employee": "TIQN-1272",
+        "attendance_device_id": "1331",
+        "custom_group": "Packing",
+        "designation": "Packing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1271",
+        "employee_name": "Đỗ Thị Dung",
+        "employee": "TIQN-1271",
+        "attendance_device_id": "1330",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker-Trainee",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1269",
+        "employee_name": "Đào Thị Thu Bình",
+        "employee": "TIQN-1269",
+        "attendance_device_id": "1328",
+        "custom_group": "Medical",
+        "designation": "Nurse",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1268",
+        "employee_name": "Phan Trần Uyển Tiên",
+        "employee": "TIQN-1268",
+        "attendance_device_id": "1327",
+        "custom_group": "Trainees",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1267",
+        "employee_name": "Trương Thị Hồng Hạnh",
+        "employee": "TIQN-1267",
+        "attendance_device_id": "1326",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1264",
+        "employee_name": "Hồng Thị Lệ Cam",
+        "employee": "TIQN-1264",
+        "attendance_device_id": "1323",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1262",
+        "employee_name": "Lê Thị Ri",
+        "employee": "TIQN-1262",
+        "attendance_device_id": "1321",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1261",
+        "employee_name": "Huỳnh Thị Như Quỳnh",
+        "employee": "TIQN-1261",
+        "attendance_device_id": "1320",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1257",
+        "employee_name": "Nguyễn Thị Thanh Thúy",
+        "employee": "TIQN-1257",
+        "attendance_device_id": "1316",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1256",
+        "employee_name": "Nguyễn Thị Xuân Thảo",
+        "employee": "TIQN-1256",
+        "attendance_device_id": "1315",
+        "custom_group": "Technical B",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1255",
+        "employee_name": "Phạm Thị Trang",
+        "employee": "TIQN-1255",
+        "attendance_device_id": "1314",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1251",
+        "employee_name": "Trang Thị Như Đào",
+        "employee": "TIQN-1251",
+        "attendance_device_id": "1310",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1250",
+        "employee_name": "Nguyễn Thị Thủy",
+        "employee": "TIQN-1250",
+        "attendance_device_id": "1309",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1246",
+        "employee_name": "Phạm Thị Bích Phương",
+        "employee": "TIQN-1246",
+        "attendance_device_id": "1305",
+        "custom_group": "Technical A",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1242",
+        "employee_name": "Dương Thúy Ngân",
+        "employee": "TIQN-1242",
+        "attendance_device_id": "1301",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1240",
+        "employee_name": "Nguyễn Thị Ngọc Huyền",
+        "employee": "TIQN-1240",
+        "attendance_device_id": "1299",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1239",
+        "employee_name": "Phạm Minh Châu",
+        "employee": "TIQN-1239",
+        "attendance_device_id": "1298",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1238",
+        "employee_name": "Nguyễn Thị Thanh",
+        "employee": "TIQN-1238",
+        "attendance_device_id": "1297",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1237",
+        "employee_name": "Đỗ Thị Hạnh",
+        "employee": "TIQN-1237",
+        "attendance_device_id": "1296",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1235",
+        "employee_name": "Phạm Thị Hoa",
+        "employee": "TIQN-1235",
+        "attendance_device_id": "1294",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1234",
+        "employee_name": "Lâm Bảo Huỳnh Như",
+        "employee": "TIQN-1234",
+        "attendance_device_id": "1293",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1233",
+        "employee_name": "Nguyễn Thị Thanh Thúy",
+        "employee": "TIQN-1233",
+        "attendance_device_id": "1292",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1228",
+        "employee_name": "Nguyễn Thị Thanh Thâm",
+        "employee": "TIQN-1228",
+        "attendance_device_id": "1287",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1227",
+        "employee_name": "Đỗ Thị Anh",
+        "employee": "TIQN-1227",
+        "attendance_device_id": "1286",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1226",
+        "employee_name": "Lê Thị Lệ",
+        "employee": "TIQN-1226",
+        "attendance_device_id": "1285",
+        "custom_group": "Technical A",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1225",
+        "employee_name": "Nguyễn Song Tú Nguyên",
+        "employee": "TIQN-1225",
+        "attendance_device_id": "1284",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1224",
+        "employee_name": "Bùi Thị Bé",
+        "employee": "TIQN-1224",
+        "attendance_device_id": "1283",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1223",
+        "employee_name": "Dương Thị Thanh",
+        "employee": "TIQN-1223",
+        "attendance_device_id": "1282",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1222",
+        "employee_name": "Võ Thị Thanh Huyền",
+        "employee": "TIQN-1222",
+        "attendance_device_id": "1281",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1216",
+        "employee_name": "Trương Thị Tuyết Sương",
+        "employee": "TIQN-1216",
+        "attendance_device_id": "1275",
+        "custom_group": "Technical A",
+        "designation": "Sewing Worker-Trainee",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1215",
+        "employee_name": "Nguyễn Thị Thanh Bình",
+        "employee": "TIQN-1215",
+        "attendance_device_id": "1274",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1213",
+        "employee_name": "Nguyễn Viết Duy",
+        "employee": "TIQN-1213",
+        "attendance_device_id": "1272",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1211",
+        "employee_name": "Nguyễn Thị Điểm",
+        "employee": "TIQN-1211",
+        "attendance_device_id": "1270",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1210",
+        "employee_name": "Nguyễn Thành Nhất",
+        "employee": "TIQN-1210",
+        "attendance_device_id": "1269",
+        "custom_group": "Preparation",
+        "designation": "Cutter",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1208",
+        "employee_name": "Bùi Thị Tố Vân",
+        "employee": "TIQN-1208",
+        "attendance_device_id": "1267",
+        "custom_group": "Purchasing",
+        "designation": "Purchasing Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1207",
+        "employee_name": "Đào Thị Ánh Nguyệt",
+        "employee": "TIQN-1207",
+        "attendance_device_id": "1266",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1206",
+        "employee_name": "Từ Thị Tiên",
+        "employee": "TIQN-1206",
+        "attendance_device_id": "1265",
+        "custom_group": "Sample",
+        "designation": "Sample Accessories Coordinator",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1204",
+        "employee_name": "Nguyễn Thị Hảo",
+        "employee": "TIQN-1204",
+        "attendance_device_id": "1263",
+        "custom_group": "Packing",
+        "designation": "Packing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1203",
+        "employee_name": "Nguyễn Khắc Tâm",
+        "employee": "TIQN-1203",
+        "attendance_device_id": "1262",
+        "custom_group": "Line 08",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1199",
+        "employee_name": "Nguyễn Thị Kim Chi",
+        "employee": "TIQN-1199",
+        "attendance_device_id": "1258",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1197",
+        "employee_name": "Ngô Tấn Tùng",
+        "employee": "TIQN-1197",
+        "attendance_device_id": "1256",
+        "custom_group": "Warehouse",
+        "designation": "Warehouse Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1196",
+        "employee_name": "Nguyễn Thành Hiếu",
+        "employee": "TIQN-1196",
+        "attendance_device_id": "1255",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1190",
+        "employee_name": "Nguyễn Thị Hoàng Ni",
+        "employee": "TIQN-1190",
+        "attendance_device_id": "1249",
+        "custom_group": "Packing",
+        "designation": "Packing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1186",
+        "employee_name": "Võ Thị Mỹ",
+        "employee": "TIQN-1186",
+        "attendance_device_id": "1245",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1185",
+        "employee_name": "Trần Thị Lý",
+        "employee": "TIQN-1185",
+        "attendance_device_id": "1244",
+        "custom_group": "Line 10",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1184",
+        "employee_name": "Nguyễn Thị Châu Đoan",
+        "employee": "TIQN-1184",
+        "attendance_device_id": "1243",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1181",
+        "employee_name": "Trần Thị Thúy Hận",
+        "employee": "TIQN-1181",
+        "attendance_device_id": "1240",
+        "custom_group": "Sample",
+        "designation": "Sample Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1180",
+        "employee_name": "Đỗ Văn Vương",
+        "employee": "TIQN-1180",
+        "attendance_device_id": "1239",
+        "custom_group": "Preparation",
+        "designation": "Cutter",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1179",
+        "employee_name": "Phan Văn Phương",
+        "employee": "TIQN-1179",
+        "attendance_device_id": "1238",
+        "custom_group": "Preparation",
+        "designation": "Cutter",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1176",
+        "employee_name": "Võ Thị Mai",
+        "employee": "TIQN-1176",
+        "attendance_device_id": "1235",
+        "custom_group": "Sample",
+        "designation": "Sample Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1175",
+        "employee_name": "Huỳnh Thị Thơm",
+        "employee": "TIQN-1175",
+        "attendance_device_id": "1234",
+        "custom_group": "Utilities",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1171",
+        "employee_name": "Cao Thị Hồng Dung",
+        "employee": "TIQN-1171",
+        "attendance_device_id": "1230",
+        "custom_group": "Utilities",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1169",
+        "employee_name": "Lê Thị Mỹ",
+        "employee": "TIQN-1169",
+        "attendance_device_id": "1228",
+        "custom_group": "Utilities",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1168",
+        "employee_name": "Bùi Tấn Cường",
+        "employee": "TIQN-1168",
+        "attendance_device_id": "1227",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1167",
+        "employee_name": "Bùi Tấn Việt",
+        "employee": "TIQN-1167",
+        "attendance_device_id": "1226",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1163",
+        "employee_name": "Phạm Thị Thu Hồng",
+        "employee": "TIQN-1163",
+        "attendance_device_id": "1222",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1162",
+        "employee_name": "Phạm Văn Nam",
+        "employee": "TIQN-1162",
+        "attendance_device_id": "1221",
+        "custom_group": "Utility",
+        "designation": "Electrician",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1160",
+        "employee_name": "Nguyễn Thị Phương Trinh",
+        "employee": "TIQN-1160",
+        "attendance_device_id": "1219",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1159",
+        "employee_name": "Nguyễn Thị Tình",
+        "employee": "TIQN-1159",
+        "attendance_device_id": "1218",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1158",
+        "employee_name": "Trần Thị Nỡ",
+        "employee": "TIQN-1158",
+        "attendance_device_id": "1217",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1157",
+        "employee_name": "Đặng Thị Như Nga",
+        "employee": "TIQN-1157",
+        "attendance_device_id": "1216",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1155",
+        "employee_name": "Nguyễn Văn Sang",
+        "employee": "TIQN-1155",
+        "attendance_device_id": "1214",
+        "custom_group": "Utility",
+        "designation": "Mechanic",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1152",
+        "employee_name": "Trương Thị Thanh Châu",
+        "employee": "TIQN-1152",
+        "attendance_device_id": "1211",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1151",
+        "employee_name": "Nguyễn Thị Tường Vin",
+        "employee": "TIQN-1151",
+        "attendance_device_id": "1210",
+        "custom_group": "Line 04",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1146",
+        "employee_name": "Nguyễn Thị Bích Nử",
+        "employee": "TIQN-1146",
+        "attendance_device_id": "1205",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1145",
+        "employee_name": "Đinh Thị Thu Hà",
+        "employee": "TIQN-1145",
+        "attendance_device_id": "1204",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1144",
+        "employee_name": "Võ Thị Đào",
+        "employee": "TIQN-1144",
+        "attendance_device_id": "1203",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1142",
+        "employee_name": "Ngô Thị Nương",
+        "employee": "TIQN-1142",
+        "attendance_device_id": "1201",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1141",
+        "employee_name": "Nguyễn Thị Đức Viện",
+        "employee": "TIQN-1141",
+        "attendance_device_id": "1200",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1140",
+        "employee_name": "Lê Thị Thanh Lợi",
+        "employee": "TIQN-1140",
+        "attendance_device_id": "1199",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1139",
+        "employee_name": "Lê Thị Hạnh",
+        "employee": "TIQN-1139",
+        "attendance_device_id": "1198",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1138",
+        "employee_name": "Phạm Thị Sương",
+        "employee": "TIQN-1138",
+        "attendance_device_id": "1197",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1137",
+        "employee_name": "Thới Thị Bé",
+        "employee": "TIQN-1137",
+        "attendance_device_id": "1196",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1135",
+        "employee_name": "Trần Mai Khanh",
+        "employee": "TIQN-1135",
+        "attendance_device_id": "1194",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1132",
+        "employee_name": "Dương Thị Thúy",
+        "employee": "TIQN-1132",
+        "attendance_device_id": "1191",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1129",
+        "employee_name": "Nguyễn Thị Hiệp",
+        "employee": "TIQN-1129",
+        "attendance_device_id": "1188",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1128",
+        "employee_name": "Dương Thị Như Hiếu",
+        "employee": "TIQN-1128",
+        "attendance_device_id": "1187",
+        "custom_group": "HR/GA",
+        "designation": "HR/GA Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1127",
+        "employee_name": "Lê Võ Bảo Hòa",
+        "employee": "TIQN-1127",
+        "attendance_device_id": "1186",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1126",
+        "employee_name": "Lê Thanh Sỹ",
+        "employee": "TIQN-1126",
+        "attendance_device_id": "1185",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1124",
+        "employee_name": "Nguyễn Long Sinh",
+        "employee": "TIQN-1124",
+        "attendance_device_id": "1183",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1123",
+        "employee_name": "Đặng Quốc Nhật",
+        "employee": "TIQN-1123",
+        "attendance_device_id": "1182",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1122",
+        "employee_name": "Nguyễn Vũ Lan Vi",
+        "employee": "TIQN-1122",
+        "attendance_device_id": "1181",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1121",
+        "employee_name": "Nguyễn Thị Tuyên",
+        "employee": "TIQN-1121",
+        "attendance_device_id": "1180",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1120",
+        "employee_name": "Đặng Thị Nhị",
+        "employee": "TIQN-1120",
+        "attendance_device_id": "1179",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1118",
+        "employee_name": "Bùi Nguyễn Thị Thúy Oanh",
+        "employee": "TIQN-1118",
+        "attendance_device_id": "1177",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1117",
+        "employee_name": "Châu Thị Phước Hằng",
+        "employee": "TIQN-1117",
+        "attendance_device_id": "1176",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1113",
+        "employee_name": "Nguyễn Thị Nga",
+        "employee": "TIQN-1113",
+        "attendance_device_id": "1172",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1112",
+        "employee_name": "Võ Thị Mến",
+        "employee": "TIQN-1112",
+        "attendance_device_id": "1171",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1110",
+        "employee_name": "Nguyễn Thị Thanh Truyền",
+        "employee": "TIQN-1110",
+        "attendance_device_id": "1169",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1109",
+        "employee_name": "Phạm Thị Quỳnh Trang",
+        "employee": "TIQN-1109",
+        "attendance_device_id": "1168",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1106",
+        "employee_name": "Lê Thị Bình",
+        "employee": "TIQN-1106",
+        "attendance_device_id": "1165",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1104",
+        "employee_name": "Lương Hồng Tiếng",
+        "employee": "TIQN-1104",
+        "attendance_device_id": "1163",
+        "custom_group": "Preparation",
+        "designation": "Cutter",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1101",
+        "employee_name": "Huỳnh Tấn Viên",
+        "employee": "TIQN-1101",
+        "attendance_device_id": "1160",
+        "custom_group": "Line 07",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1099",
+        "employee_name": "Nguyễn Thị Thanh Hường",
+        "employee": "TIQN-1099",
+        "attendance_device_id": "1158",
+        "custom_group": "QA",
+        "designation": "QA Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1098",
+        "employee_name": "Nguyễn Thị Thảo",
+        "employee": "TIQN-1098",
+        "attendance_device_id": "1157",
+        "custom_group": "QA",
+        "designation": "QA Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1094",
+        "employee_name": "Đoàn Thị Minh Hường",
+        "employee": "TIQN-1094",
+        "attendance_device_id": "1153",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1093",
+        "employee_name": "Nguyễn Thị Trang",
+        "employee": "TIQN-1093",
+        "attendance_device_id": "1152",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1091",
+        "employee_name": "Đoàn Thị Cẩm Anh",
+        "employee": "TIQN-1091",
+        "attendance_device_id": "1150",
+        "custom_group": "Sample",
+        "designation": "Sample Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1090",
+        "employee_name": "Thới Thị Lệ Phi",
+        "employee": "TIQN-1090",
+        "attendance_device_id": "1149",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1088",
+        "employee_name": "Đặng Thị Chung",
+        "employee": "TIQN-1088",
+        "attendance_device_id": "1147",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1085",
+        "employee_name": "Lê Thị Thu Tâm",
+        "employee": "TIQN-1085",
+        "attendance_device_id": "1144",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1084",
+        "employee_name": "Phạm Thị Phương Mai",
+        "employee": "TIQN-1084",
+        "attendance_device_id": "1143",
+        "custom_group": "Line 12",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1083",
+        "employee_name": "Lê Thị Thúy",
+        "employee": "TIQN-1083",
+        "attendance_device_id": "1142",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1080",
+        "employee_name": "Kitajima Motoharu",
+        "employee": "TIQN-1080",
+        "attendance_device_id": "1139",
+        "custom_group": "Head of Branch",
+        "designation": "Head Of Branch",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1079",
+        "employee_name": "Nguyễn Thị Trà Vi",
+        "employee": "TIQN-1079",
+        "attendance_device_id": "1137",
+        "custom_group": "QA",
+        "designation": "QA Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1076",
+        "employee_name": "Nguyễn Anh Tuấn",
+        "employee": "TIQN-1076",
+        "attendance_device_id": "1135",
+        "custom_group": "Canteen",
+        "designation": "Canteen Supporter",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1075",
+        "employee_name": "Lê Thị Thu Sương",
+        "employee": "TIQN-1075",
+        "attendance_device_id": "1134",
+        "custom_group": "Control",
+        "designation": "Production Control Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1074",
+        "employee_name": "Hà Thị Huyền Trâm",
+        "employee": "TIQN-1074",
+        "attendance_device_id": "1133",
+        "custom_group": "Control",
+        "designation": "Production Control Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1073",
+        "employee_name": "Lê Văn Hải",
+        "employee": "TIQN-1073",
+        "attendance_device_id": "1132",
+        "custom_group": "Line 10",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1072",
+        "employee_name": "Hà Thị Thu Thủy",
+        "employee": "TIQN-1072",
+        "attendance_device_id": "1131",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1071",
+        "employee_name": "Nguyễn Thị Bích Vân",
+        "employee": "TIQN-1071",
+        "attendance_device_id": "1130",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1069",
+        "employee_name": "Nguyễn Thị Hường",
+        "employee": "TIQN-1069",
+        "attendance_device_id": "1128",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1067",
+        "employee_name": "Nguyễn Thị Kim Anh",
+        "employee": "TIQN-1067",
+        "attendance_device_id": "1126",
+        "custom_group": "IE",
+        "designation": "IE Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1065",
+        "employee_name": "Phạm Thị Phi Diễm",
+        "employee": "TIQN-1065",
+        "attendance_device_id": "1124",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1064",
+        "employee_name": "Bùi Thị Thu",
+        "employee": "TIQN-1064",
+        "attendance_device_id": "1123",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1063",
+        "employee_name": "Đỗ Thị Trang",
+        "employee": "TIQN-1063",
+        "attendance_device_id": "1122",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1061",
+        "employee_name": "Ngô Thị Nở",
+        "employee": "TIQN-1061",
+        "attendance_device_id": "1120",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1060",
+        "employee_name": "Nguyễn Thị Thu",
+        "employee": "TIQN-1060",
+        "attendance_device_id": "1119",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1059",
+        "employee_name": "Nguyễn Duy Trình",
+        "employee": "TIQN-1059",
+        "attendance_device_id": "1118",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1057",
+        "employee_name": "Nguyễn Thị Trúc Hương",
+        "employee": "TIQN-1057",
+        "attendance_device_id": "1116",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1055",
+        "employee_name": "Ngô Thị Nga",
+        "employee": "TIQN-1055",
+        "attendance_device_id": "1114",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1053",
+        "employee_name": "Dương Thị Bé Ích",
+        "employee": "TIQN-1053",
+        "attendance_device_id": "1112",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1050",
+        "employee_name": "Nguyễn Thị Thanh Phương",
+        "employee": "TIQN-1050",
+        "attendance_device_id": "1109",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1048",
+        "employee_name": "Nguyễn Thị Thủy",
+        "employee": "TIQN-1048",
+        "attendance_device_id": "1107",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1046",
+        "employee_name": "Nguyễn Văn Luân",
+        "employee": "TIQN-1046",
+        "attendance_device_id": "1105",
+        "custom_group": "Line 09",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1043",
+        "employee_name": "Lê Thị Phương",
+        "employee": "TIQN-1043",
+        "attendance_device_id": "1102",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1042",
+        "employee_name": "Nguyễn Thị Trà My",
+        "employee": "TIQN-1042",
+        "attendance_device_id": "1101",
+        "custom_group": "Control",
+        "designation": "Production Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1040",
+        "employee_name": "Trương Minh Vũ",
+        "employee": "TIQN-1040",
+        "attendance_device_id": "1099",
+        "custom_group": "Line 10",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1039",
+        "employee_name": "Lê Thanh Tuấn",
+        "employee": "TIQN-1039",
+        "attendance_device_id": "1098",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1034",
+        "employee_name": "Trần Thị Phụng",
+        "employee": "TIQN-1034",
+        "attendance_device_id": "1093",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1032",
+        "employee_name": "Nguyễn Thị Trang",
+        "employee": "TIQN-1032",
+        "attendance_device_id": "1091",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1028",
+        "employee_name": "Phạm Thị Tuyết",
+        "employee": "TIQN-1028",
+        "attendance_device_id": "1087",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1027",
+        "employee_name": "Nguyễn Thanh Thị Ngọc",
+        "employee": "TIQN-1027",
+        "attendance_device_id": "1086",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1026",
+        "employee_name": "Trần Thị Kim Ngân",
+        "employee": "TIQN-1026",
+        "attendance_device_id": "1085",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1024",
+        "employee_name": "Nguyễn Thị Lệ Diễm",
+        "employee": "TIQN-1024",
+        "attendance_device_id": "1083",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1023",
+        "employee_name": "Phan Thị Thu Thuyền",
+        "employee": "TIQN-1023",
+        "attendance_device_id": "1082",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1022",
+        "employee_name": "Lê Thị Hồng Cẩm",
+        "employee": "TIQN-1022",
+        "attendance_device_id": "1081",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1021",
+        "employee_name": "Trần Thị Tố Tâm",
+        "employee": "TIQN-1021",
+        "attendance_device_id": "1080",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1019",
+        "employee_name": "Nguyễn Thị Kim Liên",
+        "employee": "TIQN-1019",
+        "attendance_device_id": "1078",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1018",
+        "employee_name": "Phạm Thị Bảy",
+        "employee": "TIQN-1018",
+        "attendance_device_id": "1077",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1012",
+        "employee_name": "Phạm Thị Hiền",
+        "employee": "TIQN-1012",
+        "attendance_device_id": "1070",
+        "custom_group": "QA",
+        "designation": "QA Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1011",
+        "employee_name": "Nguyễn Thị Tú Cẩm",
+        "employee": "TIQN-1011",
+        "attendance_device_id": "1069",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1009",
+        "employee_name": "Lê Thị Chi",
+        "employee": "TIQN-1009",
+        "attendance_device_id": "1067",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1008",
+        "employee_name": "Trần Thị Nương",
+        "employee": "TIQN-1008",
+        "attendance_device_id": "1066",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1005",
+        "employee_name": "Dương Thị Thúy Ngân",
+        "employee": "TIQN-1005",
+        "attendance_device_id": "1063",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1004",
+        "employee_name": "Trịnh Hữu Hiệu",
+        "employee": "TIQN-1004",
+        "attendance_device_id": "1062",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1003",
+        "employee_name": "Trần Thị Kim Oanh",
+        "employee": "TIQN-1003",
+        "attendance_device_id": "1061",
+        "custom_group": "Line technic",
+        "designation": "Technical Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1002",
+        "employee_name": "Nguyễn Thị Bộ",
+        "employee": "TIQN-1002",
+        "attendance_device_id": "1060",
+        "custom_group": "Line technic",
+        "designation": "Technical Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1001",
+        "employee_name": "Trần Thị Mỹ Hạnh",
+        "employee": "TIQN-1001",
+        "attendance_device_id": "1059",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-1000",
+        "employee_name": "Nguyễn Thị Kim Thao",
+        "employee": "TIQN-1000",
+        "attendance_device_id": "1058",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0998",
+        "employee_name": "Nguyễn Thị Thanh",
+        "employee": "TIQN-0998",
+        "attendance_device_id": "1056",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0996",
+        "employee_name": "Nguyễn Mậu Kiều My",
+        "employee": "TIQN-0996",
+        "attendance_device_id": "1054",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0995",
+        "employee_name": "Lê Thị Thu Hương",
+        "employee": "TIQN-0995",
+        "attendance_device_id": "1053",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0994",
+        "employee_name": "Dương Thị Thu Vân",
+        "employee": "TIQN-0994",
+        "attendance_device_id": "1052",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0991",
+        "employee_name": "Nguyễn Thị Thanh Thương",
+        "employee": "TIQN-0991",
+        "attendance_device_id": "1049",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0990",
+        "employee_name": "Võ Thị Luyến",
+        "employee": "TIQN-0990",
+        "attendance_device_id": "1048",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0986",
+        "employee_name": "Nguyễn Thị Ngọc Anh",
+        "employee": "TIQN-0986",
+        "attendance_device_id": "1044",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0983",
+        "employee_name": "Võ Thị Lên",
+        "employee": "TIQN-0983",
+        "attendance_device_id": "1041",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0981",
+        "employee_name": "Nguyễn Thị Kim Thùy",
+        "employee": "TIQN-0981",
+        "attendance_device_id": "1039",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0979",
+        "employee_name": "Phạm Hướng Dương",
+        "employee": "TIQN-0979",
+        "attendance_device_id": "1037",
+        "custom_group": "HR/GA",
+        "designation": "HR/GA Manager",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0977",
+        "employee_name": "Phạm Thị Oanh",
+        "employee": "TIQN-0977",
+        "attendance_device_id": "1033",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0976",
+        "employee_name": "Phan Thị Thương",
+        "employee": "TIQN-0976",
+        "attendance_device_id": "1032",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0975",
+        "employee_name": "Nguyễn Thị Minh Thùy",
+        "employee": "TIQN-0975",
+        "attendance_device_id": "1036",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0973",
+        "employee_name": "Nguyễn Thị Tâm",
+        "employee": "TIQN-0973",
+        "attendance_device_id": "1034",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0972",
+        "employee_name": "Lương Thị Kim Liên",
+        "employee": "TIQN-0972",
+        "attendance_device_id": "1029",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0970",
+        "employee_name": "Võ Ngọc Tuân",
+        "employee": "TIQN-0970",
+        "attendance_device_id": "1027",
+        "custom_group": "Line 02",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0969",
+        "employee_name": "Tôn Thị Mỹ Trang",
+        "employee": "TIQN-0969",
+        "attendance_device_id": "1026",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0964",
+        "employee_name": "Hoàng Thị Thu Trang",
+        "employee": "TIQN-0964",
+        "attendance_device_id": "1021",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0963",
+        "employee_name": "Châu Văn Chí",
+        "employee": "TIQN-0963",
+        "attendance_device_id": "1020",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0962",
+        "employee_name": "Nguyễn Thị Kim Phương",
+        "employee": "TIQN-0962",
+        "attendance_device_id": "1019",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0960",
+        "employee_name": "Đỗ Thị Cẩm Vi",
+        "employee": "TIQN-0960",
+        "attendance_device_id": "1017",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0959",
+        "employee_name": "Nguyễn Thị Chi",
+        "employee": "TIQN-0959",
+        "attendance_device_id": "1016",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0957",
+        "employee_name": "Trịnh Thị Hằng",
+        "employee": "TIQN-0957",
+        "attendance_device_id": "1014",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0955",
+        "employee_name": "Cao Thị Sang",
+        "employee": "TIQN-0955",
+        "attendance_device_id": "1012",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0950",
+        "employee_name": "Nguyễn Thị Thu Thủy",
+        "employee": "TIQN-0950",
+        "attendance_device_id": "1007",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0949",
+        "employee_name": "Phạm Thị Thiện",
+        "employee": "TIQN-0949",
+        "attendance_device_id": "1006",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0948",
+        "employee_name": "Nguyễn Thị Vân",
+        "employee": "TIQN-0948",
+        "attendance_device_id": "1005",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0945",
+        "employee_name": "Trần Thị Lưu",
+        "employee": "TIQN-0945",
+        "attendance_device_id": "1002",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0943",
+        "employee_name": "Trần Thị Thu",
+        "employee": "TIQN-0943",
+        "attendance_device_id": "1024",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0942",
+        "employee_name": "Đào Thị Ngọc Mến",
+        "employee": "TIQN-0942",
+        "attendance_device_id": "999",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0941",
+        "employee_name": "Võ Thị Minh Huệ",
+        "employee": "TIQN-0941",
+        "attendance_device_id": "998",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0940",
+        "employee_name": "Đinh Thị Tốt",
+        "employee": "TIQN-0940",
+        "attendance_device_id": "997",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0939",
+        "employee_name": "Lương Thị Minh Châu",
+        "employee": "TIQN-0939",
+        "attendance_device_id": "996",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0936",
+        "employee_name": "Đoàn Thị Thu Duyên",
+        "employee": "TIQN-0936",
+        "attendance_device_id": "993",
+        "custom_group": "Sample",
+        "designation": "Sample Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0934",
+        "employee_name": "Nguyễn Thị Hồng Ly",
+        "employee": "TIQN-0934",
+        "attendance_device_id": "991",
+        "custom_group": "Line 11",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0932",
+        "employee_name": "Hà Thị Lệ Huyền",
+        "employee": "TIQN-0932",
+        "attendance_device_id": "989",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0927",
+        "employee_name": "Võ Thị Kim Yến",
+        "employee": "TIQN-0927",
+        "attendance_device_id": "984",
+        "custom_group": "Japan",
+        "designation": "Junior Merchandiser",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0925",
+        "employee_name": "Nguyễn Thị Ngọc Ánh",
+        "employee": "TIQN-0925",
+        "attendance_device_id": "982",
+        "custom_group": "Accounting",
+        "designation": "Accountant",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0924",
+        "employee_name": "Nguyễn Thị Thanh Thanh",
+        "employee": "TIQN-0924",
+        "attendance_device_id": "980",
+        "custom_group": "Sample",
+        "designation": "Sample Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0922",
+        "employee_name": "Nguyễn Thị Hường",
+        "employee": "TIQN-0922",
+        "attendance_device_id": "976",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0919",
+        "employee_name": "Nguyễn Thị Ánh Tiết",
+        "employee": "TIQN-0919",
+        "attendance_device_id": "979",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0918",
+        "employee_name": "Đỗ Thị Hằng",
+        "employee": "TIQN-0918",
+        "attendance_device_id": "973",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0916",
+        "employee_name": "Hồng Thị Huệ",
+        "employee": "TIQN-0916",
+        "attendance_device_id": "971",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0915",
+        "employee_name": "Lê Thị Nga",
+        "employee": "TIQN-0915",
+        "attendance_device_id": "970",
+        "custom_group": "Sample",
+        "designation": "Sample Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0913",
+        "employee_name": "Nguyễn Thị Kim Thương",
+        "employee": "TIQN-0913",
+        "attendance_device_id": "969",
+        "custom_group": "Japan",
+        "designation": "Merchandiser",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0910",
+        "employee_name": "Bùi Thị Tiên",
+        "employee": "TIQN-0910",
+        "attendance_device_id": "967",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0909",
+        "employee_name": "Nguyễn Thị Thu Kiều",
+        "employee": "TIQN-0909",
+        "attendance_device_id": "964",
+        "custom_group": "Preparation",
+        "designation": "Statistical Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0908",
+        "employee_name": "Nguyễn Bùi Nguyệt Nga",
+        "employee": "TIQN-0908",
+        "attendance_device_id": "963",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0904",
+        "employee_name": "Trần Thị Hậu",
+        "employee": "TIQN-0904",
+        "attendance_device_id": "961",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0901",
+        "employee_name": "Trần Thị Kim Hương",
+        "employee": "TIQN-0901",
+        "attendance_device_id": "957",
+        "custom_group": "Line 10",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0900",
+        "employee_name": "Nguyễn Thị Thúy Kiều",
+        "employee": "TIQN-0900",
+        "attendance_device_id": "956",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0899",
+        "employee_name": "Đặng Thị Duyên",
+        "employee": "TIQN-0899",
+        "attendance_device_id": "955",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0898",
+        "employee_name": "Nguyễn Ngọc Thân",
+        "employee": "TIQN-0898",
+        "attendance_device_id": "952",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0893",
+        "employee_name": "Huỳnh Thị Kim Tính",
+        "employee": "TIQN-0893",
+        "attendance_device_id": "946",
+        "custom_group": "Utilities",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0890",
+        "employee_name": "Lê Văn Tồn",
+        "employee": "TIQN-0890",
+        "attendance_device_id": "951",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0889",
+        "employee_name": "Phạm Thị Hồng Nga",
+        "employee": "TIQN-0889",
+        "attendance_device_id": "948",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0886",
+        "employee_name": "Lê Thị Minh Tuyến",
+        "employee": "TIQN-0886",
+        "attendance_device_id": "943",
+        "custom_group": "Warehouse",
+        "designation": "Warehouse Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0882",
+        "employee_name": "Vũ Dương Vi Thảo",
+        "employee": "TIQN-0882",
+        "attendance_device_id": "939",
+        "custom_group": "Control",
+        "designation": "Statistical Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0881",
+        "employee_name": "Võ Thị Lai",
+        "employee": "TIQN-0881",
+        "attendance_device_id": "936",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0880",
+        "employee_name": "Khương Khánh Linh",
+        "employee": "TIQN-0880",
+        "attendance_device_id": "935",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0878",
+        "employee_name": "Ngô Thị Hường",
+        "employee": "TIQN-0878",
+        "attendance_device_id": "933",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0877",
+        "employee_name": "Trần Thị Ngân",
+        "employee": "TIQN-0877",
+        "attendance_device_id": "932",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0876",
+        "employee_name": "Phạm Ni  Na",
+        "employee": "TIQN-0876",
+        "attendance_device_id": "2223",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0875",
+        "employee_name": "Đỗ Thị Lài",
+        "employee": "TIQN-0875",
+        "attendance_device_id": "930",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0874",
+        "employee_name": "Đỗ Thị Thắm",
+        "employee": "TIQN-0874",
+        "attendance_device_id": "929",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0873",
+        "employee_name": "Văn Thị Thu Bích",
+        "employee": "TIQN-0873",
+        "attendance_device_id": "928",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0870",
+        "employee_name": "Nguyễn Thị Như Quỳnh",
+        "employee": "TIQN-0870",
+        "attendance_device_id": "938",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0868",
+        "employee_name": "Phan Thị Nương",
+        "employee": "TIQN-0868",
+        "attendance_device_id": "925",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0866",
+        "employee_name": "Đào Ngọc Cần",
+        "employee": "TIQN-0866",
+        "attendance_device_id": "923",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0864",
+        "employee_name": "Đặng Thị Thanh Hằng",
+        "employee": "TIQN-0864",
+        "attendance_device_id": "921",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0862",
+        "employee_name": "Trương Vũ Cường",
+        "employee": "TIQN-0862",
+        "attendance_device_id": "919",
+        "custom_group": "Line technic",
+        "designation": "Pattern Seamer",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0857",
+        "employee_name": "Huỳnh Thị Kim Liên",
+        "employee": "TIQN-0857",
+        "attendance_device_id": "913",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0856",
+        "employee_name": "Phạm Thị Mến",
+        "employee": "TIQN-0856",
+        "attendance_device_id": "912",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0855",
+        "employee_name": "Lê Thị Ly",
+        "employee": "TIQN-0855",
+        "attendance_device_id": "910",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0853",
+        "employee_name": "Bùi Thị Tuyết Vân",
+        "employee": "TIQN-0853",
+        "attendance_device_id": "908",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0852",
+        "employee_name": "Lê Thị Thùy Dung",
+        "employee": "TIQN-0852",
+        "attendance_device_id": "907",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0851",
+        "employee_name": "Nguyễn Thương Huyền Trang",
+        "employee": "TIQN-0851",
+        "attendance_device_id": "906",
+        "custom_group": "Im-Export",
+        "designation": "Logistics Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0850",
+        "employee_name": "Hoàng Thị Hợi",
+        "employee": "TIQN-0850",
+        "attendance_device_id": "905",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0848",
+        "employee_name": "La Thị Tiến",
+        "employee": "TIQN-0848",
+        "attendance_device_id": "903",
+        "custom_group": "Sample",
+        "designation": "Sample Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0847",
+        "employee_name": "Phạm Thị Vân",
+        "employee": "TIQN-0847",
+        "attendance_device_id": "902",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0844",
+        "employee_name": "Lê Thị Minh Sang",
+        "employee": "TIQN-0844",
+        "attendance_device_id": "899",
+        "custom_group": "Accounting",
+        "designation": "Accountant",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0840",
+        "employee_name": "Nguyễn Thị Ngọc Hiền",
+        "employee": "TIQN-0840",
+        "attendance_device_id": "895",
+        "custom_group": "Sample",
+        "designation": "Sample Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0839",
+        "employee_name": "Nguyễn Thị Hồng",
+        "employee": "TIQN-0839",
+        "attendance_device_id": "894",
+        "custom_group": "Sample",
+        "designation": "Sample Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0838",
+        "employee_name": "Hồ Thị Tường Vi",
+        "employee": "TIQN-0838",
+        "attendance_device_id": "893",
+        "custom_group": "Packing",
+        "designation": "Packing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0837",
+        "employee_name": "Huỳnh Thị Anh Thư",
+        "employee": "TIQN-0837",
+        "attendance_device_id": "892",
+        "custom_group": "Packing",
+        "designation": "Packing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0836",
+        "employee_name": "Nguyễn Thị Kim Hằng",
+        "employee": "TIQN-0836",
+        "attendance_device_id": "891",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0835",
+        "employee_name": "Đoàn Thị Hạnh",
+        "employee": "TIQN-0835",
+        "attendance_device_id": "890",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0833",
+        "employee_name": "Huỳnh Tân Ngọc Ân",
+        "employee": "TIQN-0833",
+        "attendance_device_id": "888",
+        "custom_group": "Sample",
+        "designation": "Sample Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0830",
+        "employee_name": "Ngô Thị Kim Tuyết",
+        "employee": "TIQN-0830",
+        "attendance_device_id": "885",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0828",
+        "employee_name": "Phan Thị Thanh Thúy",
+        "employee": "TIQN-0828",
+        "attendance_device_id": "883",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0826",
+        "employee_name": "Lê Thị Thùy Thân",
+        "employee": "TIQN-0826",
+        "attendance_device_id": "881",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0823",
+        "employee_name": "Lâm Thị Mỹ Vân",
+        "employee": "TIQN-0823",
+        "attendance_device_id": "878",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0819",
+        "employee_name": "Lê Thị Mỹ Dung",
+        "employee": "TIQN-0819",
+        "attendance_device_id": "874",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0818",
+        "employee_name": "Phạm Thị Ngọc Lài",
+        "employee": "TIQN-0818",
+        "attendance_device_id": "873",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0816",
+        "employee_name": "Trương Thị Thu Phượng",
+        "employee": "TIQN-0816",
+        "attendance_device_id": "871",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0814",
+        "employee_name": "Huỳnh Thị Hồng Khương",
+        "employee": "TIQN-0814",
+        "attendance_device_id": "870",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0813",
+        "employee_name": "Bùi Thị Quý",
+        "employee": "TIQN-0813",
+        "attendance_device_id": "868",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0809",
+        "employee_name": "Phạm Thị Mỹ Vân",
+        "employee": "TIQN-0809",
+        "attendance_device_id": "863",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0808",
+        "employee_name": "Bùi Thị Lệ Mỹ",
+        "employee": "TIQN-0808",
+        "attendance_device_id": "862",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0807",
+        "employee_name": "Nguyễn Thị Bích Hạnh",
+        "employee": "TIQN-0807",
+        "attendance_device_id": "861",
+        "custom_group": "Technical B",
+        "designation": "Line Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0806",
+        "employee_name": "Nguyễn Thị Phước",
+        "employee": "TIQN-0806",
+        "attendance_device_id": "860",
+        "custom_group": "Line 11",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0805",
+        "employee_name": "Cao Thị Thúy",
+        "employee": "TIQN-0805",
+        "attendance_device_id": "859",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0804",
+        "employee_name": "Nguyễn Thị Lệ Kiều",
+        "employee": "TIQN-0804",
+        "attendance_device_id": "858",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0801",
+        "employee_name": "Nguyễn Thị Hồng Vinh",
+        "employee": "TIQN-0801",
+        "attendance_device_id": "855",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0800",
+        "employee_name": "Nguyễn Thị Lệ",
+        "employee": "TIQN-0800",
+        "attendance_device_id": "854",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0798",
+        "employee_name": "Nguyễn Văn Dự",
+        "employee": "TIQN-0798",
+        "attendance_device_id": "852",
+        "custom_group": "Line 05",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0797",
+        "employee_name": "Huỳnh Thị Mỹ Mến",
+        "employee": "TIQN-0797",
+        "attendance_device_id": "851",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0793",
+        "employee_name": "Trần Hải Đăng",
+        "employee": "TIQN-0793",
+        "attendance_device_id": "848",
+        "custom_group": "Line 01",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0789",
+        "employee_name": "Trần Thị Tình",
+        "employee": "TIQN-0789",
+        "attendance_device_id": "844",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0785",
+        "employee_name": "Nguyễn Thị Hà",
+        "employee": "TIQN-0785",
+        "attendance_device_id": "840",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0779",
+        "employee_name": "Huỳnh Thị Thơm",
+        "employee": "TIQN-0779",
+        "attendance_device_id": "828",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0774",
+        "employee_name": "Huỳnh Thị Hậu",
+        "employee": "TIQN-0774",
+        "attendance_device_id": "829",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0772",
+        "employee_name": "Lê Thị Kim Thoa",
+        "employee": "TIQN-0772",
+        "attendance_device_id": "827",
+        "custom_group": "Line 05",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0769",
+        "employee_name": "Nguyễn Thị Hồng Liên",
+        "employee": "TIQN-0769",
+        "attendance_device_id": "824",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0768",
+        "employee_name": "Nguyễn Thị Tường Vi",
+        "employee": "TIQN-0768",
+        "attendance_device_id": "823",
+        "custom_group": "Line 07",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0767",
+        "employee_name": "Nguyễn Thị Diện",
+        "employee": "TIQN-0767",
+        "attendance_device_id": "822",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0766",
+        "employee_name": "Chương Thị Thao",
+        "employee": "TIQN-0766",
+        "attendance_device_id": "821",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0764",
+        "employee_name": "Huỳnh Thị Thu Xuân",
+        "employee": "TIQN-0764",
+        "attendance_device_id": "818",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0758",
+        "employee_name": "Lý Thị Kim Phường",
+        "employee": "TIQN-0758",
+        "attendance_device_id": "813",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0755",
+        "employee_name": "Trần Thị Thu Hảo",
+        "employee": "TIQN-0755",
+        "attendance_device_id": "810",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0753",
+        "employee_name": "Huỳnh Thị Kim Linh",
+        "employee": "TIQN-0753",
+        "attendance_device_id": "808",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0744",
+        "employee_name": "Võ Thị Huỳnh Trang",
+        "employee": "TIQN-0744",
+        "attendance_device_id": "799",
+        "custom_group": "Utilities",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0740",
+        "employee_name": "Võ Thị Ngọc Huyền",
+        "employee": "TIQN-0740",
+        "attendance_device_id": "795",
+        "custom_group": "Utilities",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0735",
+        "employee_name": "Ngô Thị Bích Ly",
+        "employee": "TIQN-0735",
+        "attendance_device_id": "790",
+        "custom_group": "Line 11",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0734",
+        "employee_name": "Nguyễn Thị Ái Phi",
+        "employee": "TIQN-0734",
+        "attendance_device_id": "789",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0732",
+        "employee_name": "Nguyễn Đình Nhu",
+        "employee": "TIQN-0732",
+        "attendance_device_id": "787",
+        "custom_group": "Maintainance",
+        "designation": "Mechanic",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0731",
+        "employee_name": "Nguyễn Thị Cẩm Loan",
+        "employee": "TIQN-0731",
+        "attendance_device_id": "911",
+        "custom_group": "Control",
+        "designation": "Translator",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0729",
+        "employee_name": "Lê Văn Việt",
+        "employee": "TIQN-0729",
+        "attendance_device_id": "784",
+        "custom_group": "Line 04",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0727",
+        "employee_name": "Lâm Văn Tuấn",
+        "employee": "TIQN-0727",
+        "attendance_device_id": "782",
+        "custom_group": "Line 06",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0725",
+        "employee_name": "Lê Thị Út",
+        "employee": "TIQN-0725",
+        "attendance_device_id": "779",
+        "custom_group": "Sample",
+        "designation": "Sample Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0720",
+        "employee_name": "Lê Thị Gấm",
+        "employee": "TIQN-0720",
+        "attendance_device_id": "774",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0715",
+        "employee_name": "Trần Thị Hà",
+        "employee": "TIQN-0715",
+        "attendance_device_id": "769",
+        "custom_group": "Line 07",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0714",
+        "employee_name": "Phạm Thị Kim Ánh",
+        "employee": "TIQN-0714",
+        "attendance_device_id": "768",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0713",
+        "employee_name": "Nguyễn Thị Huyền",
+        "employee": "TIQN-0713",
+        "attendance_device_id": "767",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0711",
+        "employee_name": "Phạm Thị Nở",
+        "employee": "TIQN-0711",
+        "attendance_device_id": "786",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0710",
+        "employee_name": "Nguyễn Thị Chi",
+        "employee": "TIQN-0710",
+        "attendance_device_id": "764",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0709",
+        "employee_name": "Nguyễn Thị Như Ca",
+        "employee": "TIQN-0709",
+        "attendance_device_id": "763",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0708",
+        "employee_name": "Ngô Thị Hằng",
+        "employee": "TIQN-0708",
+        "attendance_device_id": "762",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0707",
+        "employee_name": "Huỳnh Thị Thiết",
+        "employee": "TIQN-0707",
+        "attendance_device_id": "759",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0706",
+        "employee_name": "Nguyễn Thị Mỹ Duyên",
+        "employee": "TIQN-0706",
+        "attendance_device_id": "760",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0705",
+        "employee_name": "Huỳnh Thị Nở",
+        "employee": "TIQN-0705",
+        "attendance_device_id": "781",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0702",
+        "employee_name": "Đỗ Thị Minh Huệ",
+        "employee": "TIQN-0702",
+        "attendance_device_id": "756",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0701",
+        "employee_name": "Võ Thị Linh",
+        "employee": "TIQN-0701",
+        "attendance_device_id": "755",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0697",
+        "employee_name": "Bùi Thị Bảo Yến",
+        "employee": "TIQN-0697",
+        "attendance_device_id": "751",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0692",
+        "employee_name": "Nguyễn Văn Pháp",
+        "employee": "TIQN-0692",
+        "attendance_device_id": "746",
+        "custom_group": "Maintainance",
+        "designation": "Mechanic",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0683",
+        "employee_name": "Lâm Thị Hồng Thùy",
+        "employee": "TIQN-0683",
+        "attendance_device_id": "737",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0682",
+        "employee_name": "Nguyễn Thị Thanh Nga",
+        "employee": "TIQN-0682",
+        "attendance_device_id": "736",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0679",
+        "employee_name": "Nguyễn Thị Trâm Anh",
+        "employee": "TIQN-0679",
+        "attendance_device_id": "733",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0675",
+        "employee_name": "Nguyễn Thị Kim Phượng",
+        "employee": "TIQN-0675",
+        "attendance_device_id": "730",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0674",
+        "employee_name": "Phạm Thị Kim Loan",
+        "employee": "TIQN-0674",
+        "attendance_device_id": "727",
+        "custom_group": "HR/GA",
+        "designation": "C&B Executive",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0672",
+        "employee_name": "Huỳnh Thị Kim",
+        "employee": "TIQN-0672",
+        "attendance_device_id": "725",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0671",
+        "employee_name": "Hồ Trọng Nghĩa",
+        "employee": "TIQN-0671",
+        "attendance_device_id": "724",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0670",
+        "employee_name": "Hồ Văn Phương",
+        "employee": "TIQN-0670",
+        "attendance_device_id": "723",
+        "custom_group": "Line 05",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0669",
+        "employee_name": "Phạm Thị Minh Nguyệt",
+        "employee": "TIQN-0669",
+        "attendance_device_id": "722",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0668",
+        "employee_name": "Phạm Trương Thành Ý",
+        "employee": "TIQN-0668",
+        "attendance_device_id": "721",
+        "custom_group": "Line technic",
+        "designation": "Technical Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0665",
+        "employee_name": "Đỗ Thị Hậu",
+        "employee": "TIQN-0665",
+        "attendance_device_id": "718",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0663",
+        "employee_name": "Phạm Thị Liên",
+        "employee": "TIQN-0663",
+        "attendance_device_id": "716",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0660",
+        "employee_name": "Phạm Thị Chi",
+        "employee": "TIQN-0660",
+        "attendance_device_id": "714",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0659",
+        "employee_name": "Trần Thị Hồng Nương",
+        "employee": "TIQN-0659",
+        "attendance_device_id": "713",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0658",
+        "employee_name": "Phùng Thị Thanh Hoa",
+        "employee": "TIQN-0658",
+        "attendance_device_id": "712",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0656",
+        "employee_name": "Trương Thị Thu ",
+        "employee": "TIQN-0656",
+        "attendance_device_id": "710",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0655",
+        "employee_name": "Lương Thị Thanh Hảo",
+        "employee": "TIQN-0655",
+        "attendance_device_id": "709",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0652",
+        "employee_name": "Nguyễn Thị Công",
+        "employee": "TIQN-0652",
+        "attendance_device_id": "706",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0651",
+        "employee_name": "Võ Thị Lãnh",
+        "employee": "TIQN-0651",
+        "attendance_device_id": "705",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0643",
+        "employee_name": "Nguyễn Thị Tư",
+        "employee": "TIQN-0643",
+        "attendance_device_id": "696",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0640",
+        "employee_name": "Phạm Thị Vỹ",
+        "employee": "TIQN-0640",
+        "attendance_device_id": "693",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0637",
+        "employee_name": "Võ Thị Ba",
+        "employee": "TIQN-0637",
+        "attendance_device_id": "690",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0636",
+        "employee_name": "Trần Thị Thúy Liểu",
+        "employee": "TIQN-0636",
+        "attendance_device_id": "689",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0633",
+        "employee_name": "Phạm Thị Hồng Phước",
+        "employee": "TIQN-0633",
+        "attendance_device_id": "686",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0632",
+        "employee_name": "Lê Thị Bích Trâm",
+        "employee": "TIQN-0632",
+        "attendance_device_id": "685",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0627",
+        "employee_name": "Võ Thị Ngọc Hạnh",
+        "employee": "TIQN-0627",
+        "attendance_device_id": "680",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0626",
+        "employee_name": "Nguyễn Hữu Quý",
+        "employee": "TIQN-0626",
+        "attendance_device_id": "679",
+        "custom_group": "Line technic",
+        "designation": "Pattern Seamer",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0625",
+        "employee_name": "Trần Thị Lịnh",
+        "employee": "TIQN-0625",
+        "attendance_device_id": "678",
+        "custom_group": "Line technic",
+        "designation": "Technical Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0619",
+        "employee_name": "Tô Thị Minh Nữ",
+        "employee": "TIQN-0619",
+        "attendance_device_id": "672",
+        "custom_group": "Sample",
+        "designation": "Sample Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0616",
+        "employee_name": "Trương Thị Thảo",
+        "employee": "TIQN-0616",
+        "attendance_device_id": "669",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0615",
+        "employee_name": "Nguyễn Phúc Trình",
+        "employee": "TIQN-0615",
+        "attendance_device_id": "668",
+        "custom_group": "Line 09",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0611",
+        "employee_name": "Võ Thanh Trinh",
+        "employee": "TIQN-0611",
+        "attendance_device_id": "664",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0610",
+        "employee_name": "Lý Thị Bích Thủy",
+        "employee": "TIQN-0610",
+        "attendance_device_id": "663",
+        "custom_group": "Line 08",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0608",
+        "employee_name": "Lê Thị Bích Đào",
+        "employee": "TIQN-0608",
+        "attendance_device_id": "661",
+        "custom_group": "Line technic",
+        "designation": "Technical Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0607",
+        "employee_name": "Đỗ Thị Như Huyền",
+        "employee": "TIQN-0607",
+        "attendance_device_id": "657",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0606",
+        "employee_name": "Phạm Thị Nguyên",
+        "employee": "TIQN-0606",
+        "attendance_device_id": "659",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0605",
+        "employee_name": "Lê Thị Minh Tuyền",
+        "employee": "TIQN-0605",
+        "attendance_device_id": "656",
+        "custom_group": "Line 04",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0602",
+        "employee_name": "Lương Thị Lý",
+        "employee": "TIQN-0602",
+        "attendance_device_id": "655",
+        "custom_group": "Technical A",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0601",
+        "employee_name": "Phạm Thị Phượng",
+        "employee": "TIQN-0601",
+        "attendance_device_id": "654",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0600",
+        "employee_name": "Phạm Thị Ngọc Ánh",
+        "employee": "TIQN-0600",
+        "attendance_device_id": "653",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0599",
+        "employee_name": "Đào Thị Thanh",
+        "employee": "TIQN-0599",
+        "attendance_device_id": "652",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0598",
+        "employee_name": "Nguyễn Thị Hiền",
+        "employee": "TIQN-0598",
+        "attendance_device_id": "651",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0596",
+        "employee_name": "Đoàn Thị Nhàn",
+        "employee": "TIQN-0596",
+        "attendance_device_id": "649",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0594",
+        "employee_name": "Nguyễn Thị Tuyết",
+        "employee": "TIQN-0594",
+        "attendance_device_id": "646",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0592",
+        "employee_name": "Nguyễn Thị Thảo",
+        "employee": "TIQN-0592",
+        "attendance_device_id": "643",
+        "custom_group": "Utilities",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0591",
+        "employee_name": "Ngô Tấn Xịn",
+        "employee": "TIQN-0591",
+        "attendance_device_id": "642",
+        "custom_group": "General supporting",
+        "designation": "Seam Sealing - Supporting Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0589",
+        "employee_name": "Võ Thị Thu Hiền",
+        "employee": "TIQN-0589",
+        "attendance_device_id": "640",
+        "custom_group": "Control",
+        "designation": "Planning Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0588",
+        "employee_name": "Lê Thị Huệ",
+        "employee": "TIQN-0588",
+        "attendance_device_id": "638",
+        "custom_group": "Line technic",
+        "designation": "Technical Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0586",
+        "employee_name": "Nguyễn Thị Thuý Hằng",
+        "employee": "TIQN-0586",
+        "attendance_device_id": "636",
+        "custom_group": "Sample",
+        "designation": "Sample Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0585",
+        "employee_name": "Nguyễn An",
+        "employee": "TIQN-0585",
+        "attendance_device_id": "635",
+        "custom_group": "Canteen",
+        "designation": "Chef",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0583",
+        "employee_name": "Nguyễn Thị Thu Thảo",
+        "employee": "TIQN-0583",
+        "attendance_device_id": "633",
+        "custom_group": "Sample",
+        "designation": "Sample Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0579",
+        "employee_name": "Trương Quang Thắng",
+        "employee": "TIQN-0579",
+        "attendance_device_id": "629",
+        "custom_group": "General supporting",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0576",
+        "employee_name": "Nguyễn Duy Ngọc",
+        "employee": "TIQN-0576",
+        "attendance_device_id": "626",
+        "custom_group": "Control",
+        "designation": "Production Tool Controller",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0572",
+        "employee_name": "Thới Thị Quyên",
+        "employee": "TIQN-0572",
+        "attendance_device_id": "617",
+        "custom_group": "Line 06",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0571",
+        "employee_name": "Kiều Thị Việt Trinh",
+        "employee": "TIQN-0571",
+        "attendance_device_id": "620",
+        "custom_group": "General supporting",
+        "designation": "Seam Sealing Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0570",
+        "employee_name": "Nguyễn Văn Trường",
+        "employee": "TIQN-0570",
+        "attendance_device_id": "619",
+        "custom_group": "Line 01",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0567",
+        "employee_name": "Lê Thôi",
+        "employee": "TIQN-0567",
+        "attendance_device_id": "615",
+        "custom_group": "General supporting",
+        "designation": "Seam Sealing Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0563",
+        "employee_name": "Trần Thị Kim Phượng",
+        "employee": "TIQN-0563",
+        "attendance_device_id": "611",
+        "custom_group": "Warehouse",
+        "designation": "Warehouse & Material Control Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0560",
+        "employee_name": "Lê Thị Thúy",
+        "employee": "TIQN-0560",
+        "attendance_device_id": "607",
+        "custom_group": "Line 03",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0558",
+        "employee_name": "Huỳnh Thị Thu Trang",
+        "employee": "TIQN-0558",
+        "attendance_device_id": "606",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0557",
+        "employee_name": "Huỳnh Thị Thu Hoa",
+        "employee": "TIQN-0557",
+        "attendance_device_id": "594",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0551",
+        "employee_name": "Lê Thị Diễm",
+        "employee": "TIQN-0551",
+        "attendance_device_id": "608",
+        "custom_group": "Utilities",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0550",
+        "employee_name": "Lưu Kim Thúy",
+        "employee": "TIQN-0550",
+        "attendance_device_id": "599",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0545",
+        "employee_name": "Nguyễn Thị Tường Vy",
+        "employee": "TIQN-0545",
+        "attendance_device_id": "597",
+        "custom_group": "Utilities",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0542",
+        "employee_name": "Đồng Thị Như Quỳnh",
+        "employee": "TIQN-0542",
+        "attendance_device_id": "592",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0538",
+        "employee_name": "Cao Thị Mỹ Thắm",
+        "employee": "TIQN-0538",
+        "attendance_device_id": "595",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0537",
+        "employee_name": "Nguyễn Thị Bích Vân",
+        "employee": "TIQN-0537",
+        "attendance_device_id": "602",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0534",
+        "employee_name": "Nguyễn Thị Hà",
+        "employee": "TIQN-0534",
+        "attendance_device_id": "582",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0528",
+        "employee_name": "Lưu Thị Hương",
+        "employee": "TIQN-0528",
+        "attendance_device_id": "566",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0527",
+        "employee_name": "Trần Thị Hạng",
+        "employee": "TIQN-0527",
+        "attendance_device_id": "570",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0523",
+        "employee_name": "Lê Thị Son",
+        "employee": "TIQN-0523",
+        "attendance_device_id": "576",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0522",
+        "employee_name": "Nguyễn Thị Giang",
+        "employee": "TIQN-0522",
+        "attendance_device_id": "577",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0519",
+        "employee_name": "Nguyễn Thị Thư",
+        "employee": "TIQN-0519",
+        "attendance_device_id": "580",
+        "custom_group": "Line 03",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0518",
+        "employee_name": "Phạm Ngọc",
+        "employee": "TIQN-0518",
+        "attendance_device_id": "573",
+        "custom_group": "Line 03",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0517",
+        "employee_name": "Đào Minh Hùng",
+        "employee": "TIQN-0517",
+        "attendance_device_id": "574",
+        "custom_group": "Preparation",
+        "designation": "Preparation Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0516",
+        "employee_name": "Võ Duy Thoại",
+        "employee": "TIQN-0516",
+        "attendance_device_id": "563",
+        "custom_group": "Line 04",
+        "designation": "Supporting Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0514",
+        "employee_name": "Nguyễn Thị Thương",
+        "employee": "TIQN-0514",
+        "attendance_device_id": "561",
+        "custom_group": "CAD",
+        "designation": "Patterner",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0513",
+        "employee_name": "Nguyễn Thị Mỹ Hương",
+        "employee": "TIQN-0513",
+        "attendance_device_id": "560",
+        "custom_group": "CAD",
+        "designation": "Patterner",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0512",
+        "employee_name": "Thân Thị Thu Trà",
+        "employee": "TIQN-0512",
+        "attendance_device_id": "559",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0510",
+        "employee_name": "Nguyễn Đoàn Hương Giang",
+        "employee": "TIQN-0510",
+        "attendance_device_id": "557",
+        "custom_group": "Warehouse",
+        "designation": "Warehouse Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0501",
+        "employee_name": "Bạch Thị Minh Hiếu",
+        "employee": "TIQN-0501",
+        "attendance_device_id": "521",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0498",
+        "employee_name": "Nguyễn Thị Liễu",
+        "employee": "TIQN-0498",
+        "attendance_device_id": "529",
+        "custom_group": "IE",
+        "designation": "IE Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0491",
+        "employee_name": "Đỗ Thị Truyền",
+        "employee": "TIQN-0491",
+        "attendance_device_id": "537",
+        "custom_group": "Line 09",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0490",
+        "employee_name": "Nguyễn Thị Ngọt",
+        "employee": "TIQN-0490",
+        "attendance_device_id": "512",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0489",
+        "employee_name": "Võ Thị Nguyệt",
+        "employee": "TIQN-0489",
+        "attendance_device_id": "520",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0488",
+        "employee_name": "Dương Thị Thu Thúy",
+        "employee": "TIQN-0488",
+        "attendance_device_id": "518",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0486",
+        "employee_name": "Huỳnh Thị Phương",
+        "employee": "TIQN-0486",
+        "attendance_device_id": "532",
+        "custom_group": "Line 08",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0484",
+        "employee_name": "Đoàn Minh Chung",
+        "employee": "TIQN-0484",
+        "attendance_device_id": "525",
+        "custom_group": "Preparation",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0483",
+        "employee_name": "Nguyễn Thị Chung",
+        "employee": "TIQN-0483",
+        "attendance_device_id": "542",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0481",
+        "employee_name": "Nguyễn Thị Tuyết Phương",
+        "employee": "TIQN-0481",
+        "attendance_device_id": "543",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0479",
+        "employee_name": "Nguyễn Thị Nam",
+        "employee": "TIQN-0479",
+        "attendance_device_id": "540",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0476",
+        "employee_name": "Bùi Thị Lắm",
+        "employee": "TIQN-0476",
+        "attendance_device_id": "523",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0475",
+        "employee_name": "Nguyễn Thị Ái Nam",
+        "employee": "TIQN-0475",
+        "attendance_device_id": "531",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0474",
+        "employee_name": "Lê Thị Hồng Tin",
+        "employee": "TIQN-0474",
+        "attendance_device_id": "539",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0473",
+        "employee_name": "Phạm Thị Nữ",
+        "employee": "TIQN-0473",
+        "attendance_device_id": "548",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0468",
+        "employee_name": "Võ Thị Xuân",
+        "employee": "TIQN-0468",
+        "attendance_device_id": "509",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0461",
+        "employee_name": "Nguyễn Thị Dung",
+        "employee": "TIQN-0461",
+        "attendance_device_id": "506",
+        "custom_group": "Line 07",
+        "designation": "Line Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0458",
+        "employee_name": "Nguyễn Thị Lưu",
+        "employee": "TIQN-0458",
+        "attendance_device_id": "503",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0452",
+        "employee_name": "Đặng Thị Chi",
+        "employee": "TIQN-0452",
+        "attendance_device_id": "495",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0449",
+        "employee_name": "Hồ Thị Thúy Kiều",
+        "employee": "TIQN-0449",
+        "attendance_device_id": "493",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0445",
+        "employee_name": "Tạ Thị Lan Huyền",
+        "employee": "TIQN-0445",
+        "attendance_device_id": "482",
+        "custom_group": "IE",
+        "designation": "IE Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0444",
+        "employee_name": "Nguyễn Thị Ly Na",
+        "employee": "TIQN-0444",
+        "attendance_device_id": "481",
+        "custom_group": "Line technic",
+        "designation": "Line Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0443",
+        "employee_name": "Nguyễn Thị Tuyết Nhung",
+        "employee": "TIQN-0443",
+        "attendance_device_id": "485",
+        "custom_group": "CAD",
+        "designation": "Patterner",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0441",
+        "employee_name": "Trần Thị Ngọc Sen",
+        "employee": "TIQN-0441",
+        "attendance_device_id": "487",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0437",
+        "employee_name": "Trần Thị Bích Phượng",
+        "employee": "TIQN-0437",
+        "attendance_device_id": "484",
+        "custom_group": "CAD",
+        "designation": "Patterner",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0436",
+        "employee_name": "Đặng Thị Kim Cúc",
+        "employee": "TIQN-0436",
+        "attendance_device_id": "463",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0435",
+        "employee_name": "Nguyễn Thị Hạnh",
+        "employee": "TIQN-0435",
+        "attendance_device_id": "480",
+        "custom_group": "CAD",
+        "designation": "CAD Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0433",
+        "employee_name": "Đỗ Thị Bích Liên",
+        "employee": "TIQN-0433",
+        "attendance_device_id": "478",
+        "custom_group": "Sample",
+        "designation": "Sample Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0432",
+        "employee_name": "Lý Thị Nữ",
+        "employee": "TIQN-0432",
+        "attendance_device_id": "477",
+        "custom_group": "IE",
+        "designation": "IE Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0431",
+        "employee_name": "Phạm Thị Thu Thùy",
+        "employee": "TIQN-0431",
+        "attendance_device_id": "476",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0430",
+        "employee_name": "Võ Duy Trị",
+        "employee": "TIQN-0430",
+        "attendance_device_id": "475",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0429",
+        "employee_name": "Nguyễn Thị Hoàng Trinh",
+        "employee": "TIQN-0429",
+        "attendance_device_id": "474",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0426",
+        "employee_name": "Võ Thị Lệ Hiền",
+        "employee": "TIQN-0426",
+        "attendance_device_id": "471",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0421",
+        "employee_name": "Nguyễn Thị Thúy",
+        "employee": "TIQN-0421",
+        "attendance_device_id": "466",
+        "custom_group": "Sample",
+        "designation": "Sample Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0418",
+        "employee_name": "Lê Thị Kiều Hoanh",
+        "employee": "TIQN-0418",
+        "attendance_device_id": "455",
+        "custom_group": "HSE",
+        "designation": "HSE Officer",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0415",
+        "employee_name": "Châu Thị Tâm",
+        "employee": "TIQN-0415",
+        "attendance_device_id": "459",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0412",
+        "employee_name": "Nguyễn Thị Thúy",
+        "employee": "TIQN-0412",
+        "attendance_device_id": "456",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0402",
+        "employee_name": "Trần Thị Xinh",
+        "employee": "TIQN-0402",
+        "attendance_device_id": "445",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0400",
+        "employee_name": "Nguyễn Thị Em",
+        "employee": "TIQN-0400",
+        "attendance_device_id": "443",
+        "custom_group": "Line 02",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0398",
+        "employee_name": "Nguyễn Hoàng Điền",
+        "employee": "TIQN-0398",
+        "attendance_device_id": "441",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0389",
+        "employee_name": "Lê Thị Danh",
+        "employee": "TIQN-0389",
+        "attendance_device_id": "432",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0388",
+        "employee_name": "Nguyễn Thị Thúy Kiều",
+        "employee": "TIQN-0388",
+        "attendance_device_id": "431",
+        "custom_group": "Line 09",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0387",
+        "employee_name": "Nguyễn Thị Kim Hạnh",
+        "employee": "TIQN-0387",
+        "attendance_device_id": "430",
+        "custom_group": "Preparation",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0386",
+        "employee_name": "Nguyễn Thị Diệu",
+        "employee": "TIQN-0386",
+        "attendance_device_id": "429",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0385",
+        "employee_name": "Bạch Thị Tịnh",
+        "employee": "TIQN-0385",
+        "attendance_device_id": "428",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0384",
+        "employee_name": "Trần Thị Ly",
+        "employee": "TIQN-0384",
+        "attendance_device_id": "1030",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0381",
+        "employee_name": "Nguyễn Tấn Việt",
+        "employee": "TIQN-0381",
+        "attendance_device_id": "422",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0378",
+        "employee_name": "Nguyễn Thị Vi",
+        "employee": "TIQN-0378",
+        "attendance_device_id": "420",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0374",
+        "employee_name": "Nguyễn Văn Trọng",
+        "employee": "TIQN-0374",
+        "attendance_device_id": "419",
+        "custom_group": "Preparation",
+        "designation": "Cutter",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0372",
+        "employee_name": "Đỗ Hoàng Phương Trang",
+        "employee": "TIQN-0372",
+        "attendance_device_id": "413",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0371",
+        "employee_name": "Nguyễn Thị Mỹ Lệ",
+        "employee": "TIQN-0371",
+        "attendance_device_id": "414",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0370",
+        "employee_name": "Đặng Thị Thùy Vân",
+        "employee": "TIQN-0370",
+        "attendance_device_id": "417",
+        "custom_group": "General supporting",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0369",
+        "employee_name": "Đặng Thị Mỹ",
+        "employee": "TIQN-0369",
+        "attendance_device_id": "418",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0368",
+        "employee_name": "Dương Thị Như Trâm",
+        "employee": "TIQN-0368",
+        "attendance_device_id": "411",
+        "custom_group": "Im-Export",
+        "designation": "Logistics Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0367",
+        "employee_name": "Lê Thị Trinh Nữ",
+        "employee": "TIQN-0367",
+        "attendance_device_id": "409",
+        "custom_group": "Line 12",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0366",
+        "employee_name": "Trương Thị Thủy",
+        "employee": "TIQN-0366",
+        "attendance_device_id": "410",
+        "custom_group": "Control",
+        "designation": "Translator",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0365",
+        "employee_name": "Nguyễn Thị Như Tuyền",
+        "employee": "TIQN-0365",
+        "attendance_device_id": "408",
+        "custom_group": "CAD",
+        "designation": "Patterner",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0362",
+        "employee_name": "Huỳnh Thị Bé Dự",
+        "employee": "TIQN-0362",
+        "attendance_device_id": "404",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0361",
+        "employee_name": "Nguyễn Thị Như Lý",
+        "employee": "TIQN-0361",
+        "attendance_device_id": "405",
+        "custom_group": "Canteen",
+        "designation": "Canteen Supporter",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0360",
+        "employee_name": "Hoàng Thị Diệu",
+        "employee": "TIQN-0360",
+        "attendance_device_id": "424",
+        "custom_group": "Warehouse",
+        "designation": "Warehouse Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0359",
+        "employee_name": "Đoàn Thị Sen",
+        "employee": "TIQN-0359",
+        "attendance_device_id": "403",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0352",
+        "employee_name": "Lê Thị Phương",
+        "employee": "TIQN-0352",
+        "attendance_device_id": "397",
+        "custom_group": "Canteen",
+        "designation": "Canteen Supporter",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0351",
+        "employee_name": "Lê Thị Mai",
+        "employee": "TIQN-0351",
+        "attendance_device_id": "396",
+        "custom_group": "Canteen",
+        "designation": "Canteen Supporter",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0343",
+        "employee_name": "Nguyễn Thị Ngọc Lệ",
+        "employee": "TIQN-0343",
+        "attendance_device_id": "389",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0342",
+        "employee_name": "Nguyễn Thị Thúy Kiều",
+        "employee": "TIQN-0342",
+        "attendance_device_id": "388",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0340",
+        "employee_name": "Huỳnh Thị Thu My",
+        "employee": "TIQN-0340",
+        "attendance_device_id": "383",
+        "custom_group": "Control",
+        "designation": "Planning Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0337",
+        "employee_name": "Phạm Thị Hồng Kiều",
+        "employee": "TIQN-0337",
+        "attendance_device_id": "381",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0332",
+        "employee_name": "Trương Thị Thủy",
+        "employee": "TIQN-0332",
+        "attendance_device_id": "368",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0330",
+        "employee_name": "Nguyễn Thị Hạnh",
+        "employee": "TIQN-0330",
+        "attendance_device_id": "371",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0326",
+        "employee_name": "Ngô Thị Kim Trúc",
+        "employee": "TIQN-0326",
+        "attendance_device_id": "360",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0321",
+        "employee_name": "Nguyễn Thị Phương Thi",
+        "employee": "TIQN-0321",
+        "attendance_device_id": "376",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0313",
+        "employee_name": "Trần Thị Nha",
+        "employee": "TIQN-0313",
+        "attendance_device_id": "358",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0311",
+        "employee_name": "Nguyễn Thị Chi",
+        "employee": "TIQN-0311",
+        "attendance_device_id": "373",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0309",
+        "employee_name": "Bùi Thị Mỹ Vận",
+        "employee": "TIQN-0309",
+        "attendance_device_id": "369",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0306",
+        "employee_name": "Hồ Ngọc Vũ",
+        "employee": "TIQN-0306",
+        "attendance_device_id": "352",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0304",
+        "employee_name": "Võ Đăng Trình",
+        "employee": "TIQN-0304",
+        "attendance_device_id": "346",
+        "custom_group": "Purchasing",
+        "designation": "Purchasing Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0302",
+        "employee_name": "Nguyễn Thị Mỹ Danh",
+        "employee": "TIQN-0302",
+        "attendance_device_id": "344",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0300",
+        "employee_name": "Nguyễn Thị Mỹ Thuyền",
+        "employee": "TIQN-0300",
+        "attendance_device_id": "343",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0298",
+        "employee_name": "Nguyễn Thùy Dương",
+        "employee": "TIQN-0298",
+        "attendance_device_id": "336",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0296",
+        "employee_name": "Đoàn Thị Thanh Thùy",
+        "employee": "TIQN-0296",
+        "attendance_device_id": "342",
+        "custom_group": "General supporting",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0295",
+        "employee_name": "Nguyễn Thị Thu",
+        "employee": "TIQN-0295",
+        "attendance_device_id": "338",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0293",
+        "employee_name": "Phạm Thị Bích Hồng",
+        "employee": "TIQN-0293",
+        "attendance_device_id": "337",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0292",
+        "employee_name": "Bùi Thị Xuân",
+        "employee": "TIQN-0292",
+        "attendance_device_id": "340",
+        "custom_group": "General supporting",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0291",
+        "employee_name": "Nguyễn Duy Toàn",
+        "employee": "TIQN-0291",
+        "attendance_device_id": "332",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0286",
+        "employee_name": "Bồ Trọng Giang",
+        "employee": "TIQN-0286",
+        "attendance_device_id": "328",
+        "custom_group": "Preparation",
+        "designation": "Preparation Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0284",
+        "employee_name": "Trần Thị Thanh Huyền",
+        "employee": "TIQN-0284",
+        "attendance_device_id": "325",
+        "custom_group": "Warehouse",
+        "designation": "Warehouse Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0282",
+        "employee_name": "Võ Thị Thúy Hiền",
+        "employee": "TIQN-0282",
+        "attendance_device_id": "323",
+        "custom_group": "Warehouse",
+        "designation": "Warehouse Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0281",
+        "employee_name": "Trần Thị Thuận",
+        "employee": "TIQN-0281",
+        "attendance_device_id": "322",
+        "custom_group": "Line 08",
+        "designation": "Line Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0280",
+        "employee_name": "Nguyễn Thị Trà My",
+        "employee": "TIQN-0280",
+        "attendance_device_id": "320",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0279",
+        "employee_name": "Lê Văn Thành",
+        "employee": "TIQN-0279",
+        "attendance_device_id": "279",
+        "custom_group": "Line technic",
+        "designation": "Pattern Seamer",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0275",
+        "employee_name": "Nguyễn Thành Vinh",
+        "employee": "TIQN-0275",
+        "attendance_device_id": "291",
+        "custom_group": "Maintainance",
+        "designation": "Mechanic",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0274",
+        "employee_name": "Lê Thị Hạnh",
+        "employee": "TIQN-0274",
+        "attendance_device_id": "326",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0273",
+        "employee_name": "Lê Thị Xuân Thời",
+        "employee": "TIQN-0273",
+        "attendance_device_id": "318",
+        "custom_group": "Line 06",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0269",
+        "employee_name": "Dương Thị Mỹ Trâm",
+        "employee": "TIQN-0269",
+        "attendance_device_id": "314",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0266",
+        "employee_name": "Cao Thị Bích Hường",
+        "employee": "TIQN-0266",
+        "attendance_device_id": "308",
+        "custom_group": "Line 05",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0264",
+        "employee_name": "Đoàn Thị Thanh Trà",
+        "employee": "TIQN-0264",
+        "attendance_device_id": "306",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0262",
+        "employee_name": "Nguyễn Thị Tám",
+        "employee": "TIQN-0262",
+        "attendance_device_id": "304",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0261",
+        "employee_name": "Bùi Thị Ánh Văn",
+        "employee": "TIQN-0261",
+        "attendance_device_id": "303",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0260",
+        "employee_name": "Ngô Thị Huệ",
+        "employee": "TIQN-0260",
+        "attendance_device_id": "319",
+        "custom_group": "Line 08",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0259",
+        "employee_name": "Đỗ Thị Trang",
+        "employee": "TIQN-0259",
+        "attendance_device_id": "301",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0258",
+        "employee_name": "Nguyễn Thị Kim Mơ",
+        "employee": "TIQN-0258",
+        "attendance_device_id": "300",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0257",
+        "employee_name": "Trần Thị Nở",
+        "employee": "TIQN-0257",
+        "attendance_device_id": "299",
+        "custom_group": "Technical A",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0254",
+        "employee_name": "Nguyễn Quỳnh Như",
+        "employee": "TIQN-0254",
+        "attendance_device_id": "296",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0253",
+        "employee_name": "Nguyễn Thị Thương",
+        "employee": "TIQN-0253",
+        "attendance_device_id": "295",
+        "custom_group": "Line 05",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0247",
+        "employee_name": "Phạm Thị Vân",
+        "employee": "TIQN-0247",
+        "attendance_device_id": "284",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0246",
+        "employee_name": "Ao Thị Nương",
+        "employee": "TIQN-0246",
+        "attendance_device_id": "267",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0242",
+        "employee_name": "Nguyễn Thị Bích Quỳnh",
+        "employee": "TIQN-0242",
+        "attendance_device_id": "270",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0240",
+        "employee_name": "Nguyễn Thị Hiếu",
+        "employee": "TIQN-0240",
+        "attendance_device_id": "281",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0239",
+        "employee_name": "Phạm Thị Tâm",
+        "employee": "TIQN-0239",
+        "attendance_device_id": "269",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0233",
+        "employee_name": "Nguyễn Thị Hồng Hà",
+        "employee": "TIQN-0233",
+        "attendance_device_id": "259",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0231",
+        "employee_name": "Hồ Thị Thùy Trang",
+        "employee": "TIQN-0231",
+        "attendance_device_id": "258",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0227",
+        "employee_name": "Nguyễn Thị Kiều",
+        "employee": "TIQN-0227",
+        "attendance_device_id": "262",
+        "custom_group": "Inspection",
+        "designation": "QC Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0226",
+        "employee_name": "Lê Phước Đạt",
+        "employee": "TIQN-0226",
+        "attendance_device_id": "321",
+        "custom_group": "Utility",
+        "designation": "Mechanic",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0224",
+        "employee_name": "Đỗ Ngọc Hiển",
+        "employee": "TIQN-0224",
+        "attendance_device_id": "351",
+        "custom_group": "Maintainance",
+        "designation": "Mechanic",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0222",
+        "employee_name": "Trương Văn Định",
+        "employee": "TIQN-0222",
+        "attendance_device_id": "252",
+        "custom_group": "Packing",
+        "designation": "QC Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0221",
+        "employee_name": "Lê Thị Bích Kiều",
+        "employee": "TIQN-0221",
+        "attendance_device_id": "253",
+        "custom_group": "Inspection",
+        "designation": "QC Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0216",
+        "employee_name": "Nguyễn Thị Hà",
+        "employee": "TIQN-0216",
+        "attendance_device_id": "290",
+        "custom_group": "HR/GA",
+        "designation": "GA",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0215",
+        "employee_name": "Võ Hồng Hạnh",
+        "employee": "TIQN-0215",
+        "attendance_device_id": "245",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0213",
+        "employee_name": "Nguyễn Thị Kim Ngân",
+        "employee": "TIQN-0213",
+        "attendance_device_id": "243",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0210",
+        "employee_name": "Nguyễn Tấn Tài",
+        "employee": "TIQN-0210",
+        "attendance_device_id": "240",
+        "custom_group": "Line technic",
+        "designation": "Mechanic",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0208",
+        "employee_name": "Lê Thị Xuân Nương",
+        "employee": "TIQN-0208",
+        "attendance_device_id": "238",
+        "custom_group": "General supporting",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0207",
+        "employee_name": "Nguyễn Thị Kim",
+        "employee": "TIQN-0207",
+        "attendance_device_id": "237",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0206",
+        "employee_name": "Lê Thị Nhân",
+        "employee": "TIQN-0206",
+        "attendance_device_id": "236",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0203",
+        "employee_name": "Phan Thị Thu Thủy",
+        "employee": "TIQN-0203",
+        "attendance_device_id": "233",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0199",
+        "employee_name": "Trần Thị Thu",
+        "employee": "TIQN-0199",
+        "attendance_device_id": "229",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0198",
+        "employee_name": "Đỗ Thị Ngọc Tuyết",
+        "employee": "TIQN-0198",
+        "attendance_device_id": "228",
+        "custom_group": "Line technic",
+        "designation": "Technical Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0197",
+        "employee_name": "Nguyễn Thị Triều",
+        "employee": "TIQN-0197",
+        "attendance_device_id": "227",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0196",
+        "employee_name": "Nguyễn Thị Mỹ",
+        "employee": "TIQN-0196",
+        "attendance_device_id": "226",
+        "custom_group": "Line 11",
+        "designation": "Line Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0195",
+        "employee_name": "Nguyễn Thị Triển",
+        "employee": "TIQN-0195",
+        "attendance_device_id": "225",
+        "custom_group": "Line 09",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0191",
+        "employee_name": "Trịnh Quý Linh",
+        "employee": "TIQN-0191",
+        "attendance_device_id": "221",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0185",
+        "employee_name": "Đỗ Thị Hồng Vấn",
+        "employee": "TIQN-0185",
+        "attendance_device_id": "215",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0184",
+        "employee_name": "Lâm Thị Bích Thủy",
+        "employee": "TIQN-0184",
+        "attendance_device_id": "214",
+        "custom_group": "Line 06",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0183",
+        "employee_name": "Đặng Thị Thuận",
+        "employee": "TIQN-0183",
+        "attendance_device_id": "213",
+        "custom_group": "Japan",
+        "designation": "Merchandiser Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0180",
+        "employee_name": "Lê Thị Thu Mỹ",
+        "employee": "TIQN-0180",
+        "attendance_device_id": "210",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0178",
+        "employee_name": "Trần Thị Thu Quyên",
+        "employee": "TIQN-0178",
+        "attendance_device_id": "208",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0175",
+        "employee_name": "Nguyễn Thị Kim Yến",
+        "employee": "TIQN-0175",
+        "attendance_device_id": "205",
+        "custom_group": "Line 01",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0173",
+        "employee_name": "Nguyễn Thị Hiền",
+        "employee": "TIQN-0173",
+        "attendance_device_id": "203",
+        "custom_group": "Line 07",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0168",
+        "employee_name": "Đỗ Thị Rơi",
+        "employee": "TIQN-0168",
+        "attendance_device_id": "198",
+        "custom_group": "Sample",
+        "designation": "Sample Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0167",
+        "employee_name": "Võ Thị Xuân Thảo",
+        "employee": "TIQN-0167",
+        "attendance_device_id": "197",
+        "custom_group": "IE",
+        "designation": "IE Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0165",
+        "employee_name": "Phạm Thị Thiện",
+        "employee": "TIQN-0165",
+        "attendance_device_id": "195",
+        "custom_group": "IE",
+        "designation": "IE Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0164",
+        "employee_name": "Đoàn Minh Vương",
+        "employee": "TIQN-0164",
+        "attendance_device_id": "194",
+        "custom_group": "Maintainance",
+        "designation": "Mechanic",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0163",
+        "employee_name": "Nguyễn Thị Bé Hồng",
+        "employee": "TIQN-0163",
+        "attendance_device_id": "193",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0162",
+        "employee_name": "Nguyễn Thị Minh Anh",
+        "employee": "TIQN-0162",
+        "attendance_device_id": "192",
+        "custom_group": "IE",
+        "designation": "IE Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0160",
+        "employee_name": "Nguyễn Thị Thanh Thúy",
+        "employee": "TIQN-0160",
+        "attendance_device_id": "190",
+        "custom_group": "Accounting",
+        "designation": "Accounting Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0156",
+        "employee_name": "Lê Thị Việt Nga",
+        "employee": "TIQN-0156",
+        "attendance_device_id": "186",
+        "custom_group": "Preparation",
+        "designation": "Embroider",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0155",
+        "employee_name": "Lê Thị Xuân Hồng",
+        "employee": "TIQN-0155",
+        "attendance_device_id": "185",
+        "custom_group": "Line 04",
+        "designation": "Line Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0154",
+        "employee_name": "Lê Thị Hoàng Lê",
+        "employee": "TIQN-0154",
+        "attendance_device_id": "184",
+        "custom_group": "IE",
+        "designation": "Translator",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0151",
+        "employee_name": "Hồ Thị Kim Liên",
+        "employee": "TIQN-0151",
+        "attendance_device_id": "180",
+        "custom_group": "Line 02",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0150",
+        "employee_name": "Lê Thị Nhung",
+        "employee": "TIQN-0150",
+        "attendance_device_id": "181",
+        "custom_group": "Preparation",
+        "designation": "Production Preparation Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0148",
+        "employee_name": "Nguyễn Thái Sơn",
+        "employee": "TIQN-0148",
+        "attendance_device_id": "154",
+        "custom_group": "IT",
+        "designation": "IT Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0147",
+        "employee_name": "Nguyễn Thị Bé",
+        "employee": "TIQN-0147",
+        "attendance_device_id": "153",
+        "custom_group": "Sample",
+        "designation": "Sample Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0145",
+        "employee_name": "Trần Thị Phương Thảo",
+        "employee": "TIQN-0145",
+        "attendance_device_id": "151",
+        "custom_group": "Sample",
+        "designation": "Sample Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0143",
+        "employee_name": "Ngô Xuân Quỳnh",
+        "employee": "TIQN-0143",
+        "attendance_device_id": "149",
+        "custom_group": "Line 01",
+        "designation": "Line Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0141",
+        "employee_name": "Nguyễn Thị Kim Tuyến",
+        "employee": "TIQN-0141",
+        "attendance_device_id": "147",
+        "custom_group": "Sample",
+        "designation": "Sample Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0140",
+        "employee_name": "Trương Thị An",
+        "employee": "TIQN-0140",
+        "attendance_device_id": "146",
+        "custom_group": "Sample",
+        "designation": "Sample Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0139",
+        "employee_name": "Nguyễn Thị Ngân",
+        "employee": "TIQN-0139",
+        "attendance_device_id": "145",
+        "custom_group": "Line 05",
+        "designation": "Line Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0137",
+        "employee_name": "Nguyễn Thị Thu Thảo",
+        "employee": "TIQN-0137",
+        "attendance_device_id": "143",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0136",
+        "employee_name": "Lê Thị Loan",
+        "employee": "TIQN-0136",
+        "attendance_device_id": "142",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0133",
+        "employee_name": "Nguyễn Thị Thùy",
+        "employee": "TIQN-0133",
+        "attendance_device_id": "139",
+        "custom_group": "Line 03",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0128",
+        "employee_name": "Nguyễn Thị Anh Thư",
+        "employee": "TIQN-0128",
+        "attendance_device_id": "134",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0124",
+        "employee_name": "Kimitaka Araya",
+        "employee": "TIQN-0124",
+        "attendance_device_id": "50",
+        "custom_group": "0",
+        "designation": "Manager Of Development&Production Technology",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0120",
+        "employee_name": "Võ Thị Huệ",
+        "employee": "TIQN-0120",
+        "attendance_device_id": "130",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0106",
+        "employee_name": "Đặng Thị Tha",
+        "employee": "TIQN-0106",
+        "attendance_device_id": "116",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0100",
+        "employee_name": "Lê Thị Kim Anh",
+        "employee": "TIQN-0100",
+        "attendance_device_id": "110",
+        "custom_group": "Sample",
+        "designation": "Sample Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0097",
+        "employee_name": "Võ Thị Trang",
+        "employee": "TIQN-0097",
+        "attendance_device_id": "107",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0093",
+        "employee_name": "Dương Thị Kim Anh",
+        "employee": "TIQN-0093",
+        "attendance_device_id": "103",
+        "custom_group": "Technical A",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0091",
+        "employee_name": "Võ Thị Kiều",
+        "employee": "TIQN-0091",
+        "attendance_device_id": "101",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0090",
+        "employee_name": "Trần Thị Bích Mơ",
+        "employee": "TIQN-0090",
+        "attendance_device_id": "100",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0089",
+        "employee_name": "Đặng Thị Kim Thùy",
+        "employee": "TIQN-0089",
+        "attendance_device_id": "99",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0084",
+        "employee_name": "Nguyễn Thị Bích Thảo",
+        "employee": "TIQN-0084",
+        "attendance_device_id": "94",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0083",
+        "employee_name": "Phạm Thị Ái My My",
+        "employee": "TIQN-0083",
+        "attendance_device_id": "93",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0081",
+        "employee_name": "Thới Thị Thật",
+        "employee": "TIQN-0081",
+        "attendance_device_id": "91",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0079",
+        "employee_name": "Võ Thị Kim Chung",
+        "employee": "TIQN-0079",
+        "attendance_device_id": "89",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0071",
+        "employee_name": "Nguyễn Thị Phượng Hằng",
+        "employee": "TIQN-0071",
+        "attendance_device_id": "81",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0068",
+        "employee_name": "Phù Thị Thúy Toa",
+        "employee": "TIQN-0068",
+        "attendance_device_id": "78",
+        "custom_group": "Line 10",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0067",
+        "employee_name": "Nguyễn Thị Tình",
+        "employee": "TIQN-0067",
+        "attendance_device_id": "156",
+        "custom_group": "Line 02",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0066",
+        "employee_name": "Nguyễn Thị Kim Cúc",
+        "employee": "TIQN-0066",
+        "attendance_device_id": "76",
+        "custom_group": "Line 04",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0063",
+        "employee_name": "Nguyễn Thị Thu Dung",
+        "employee": "TIQN-0063",
+        "attendance_device_id": "73",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0061",
+        "employee_name": "Nguyễn Thị Thu Hà",
+        "employee": "TIQN-0061",
+        "attendance_device_id": "121",
+        "custom_group": "Line 12",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0057",
+        "employee_name": "Nguyễn Công Biên",
+        "employee": "TIQN-0057",
+        "attendance_device_id": "67",
+        "custom_group": "Line 01",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0056",
+        "employee_name": "Nguyễn Thị Thuyền",
+        "employee": "TIQN-0056",
+        "attendance_device_id": "66",
+        "custom_group": "Grand leader",
+        "designation": "Grand Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0055",
+        "employee_name": "Huỳnh Thị Loan",
+        "employee": "TIQN-0055",
+        "attendance_device_id": "65",
+        "custom_group": "Line 10",
+        "designation": "Line Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0054",
+        "employee_name": "Võ Thị Hồng Trang",
+        "employee": "TIQN-0054",
+        "attendance_device_id": "64",
+        "custom_group": "Line 02",
+        "designation": "Line Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0050",
+        "employee_name": "Nguyễn Dự",
+        "employee": "TIQN-0050",
+        "attendance_device_id": "53",
+        "custom_group": "Preparation",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0047",
+        "employee_name": "Lê Ngọc Vỹ",
+        "employee": "TIQN-0047",
+        "attendance_device_id": "48",
+        "custom_group": "Cutting",
+        "designation": "Cutting Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0045",
+        "employee_name": "Nguyễn Đình Ngân",
+        "employee": "TIQN-0045",
+        "attendance_device_id": "157",
+        "custom_group": "Utility",
+        "designation": "Electrician",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0044",
+        "employee_name": "Nguyễn Thị Yến Ni",
+        "employee": "TIQN-0044",
+        "attendance_device_id": "11",
+        "custom_group": "Line 11",
+        "designation": "Office Department Manager",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0042",
+        "employee_name": "Trần Thị Kim Dung",
+        "employee": "TIQN-0042",
+        "attendance_device_id": "31",
+        "custom_group": "Sample",
+        "designation": "Sample Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0040",
+        "employee_name": "Đoàn Thị Kim Loan",
+        "employee": "TIQN-0040",
+        "attendance_device_id": "43",
+        "custom_group": "Line 06",
+        "designation": "Line Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0039",
+        "employee_name": "Nguyễn Hoàng Thảo Ni",
+        "employee": "TIQN-0039",
+        "attendance_device_id": "2",
+        "custom_group": "HR/GA",
+        "designation": "HRA Executive",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0038",
+        "employee_name": "Phạm Thị Tâm",
+        "employee": "TIQN-0038",
+        "attendance_device_id": "39",
+        "custom_group": "Sample",
+        "designation": "Sample Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0037",
+        "employee_name": "Trương Trần Phương Dung",
+        "employee": "TIQN-0037",
+        "attendance_device_id": "46",
+        "custom_group": "Technical A",
+        "designation": "Utilities Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0036",
+        "employee_name": "Nguyễn Thị Mỹ Nhi",
+        "employee": "TIQN-0036",
+        "attendance_device_id": "42",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0034",
+        "employee_name": "Nguyễn Thị Tuyền",
+        "employee": "TIQN-0034",
+        "attendance_device_id": "27",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0033",
+        "employee_name": "Đào Thị Kim Huệ",
+        "employee": "TIQN-0033",
+        "attendance_device_id": "40",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0031",
+        "employee_name": "Nguyễn Thị Lệ",
+        "employee": "TIQN-0031",
+        "attendance_device_id": "38",
+        "custom_group": "Line 06",
+        "designation": "Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0024",
+        "employee_name": "Trần Thị Hiếu",
+        "employee": "TIQN-0024",
+        "attendance_device_id": "32",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0023",
+        "employee_name": "Lương Thị Cẩm Vân",
+        "employee": "TIQN-0023",
+        "attendance_device_id": "33",
+        "custom_group": "Sample",
+        "designation": "Sample Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0020",
+        "employee_name": "Nguyễn Thị Kim Oanh",
+        "employee": "TIQN-0020",
+        "attendance_device_id": "22",
+        "custom_group": "Line 09",
+        "designation": "Line Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0019",
+        "employee_name": "Cao Thị Cẩm",
+        "employee": "TIQN-0019",
+        "attendance_device_id": "21",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0017",
+        "employee_name": "Đặng Thị Hồng Phương",
+        "employee": "TIQN-0017",
+        "attendance_device_id": "158",
+        "custom_group": "Sample",
+        "designation": "Sample Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0013",
+        "employee_name": "Nguyễn Thị Vân",
+        "employee": "TIQN-0013",
+        "attendance_device_id": "44",
+        "custom_group": "Line 03",
+        "designation": "Line Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0010",
+        "employee_name": "Cao Thị Thủy",
+        "employee": "TIQN-0010",
+        "attendance_device_id": "16",
+        "custom_group": "Line 03",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0009",
+        "employee_name": "Cao Thị Nhung",
+        "employee": "TIQN-0009",
+        "attendance_device_id": "15",
+        "custom_group": "Line 01",
+        "designation": "Sewing Worker",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0008",
+        "employee_name": "Phạm Văn An",
+        "employee": "TIQN-0008",
+        "attendance_device_id": "8",
+        "custom_group": "Maintainance",
+        "designation": "Mechanic",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0007",
+        "employee_name": "Phùng Tấn Trạng",
+        "employee": "TIQN-0007",
+        "attendance_device_id": "9",
+        "custom_group": "Maintainance",
+        "designation": "Mechanic Sub Leader",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0006",
+        "employee_name": "Trần Văn Ân",
+        "employee": "TIQN-0006",
+        "attendance_device_id": "7",
+        "custom_group": "Utility",
+        "designation": "Engineering Manager",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0003",
+        "employee_name": "Cao Thị Hồng Thúy",
+        "employee": "TIQN-0003",
+        "attendance_device_id": "5",
+        "custom_group": "Control",
+        "designation": "Planning Staff",
+        "status": "Active"
+    },
+    {
+        "name": "TIQN-0002",
+        "employee_name": "Lê Thanh Phong",
+        "employee": "TIQN-0002",
+        "attendance_device_id": "3",
+        "custom_group": "Control",
+        "designation": "Production Department Manager",
+        "status": "Active"
+    }
+]

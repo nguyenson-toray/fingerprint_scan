@@ -1,0 +1,1491 @@
+2025-06-04 13:59:31 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 13:59:31 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 13:59:31 - ERROR - ❌ Lỗi tải dữ liệu vân tay local: Expecting value: line 1 column 1 (char 0)
+2025-06-04 13:59:31 - INFO - ✅ Đã tải 0 nhân viên từ dữ liệu local
+2025-06-04 13:59:31 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 13:59:31 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 13:59:31 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 13:59:31 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 13:59:31 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 13:59:31 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 13:59:31 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 13:59:43 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 13:59:43 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 13:59:43 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 13:59:43 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 13:59:43 - INFO - ⚠️ Chỉ Scanner được kết nối
+2025-06-04 13:59:43 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 13:59:45 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 13:59:45 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 13:59:46 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 13:59:46 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 13:59:46 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 13:59:46 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 13:59:46 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 13:59:46 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 13:59:46 - INFO - ✅ Tất cả kết nối đã sẵn sàng
+2025-06-04 13:59:46 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 13:59:51 - INFO - ✅ Thiết bị Máy chấm công 1 (10.0.1.48) - Kết nối thành công
+2025-06-04 13:59:51 - INFO - 📊 Hoàn thành kiểm tra: 1/1 thiết bị kết nối
+2025-06-04 13:59:53 - INFO - ✅ Thiết bị Máy chấm công 1 (10.0.1.48) - Kết nối thành công
+2025-06-04 13:59:53 - INFO - 📊 Hoàn thành kiểm tra: 1/1 thiết bị kết nối
+2025-06-04 13:59:59 - INFO - 📱 Đã chọn thiết bị: Máy chấm công 1 (ID: 1)
+2025-06-04 14:00:00 - INFO - 🔍 Đang kiểm tra kết nối thiết bị: Máy chấm công 1
+2025-06-04 14:00:00 - ERROR - ❌ Lỗi kiểm tra thiết bị Máy chấm công 1: 'name'
+2025-06-04 14:00:33 - INFO - 🔍 Hiển thị thông tin vân tay cho TIQN-28-0001: 0 vân tay
+2025-06-04 14:00:33 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 14:00:34 - INFO - 👆 Đã chọn ngón tay: Ngón cái trái
+2025-06-04 14:00:40 - INFO - 👆 Đã chọn ngón tay: Ngón giữa trái
+2025-06-04 14:00:41 - INFO - 👆 Đã chọn ngón tay: Ngón út trái
+2025-06-04 14:00:43 - INFO - 👆 Đã chọn ngón tay: Ngón cái trái
+2025-06-04 14:00:44 - INFO - 👆 Đã chọn ngón tay: Ngón giữa trái
+2025-06-04 14:00:50 - INFO - ✅ Đã ngắt kết nối scanner thành công.
+2025-06-04 14:00:50 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 14:01:00 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 14:01:00 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 14:01:00 - ERROR - ❌ Lỗi tải dữ liệu vân tay local: Expecting value: line 1 column 1 (char 0)
+2025-06-04 14:01:00 - INFO - ✅ Đã tải 0 nhân viên từ dữ liệu local
+2025-06-04 14:01:00 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 14:01:00 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 14:01:01 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:01:01 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 14:01:01 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 14:01:01 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:01:01 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 14:01:13 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 14:01:13 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 14:01:13 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 14:01:13 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 14:01:13 - INFO - ⚠️ Chỉ Scanner được kết nối
+2025-06-04 14:01:13 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:01:16 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 14:01:16 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 14:01:17 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 14:01:17 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 14:01:17 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 14:01:17 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 14:01:17 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 14:01:17 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 14:01:17 - INFO - ✅ Tất cả kết nối đã sẵn sàng
+2025-06-04 14:01:17 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:01:22 - INFO - ✅ Thiết bị Máy chấm công 1 (10.0.1.48) - Kết nối thành công
+2025-06-04 14:01:22 - INFO - 📊 Hoàn thành kiểm tra: 1/1 thiết bị kết nối
+2025-06-04 14:02:52 - INFO - ✅ Đã ngắt kết nối scanner thành công.
+2025-06-04 14:02:52 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 14:03:11 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 14:03:12 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 14:03:12 - ERROR - ❌ Lỗi tải dữ liệu vân tay local: Expecting value: line 1 column 1 (char 0)
+2025-06-04 14:03:12 - INFO - ✅ Đã tải 0 nhân viên từ dữ liệu local
+2025-06-04 14:03:12 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 14:03:12 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 14:03:12 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:03:12 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 14:03:12 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 14:03:12 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:03:12 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 14:05:46 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 14:05:46 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 14:05:46 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 14:05:46 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 14:05:46 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 14:05:46 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 14:05:46 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 14:05:46 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 14:05:46 - INFO - ⚠️ Chỉ ERPNext được kết nối
+2025-06-04 14:05:46 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:05:58 - INFO - 🔄 Bắt đầu kiểm tra trạng thái thiết bị...
+2025-06-04 14:05:58 - INFO - ✅ Thiết bị Máy chấm công 1 (10.0.1.48) - Kết nối thành công
+2025-06-04 14:05:58 - INFO - 📊 Hoàn thành kiểm tra: 1/1 thiết bị kết nối
+2025-06-04 14:05:58 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:06:13 - INFO - 🔄 Bắt đầu kiểm tra trạng thái thiết bị...
+2025-06-04 14:06:13 - INFO - ✅ Thiết bị Máy chấm công 1 (10.0.1.48) - Kết nối thành công
+2025-06-04 14:06:13 - INFO - 📊 Hoàn thành kiểm tra: 1/1 thiết bị kết nối
+2025-06-04 14:06:13 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:06:14 - INFO - 📱 Đã chọn thiết bị: Máy chấm công 1 (ID: 1)
+2025-06-04 14:09:52 - INFO - 🔍 Hiển thị thông tin vân tay cho TIQN-28-0001: 0 vân tay
+2025-06-04 14:09:52 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 14:09:54 - INFO - 👆 Đã chọn ngón tay: Ngón giữa trái
+2025-06-04 14:10:05 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 14:10:05 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 14:10:05 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 14:10:05 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 14:10:05 - INFO - ✅ Tất cả kết nối đã sẵn sàng
+2025-06-04 14:10:05 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:10:07 - INFO - 📷 Quét lần 1/3
+2025-06-04 14:10:07 - INFO - 🔍 Đang chờ quét vân tay lần 1/3...
+2025-06-04 14:10:10 - INFO - ✅ Đã chụp vân tay lần 1.
+2025-06-04 14:10:10 - INFO - 👆 Vui lòng nhấc ngón tay và đặt lại
+2025-06-04 14:10:12 - INFO - 📷 Quét lần 2/3
+2025-06-04 14:10:12 - INFO - 🔍 Đang chờ quét vân tay lần 2/3...
+2025-06-04 14:10:13 - INFO - ✅ Đã chụp vân tay lần 2.
+2025-06-04 14:10:13 - INFO - 👆 Vui lòng nhấc ngón tay và đặt lại
+2025-06-04 14:10:15 - INFO - 📷 Quét lần 3/3
+2025-06-04 14:10:15 - INFO - 🔍 Đang chờ quét vân tay lần 3/3...
+2025-06-04 14:10:15 - INFO - ✅ Đã chụp vân tay lần 3.
+2025-06-04 14:10:15 - INFO - 🔄 Đang merge 3 mẫu vân tay...
+2025-06-04 14:10:15 - INFO - ✅ Merge vân tay thành công! Kích thước template: 1062 bytes.
+2025-06-04 14:10:15 - INFO - ✅ Đã quét thành công vân tay Ngón giữa trái cho TIQN-28-0001
+2025-06-04 14:10:17 - INFO - 🔍 Hiển thị thông tin vân tay cho TIQN-28-0001: 1 vân tay
+2025-06-04 14:10:19 - INFO - ✅ Đã lưu 1 nhân viên vào file local
+2025-06-04 14:10:19 - INFO - ✅ Lưu vân tay thành công cho TIQN-28-0001 - Ngón 2
+2025-06-04 14:10:19 - INFO - ✅ Đã lưu dữ liệu vân tay vào ERPNext
+2025-06-04 14:10:20 - INFO - ✅ Đã lưu dữ liệu vân tay
+2025-06-04 14:10:21 - INFO - 🔍 Hiển thị thông tin vân tay cho TIQN-1466: 0 vân tay
+2025-06-04 14:10:21 - INFO - 📋 Đã chọn nhân viên: Nguyễn Thị Quỳnh Nga (TIQN-1466)
+2025-06-04 14:10:22 - INFO - 🔍 Hiển thị thông tin vân tay cho TIQN-1465: 0 vân tay
+2025-06-04 14:10:22 - INFO - 📋 Đã chọn nhân viên: Lê Thị Tiên (TIQN-1465)
+2025-06-04 14:10:23 - INFO - 🔍 Hiển thị thông tin vân tay cho TIQN-1460: 0 vân tay
+2025-06-04 14:10:23 - INFO - 📋 Đã chọn nhân viên: Phạm Thị Thanh Hảo (TIQN-1460)
+2025-06-04 14:10:23 - INFO - 🔍 Hiển thị thông tin vân tay cho TIQN-1460: 0 vân tay
+2025-06-04 14:10:23 - INFO - 📋 Đã chọn nhân viên: Phạm Thị Thanh Hảo (TIQN-1460)
+2025-06-04 14:10:24 - INFO - 👆 Đã chọn ngón tay: Ngón áp út phải
+2025-06-04 14:10:25 - INFO - 🔍 Hiển thị thông tin vân tay cho TIQN-28-0001: 1 vân tay
+2025-06-04 14:10:25 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 14:11:04 - INFO - ✅ Đã ngắt kết nối scanner thành công.
+2025-06-04 14:11:04 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 14:13:39 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 14:13:39 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 14:13:39 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 14:13:39 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 14:13:39 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 14:13:40 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:13:40 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 14:13:40 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 14:13:40 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:13:40 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 14:13:53 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 14:13:53 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 14:13:53 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 14:13:53 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 14:13:53 - INFO - ⚠️ Chỉ Scanner được kết nối
+2025-06-04 14:13:53 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:13:55 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 14:13:55 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 14:13:55 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 14:13:55 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 14:13:56 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 14:13:56 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 14:13:56 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 14:13:56 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 14:13:56 - INFO - ✅ Tất cả kết nối đã sẵn sàng
+2025-06-04 14:13:56 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:14:07 - INFO - 📱 Đã chọn thiết bị: Máy chấm công 1 (ID: 1)
+2025-06-04 14:14:16 - INFO - 🔍 Đang kiểm tra kết nối thiết bị: Máy chấm công 1
+2025-06-04 14:14:16 - ERROR - ❌ Lỗi kiểm tra thiết bị Máy chấm công 1: 'name'
+2025-06-04 14:14:21 - INFO - 🔄 Bắt đầu kiểm tra trạng thái thiết bị...
+2025-06-04 14:14:21 - INFO - ✅ Thiết bị Máy chấm công 1 (10.0.1.48) - Kết nối thành công
+2025-06-04 14:14:21 - INFO - 📊 Hoàn thành kiểm tra: 1/1 thiết bị kết nối
+2025-06-04 14:14:21 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:14:22 - INFO - 📱 Đã chọn thiết bị: Máy chấm công 1 (ID: 1)
+2025-06-04 14:14:39 - INFO - 🔍 Hiển thị thông tin vân tay cho TIQN-28-0001: 1 vân tay
+2025-06-04 14:14:39 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 14:15:05 - INFO - 👆 Đã chọn ngón tay: Ngón áp út phải
+2025-06-04 14:15:39 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 14:15:40 - INFO - ✅ Đã làm mới danh sách 724 nhân viên
+2025-06-04 14:15:40 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 14:20:23 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 14:20:23 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 14:20:23 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 14:20:23 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 14:20:23 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 14:20:23 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:20:23 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 14:20:23 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 14:20:23 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:20:23 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 14:24:18 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 14:24:18 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 14:24:18 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 14:24:18 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 14:24:19 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 14:24:19 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 14:24:19 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 14:24:19 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 14:24:19 - INFO - ⚠️ Chỉ ERPNext được kết nối
+2025-06-04 14:24:19 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:26:03 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 14:26:03 - INFO - ✅ Đã làm mới danh sách 724 nhân viên
+2025-06-04 14:26:03 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 14:28:27 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 14:28:27 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 14:28:27 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 14:28:27 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 14:28:27 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 14:28:29 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:28:29 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 14:28:29 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 14:28:29 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:28:29 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 14:28:34 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 14:28:34 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 14:28:34 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 14:28:34 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 14:28:34 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 14:28:34 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 14:28:34 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 14:28:34 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 14:28:34 - INFO - ⚠️ Chỉ ERPNext được kết nối
+2025-06-04 14:28:34 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:32:08 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 14:37:02 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 14:37:03 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 14:37:03 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 14:37:03 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 14:37:03 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 14:37:04 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:37:04 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 14:37:04 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 14:37:04 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:37:04 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 14:37:24 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 14:37:24 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 14:37:24 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 14:37:24 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 14:37:24 - INFO - ⚠️ Chỉ Scanner được kết nối
+2025-06-04 14:37:24 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:37:56 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 14:37:56 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 14:37:56 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 14:37:56 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 14:37:56 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 14:37:57 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:37:57 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 14:37:57 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 14:37:57 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:37:57 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 14:38:35 - INFO - 📱 Đã chọn thiết bị: Máy chấm công 1 (ID: 1)
+2025-06-04 14:38:41 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 14:41:14 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 14:41:14 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 14:41:14 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 14:41:14 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 14:41:14 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 14:41:15 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:41:15 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 14:41:15 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 14:41:15 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:41:15 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 14:42:18 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 14:46:03 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 14:46:03 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 14:46:03 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 14:46:03 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 14:46:03 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 14:46:04 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:46:04 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 14:46:04 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 14:46:04 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:46:04 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 14:46:28 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 14:46:28 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 14:46:28 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 14:46:28 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 14:46:28 - INFO - ⚠️ Chỉ Scanner được kết nối
+2025-06-04 14:46:28 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:47:41 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 14:47:41 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 14:47:41 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 14:47:41 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 14:47:41 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 14:47:42 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:47:42 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 14:47:42 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 14:47:42 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:47:42 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 14:47:56 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 14:52:46 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 14:52:47 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 14:52:47 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 14:52:47 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 14:52:47 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 14:52:48 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:52:48 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 14:52:48 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 14:52:48 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:52:48 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 14:56:23 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 14:56:23 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 14:56:23 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 14:56:23 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 14:56:23 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 14:56:23 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:56:23 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 14:56:23 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 14:56:23 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:56:23 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 14:56:24 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 14:56:24 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 14:56:24 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 14:56:24 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 14:56:24 - INFO - ⚠️ Chỉ Scanner được kết nối
+2025-06-04 14:56:24 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:56:24 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 14:56:24 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 14:56:25 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 14:56:25 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 14:56:25 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 14:56:25 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 14:56:25 - INFO - ℹ️ Không tìm thấy DocType Attendance Device, sử dụng cấu hình local
+2025-06-04 14:56:25 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 14:56:25 - INFO - ✅ Tất cả kết nối đã sẵn sàng
+2025-06-04 14:56:25 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:56:25 - INFO - ✅ Thiết bị Máy chấm công 1 (10.0.1.48) - Kết nối thành công
+2025-06-04 14:56:25 - INFO - 📊 Hoàn thành kiểm tra: 1/1 thiết bị kết nối
+2025-06-04 14:56:36 - INFO - 🔍 Hiển thị thông tin vân tay cho TIQN-28-0001: 1 vân tay
+2025-06-04 14:56:36 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 14:56:37 - INFO - 👆 Đã chọn ngón tay: Ngón cái trái
+2025-06-04 14:56:44 - INFO - ✅ Đã ngắt kết nối scanner thành công.
+2025-06-04 14:56:44 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 14:57:10 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 14:57:11 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 14:57:11 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 14:57:11 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 14:57:11 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 14:57:11 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:57:11 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 14:57:11 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 14:57:11 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:57:11 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 14:57:15 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 14:57:15 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 14:57:15 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 14:57:15 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 14:57:15 - INFO - ⚠️ Chỉ Scanner được kết nối
+2025-06-04 14:57:15 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:57:17 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 14:57:17 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 14:57:17 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 14:57:18 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 14:57:18 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 14:57:18 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 14:57:18 - INFO - ℹ️ Không tìm thấy DocType Attendance Device, sử dụng cấu hình local
+2025-06-04 14:57:18 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 14:57:18 - INFO - ✅ Tất cả kết nối đã sẵn sàng
+2025-06-04 14:57:18 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:57:37 - INFO - ✅ Đã ngắt kết nối scanner thành công.
+2025-06-04 14:57:37 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 14:58:50 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 14:58:50 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 14:58:50 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 14:58:50 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 14:58:50 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 14:58:50 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:58:50 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 14:58:50 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 14:58:50 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:58:50 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 14:58:54 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 14:58:54 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 14:58:54 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 14:58:54 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 14:58:54 - INFO - ⚠️ Chỉ Scanner được kết nối
+2025-06-04 14:58:54 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:58:56 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 14:58:56 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 14:58:56 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 14:58:56 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 14:58:56 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 14:58:56 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 14:58:56 - INFO - ℹ️ Không tìm thấy DocType Attendance Device, sử dụng cấu hình local
+2025-06-04 14:58:56 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 14:58:56 - INFO - ✅ Tất cả kết nối đã sẵn sàng
+2025-06-04 14:58:56 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:59:09 - INFO - 🔄 Bắt đầu kiểm tra trạng thái thiết bị...
+2025-06-04 14:59:09 - INFO - ✅ Thiết bị Máy chấm công 1 (10.0.1.48) - Kết nối thành công
+2025-06-04 14:59:09 - INFO - 📊 Hoàn thành kiểm tra: 1/1 thiết bị kết nối
+2025-06-04 14:59:09 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 14:59:10 - INFO - 📱 Đã chọn thiết bị: Máy chấm công 1 (ID: 1)
+2025-06-04 14:59:11 - INFO - 🔍 Đang kiểm tra kết nối thiết bị: Máy chấm công 1
+2025-06-04 14:59:11 - ERROR - ❌ Lỗi kiểm tra thiết bị Máy chấm công 1: 'name'
+2025-06-04 14:59:13 - INFO - ✅ Đã ngắt kết nối scanner thành công.
+2025-06-04 14:59:13 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 15:00:39 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 15:00:39 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 15:00:39 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 15:00:39 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 15:00:39 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 15:00:40 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:00:40 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 15:00:40 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 15:00:40 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:00:40 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 15:00:43 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 15:00:43 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 15:00:43 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 15:00:43 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 15:00:43 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 15:00:43 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 15:00:43 - INFO - ℹ️ Không tìm thấy DocType Attendance Device, sử dụng cấu hình local
+2025-06-04 15:00:43 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 15:00:43 - INFO - ⚠️ Chỉ ERPNext được kết nối
+2025-06-04 15:00:43 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:00:47 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 15:00:47 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 15:00:47 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 15:00:47 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 15:00:47 - INFO - ✅ Tất cả kết nối đã sẵn sàng
+2025-06-04 15:00:47 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:00:49 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 15:00:57 - INFO - 👆 Đã chọn ngón tay: Ngón út trái
+2025-06-04 15:01:08 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 15:01:08 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 15:01:09 - INFO - ✅ Đã làm mới danh sách 724 nhân viên
+2025-06-04 15:01:33 - INFO - 🔄 Bắt đầu kiểm tra trạng thái thiết bị...
+2025-06-04 15:01:33 - INFO - ✅ Thiết bị Máy chấm công 1 (10.0.1.48) - Kết nối thành công
+2025-06-04 15:01:34 - INFO - 📊 Hoàn thành kiểm tra: 1/1 thiết bị kết nối
+2025-06-04 15:01:34 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:01:40 - INFO - ✅ Đã ngắt kết nối scanner thành công.
+2025-06-04 15:01:40 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 15:02:00 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 15:02:00 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 15:02:00 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 15:02:00 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 15:02:00 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 15:02:01 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:02:01 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 15:02:01 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 15:02:01 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:02:01 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 15:02:07 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 15:02:07 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 15:02:07 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 15:02:07 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 15:02:07 - INFO - ⚠️ Chỉ Scanner được kết nối
+2025-06-04 15:02:07 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:02:09 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 15:02:09 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 15:02:09 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 15:02:09 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 15:02:09 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 15:02:09 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 15:02:09 - INFO - ℹ️ Không tìm thấy DocType Attendance Device, sử dụng cấu hình local
+2025-06-04 15:02:09 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 15:02:09 - INFO - ✅ Tất cả kết nối đã sẵn sàng
+2025-06-04 15:02:09 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:02:14 - INFO - ℹ️ Không tìm thấy DocType Attendance Device, sử dụng cấu hình local
+2025-06-04 15:02:14 - INFO - ℹ️ Không tìm thấy Attendance Machine, sử dụng cấu hình local
+2025-06-04 15:02:26 - INFO - ✅ Đã ngắt kết nối scanner thành công.
+2025-06-04 15:02:26 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 15:03:22 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 15:03:22 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 15:03:22 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 15:03:22 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 15:03:22 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 15:03:23 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:03:23 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 15:03:23 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 15:03:23 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:03:23 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 15:03:34 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 15:03:47 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 15:03:47 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 15:03:47 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 15:03:47 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 15:03:47 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 15:03:49 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:03:49 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 15:03:49 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 15:03:49 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:03:49 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 15:03:50 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 15:03:50 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 15:03:50 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 15:03:51 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 15:03:51 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 15:03:51 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 15:03:51 - INFO - ℹ️ Không tìm thấy DocType Attendance Device, sử dụng cấu hình local
+2025-06-04 15:03:51 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 15:03:51 - INFO - ⚠️ Chỉ ERPNext được kết nối
+2025-06-04 15:03:51 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:03:53 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 15:06:02 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 15:06:02 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 15:06:02 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 15:06:02 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 15:06:02 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 15:06:03 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:06:03 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 15:06:03 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 15:06:03 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:06:03 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 15:06:05 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 15:06:05 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 15:06:05 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 15:06:06 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 15:06:06 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 15:06:06 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 15:06:06 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 15:06:06 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 15:06:06 - INFO - ⚠️ Chỉ ERPNext được kết nối
+2025-06-04 15:06:06 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:06:09 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 15:06:09 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 15:06:09 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 15:06:09 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 15:06:09 - INFO - ✅ Tất cả kết nối đã sẵn sàng
+2025-06-04 15:06:09 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:06:11 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 15:06:11 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 15:06:12 - INFO - ✅ Đã làm mới danh sách 724 nhân viên
+2025-06-04 15:06:16 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 15:06:16 - INFO - ℹ️ Không tìm thấy Attendance Machine, sử dụng cấu hình local
+2025-06-04 15:47:27 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 15:47:59 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 15:49:45 - INFO - ✅ Đã ngắt kết nối scanner thành công.
+2025-06-04 15:49:45 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 15:52:30 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 15:52:30 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 15:52:30 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 15:52:30 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 15:52:30 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 15:52:32 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:52:32 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 15:52:32 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 15:52:32 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:52:32 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 15:52:35 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 15:52:35 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 15:52:35 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 15:52:35 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 15:52:36 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 15:52:36 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 15:52:36 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 15:52:36 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 15:52:36 - INFO - ⚠️ Chỉ ERPNext được kết nối
+2025-06-04 15:52:36 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:52:39 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 15:52:39 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 15:52:39 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 15:52:39 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 15:52:39 - INFO - ✅ Tất cả kết nối đã sẵn sàng
+2025-06-04 15:52:39 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:52:43 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 15:52:47 - INFO - 🔄 Bắt đầu đồng bộ đến 1 thiết bị
+2025-06-04 15:52:47 - ERROR - ❌ Lỗi đồng bộ: 'name'
+2025-06-04 15:53:56 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 15:53:56 - INFO - ℹ️ Không tìm thấy Attendance Machine, sử dụng cấu hình local
+2025-06-04 15:55:01 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 15:55:01 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 15:55:01 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 15:55:01 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 15:55:01 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 15:55:04 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:55:04 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 15:55:04 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 15:55:04 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:55:04 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 15:55:07 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 15:55:07 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 15:55:07 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 15:55:08 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 15:55:08 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 15:55:08 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 15:55:08 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 15:55:08 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 15:55:08 - INFO - ⚠️ Chỉ ERPNext được kết nối
+2025-06-04 15:55:08 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:55:11 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 15:55:11 - INFO - ℹ️ Không tìm thấy Attendance Machine, sử dụng cấu hình local
+2025-06-04 15:55:19 - INFO - 📱 Đã chọn thiết bị: Máy chấm công 1 (ID: 1)
+2025-06-04 15:55:21 - INFO - 🔍 Đang kiểm tra kết nối thiết bị: Máy chấm công 1
+2025-06-04 15:55:21 - ERROR - ❌ Lỗi cấu hình thiết bị Máy chấm công 1: thiếu key ''name''
+2025-06-04 15:55:29 - INFO - 🔄 Bắt đầu kiểm tra trạng thái thiết bị...
+2025-06-04 15:55:29 - INFO - ✅ Thiết bị Máy chấm công 1 (10.0.1.48) - Kết nối thành công
+2025-06-04 15:55:29 - INFO - 📊 Hoàn thành kiểm tra: 1/1 thiết bị kết nối
+2025-06-04 15:55:29 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 15:55:30 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 15:55:30 - INFO - ℹ️ Không tìm thấy Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:02:29 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:02:29 - INFO - ℹ️ Không tìm thấy Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:02:31 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:02:31 - INFO - ℹ️ Không tìm thấy Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:02:34 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 16:02:47 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 16:02:48 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 16:02:48 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 16:02:48 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 16:02:48 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 16:02:49 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:02:49 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 16:02:49 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 16:02:49 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:02:49 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 16:02:52 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 16:02:52 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 16:02:52 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 16:02:52 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 16:02:52 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 16:02:52 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 16:02:52 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:02:52 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 16:02:52 - INFO - ⚠️ Chỉ ERPNext được kết nối
+2025-06-04 16:02:52 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:02:54 - INFO - ✅ Thiết bị Máy chấm công 1 (10.0.1.48) - Kết nối thành công
+2025-06-04 16:02:54 - INFO - 📊 Hoàn thành kiểm tra: 1/1 thiết bị kết nối
+2025-06-04 16:02:59 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:02:59 - INFO - ℹ️ Không tìm thấy Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:04:19 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 16:04:19 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 16:04:19 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 16:04:19 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 16:04:19 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 16:04:21 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:04:21 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 16:04:21 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 16:04:21 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:04:21 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 16:04:54 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 16:04:54 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 16:04:54 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 16:04:54 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 16:04:54 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 16:04:54 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 16:04:54 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:04:54 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 16:04:54 - INFO - ⚠️ Chỉ ERPNext được kết nối
+2025-06-04 16:04:54 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:04:56 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:04:56 - INFO - ℹ️ Không tìm thấy Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:05:44 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 16:05:44 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 16:05:44 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 16:05:44 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 16:05:44 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 16:05:45 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:05:45 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 16:05:45 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 16:05:45 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:05:45 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 16:05:47 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 16:05:47 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 16:05:47 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 16:05:47 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 16:05:47 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 16:05:47 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 16:05:47 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:05:47 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 16:05:47 - INFO - ⚠️ Chỉ ERPNext được kết nối
+2025-06-04 16:05:47 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:05:50 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:05:50 - INFO - ℹ️ Không tìm thấy Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:05:57 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 16:06:59 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 16:06:59 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 16:06:59 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 16:06:59 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 16:06:59 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 16:07:01 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:07:01 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 16:07:01 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 16:07:01 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:07:01 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 16:07:03 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 16:07:03 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 16:07:03 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 16:07:03 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 16:07:03 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 16:07:03 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 16:07:03 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:07:03 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 16:07:03 - INFO - ⚠️ Chỉ ERPNext được kết nối
+2025-06-04 16:07:03 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:07:10 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:07:10 - INFO - ℹ️ Không tìm thấy Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:07:24 - INFO - 📱 Đã chọn thiết bị: Máy chấm công 1 (ID: 1)
+2025-06-04 16:07:25 - INFO - 🔍 Đang kiểm tra kết nối thiết bị: Máy chấm công 1
+2025-06-04 16:07:25 - ERROR - ❌ Lỗi cấu hình thiết bị Máy chấm công 1: thiếu key ''name''
+2025-06-04 16:08:18 - INFO - 🔍 Đang kiểm tra kết nối thiết bị: Máy chấm công 1
+2025-06-04 16:08:18 - ERROR - ❌ Lỗi cấu hình thiết bị Máy chấm công 1: thiếu key ''name''
+2025-06-04 16:08:55 - INFO - ✅ Thiết bị Máy chấm công 1 (10.0.1.48) - Kết nối thành công
+2025-06-04 16:08:55 - INFO - 📊 Hoàn thành kiểm tra: 1/1 thiết bị kết nối
+2025-06-04 16:08:55 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 16:08:55 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 16:08:55 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 16:08:55 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 16:08:55 - INFO - ✅ Tất cả kết nối đã sẵn sàng
+2025-06-04 16:08:55 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:09:08 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 16:09:13 - INFO - 📋 Đã chọn nhân viên: Nguyễn Thị Quỳnh Nga (TIQN-1466)
+2025-06-04 16:09:13 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 16:09:17 - INFO - 🔄 Bắt đầu đồng bộ đến 1 thiết bị
+2025-06-04 16:09:17 - ERROR - ❌ Lỗi đồng bộ: 'name'
+2025-06-04 16:09:35 - INFO - ✅ Đã ngắt kết nối scanner thành công.
+2025-06-04 16:09:35 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 16:11:06 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 16:11:06 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 16:11:06 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 16:11:06 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 16:11:06 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 16:11:07 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:11:07 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 16:11:07 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 16:11:07 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:11:07 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 16:11:09 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 16:11:09 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 16:11:10 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 16:11:10 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 16:11:10 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 16:11:10 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 16:11:10 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:11:10 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 16:11:10 - INFO - ⚠️ Chỉ ERPNext được kết nối
+2025-06-04 16:11:10 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:11:17 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:11:17 - INFO - ℹ️ Không tìm thấy Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:12:38 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 16:12:38 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 16:12:38 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 16:12:38 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 16:12:38 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 16:12:39 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:12:39 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 16:12:39 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 16:12:39 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:12:39 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 16:12:41 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 16:12:41 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 16:12:41 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 16:12:41 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 16:12:41 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 16:12:41 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 16:12:41 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:12:41 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 16:12:41 - INFO - ⚠️ Chỉ ERPNext được kết nối
+2025-06-04 16:12:41 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:12:43 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:12:43 - INFO - ℹ️ Không tìm thấy Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:12:56 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 16:12:59 - INFO - 🔄 Bắt đầu đồng bộ đến 1 thiết bị
+2025-06-04 16:12:59 - ERROR - ❌ Lỗi đồng bộ: 'name'
+2025-06-04 16:13:52 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 16:13:57 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 16:13:58 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 16:13:58 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 16:13:58 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 16:13:58 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 16:14:00 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:14:00 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 16:14:00 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 16:14:00 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:14:00 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 16:14:07 - INFO - ✅ Thiết bị Máy chấm công 1 (10.0.1.48) - Kết nối thành công
+2025-06-04 16:14:07 - INFO - 📊 Hoàn thành kiểm tra: 1/1 thiết bị kết nối
+2025-06-04 16:14:10 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 16:14:10 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 16:14:10 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 16:14:10 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 16:14:10 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 16:14:10 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 16:14:10 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:14:10 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 16:14:10 - INFO - ⚠️ Chỉ ERPNext được kết nối
+2025-06-04 16:14:10 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:14:13 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 16:14:19 - INFO - 🔄 Bắt đầu đồng bộ đến 1 thiết bị
+2025-06-04 16:14:19 - ERROR - ❌ Lỗi đồng bộ: 'name'
+2025-06-04 16:15:36 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 16:15:45 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 16:15:45 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 16:15:45 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 16:15:45 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 16:15:45 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 16:15:46 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:15:46 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 16:15:46 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 16:15:46 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:15:46 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 16:15:48 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 16:15:48 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 16:15:48 - INFO - ✅ DocType 'Fingerprint Data' đã tồn tại
+2025-06-04 16:15:48 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 16:15:48 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 16:15:48 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 16:15:48 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:15:48 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 16:15:48 - INFO - ⚠️ Chỉ ERPNext được kết nối
+2025-06-04 16:15:48 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:15:50 - ERROR - ❌ Lỗi kiểm tra thiết bị Máy chấm công 1: str, bytes or bytearray expected, not NoneType
+2025-06-04 16:15:50 - INFO - 📊 Hoàn thành kiểm tra: 0/1 thiết bị kết nối
+2025-06-04 16:15:57 - INFO - ℹ️ Không tìm thấy DocType Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:15:57 - INFO - ℹ️ Không tìm thấy Attendance Machine, sử dụng cấu hình local
+2025-06-04 16:16:02 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 16:16:04 - INFO - 🔄 Bắt đầu đồng bộ đến 1 thiết bị
+2025-06-04 16:16:04 - ERROR - ❌ Lỗi đồng bộ: 'name'
+2025-06-04 16:16:20 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 16:29:36 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 16:29:36 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 16:29:36 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 16:29:36 - INFO - ✅ Sử dụng 1 máy chấm công từ config.py
+2025-06-04 16:29:36 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 16:29:37 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:29:37 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 16:29:37 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 16:29:37 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:29:37 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 16:29:39 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 16:29:39 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 16:29:39 - INFO - ✅ DocType 'Attendance Machine' đã tồn tại
+2025-06-04 16:29:39 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 16:29:39 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 16:29:39 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 16:29:40 - INFO - ✅ Lấy được 1 máy chấm công từ ERPNext Attendance Machine
+2025-06-04 16:29:40 - INFO - ✅ Đã lưu 1 máy chấm công vào file local
+2025-06-04 16:29:40 - INFO - ✅ Đã cập nhật 1 máy chấm công từ ERPNext
+2025-06-04 16:29:40 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 16:29:40 - INFO - ⚠️ Chỉ ERPNext được kết nối
+2025-06-04 16:29:40 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 16:29:49 - INFO - ✅ Lấy được 1 máy chấm công từ ERPNext Attendance Machine
+2025-06-04 16:29:49 - INFO - ✅ Đã lưu 1 máy chấm công vào file local
+2025-06-04 16:29:49 - INFO - ✅ Đã tải 1 thiết bị từ ERPNext
+2025-06-04 16:29:49 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 19:20:02 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 19:20:07 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 19:20:07 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 19:20:07 - INFO - ✅ Đã tải 1 máy chấm công từ file local
+2025-06-04 19:20:07 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 19:20:09 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 19:20:09 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 19:20:09 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 19:20:09 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 19:20:09 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 19:20:16 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 19:20:16 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 19:20:16 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 19:20:16 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 19:20:16 - INFO - ⚠️ Chỉ Scanner được kết nối
+2025-06-04 19:20:16 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 19:20:52 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 19:20:52 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 19:20:53 - INFO - ✅ DocType 'Attendance Machine' đã tồn tại
+2025-06-04 19:20:53 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 19:20:53 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 19:20:53 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 19:20:53 - INFO - ✅ Lấy được 1 máy chấm công từ ERPNext Attendance Machine
+2025-06-04 19:20:53 - INFO - ✅ Đã lưu 1 máy chấm công vào file local
+2025-06-04 19:20:53 - INFO - ✅ Đã cập nhật 1 máy chấm công từ ERPNext
+2025-06-04 19:20:53 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 19:20:53 - INFO - ✅ Tất cả kết nối đã sẵn sàng
+2025-06-04 19:20:53 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 19:20:59 - INFO - ✅ Lấy được 1 máy chấm công từ ERPNext Attendance Machine
+2025-06-04 19:20:59 - INFO - ✅ Đã lưu 1 máy chấm công vào file local
+2025-06-04 19:20:59 - INFO - ✅ Đã tải 1 thiết bị từ ERPNext
+2025-06-04 19:20:59 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 19:22:09 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 19:22:31 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 19:22:31 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 19:22:31 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 19:22:31 - INFO - ✅ Đã tải 1 máy chấm công từ file local
+2025-06-04 19:22:31 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 19:22:32 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 19:22:32 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 19:22:32 - WARNING - ❌ Chưa có kết nối nào
+2025-06-04 19:22:32 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 19:22:32 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 19:23:11 - INFO - 📱 Đã chọn thiết bị: Máy 8 (ID: 1)
+2025-06-04 19:32:23 - INFO - ✅ Thiết bị Máy 8 (10.0.1.48) - Kết nối thành công
+2025-06-04 19:32:23 - INFO - 📊 Hoàn thành kiểm tra: 1/1 thiết bị kết nối
+2025-06-04 19:36:52 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 19:36:52 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 19:36:52 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 19:36:52 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 19:36:52 - INFO - ⚠️ Chỉ Scanner được kết nối
+2025-06-04 19:36:52 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 19:36:55 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 19:36:55 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 19:36:55 - INFO - ✅ DocType 'Attendance Machine' đã tồn tại
+2025-06-04 19:36:55 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 19:36:56 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 19:36:56 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 19:36:56 - INFO - ✅ Lấy được 1 máy chấm công từ ERPNext Attendance Machine
+2025-06-04 19:36:56 - INFO - ✅ Đã lưu 1 máy chấm công vào file local
+2025-06-04 19:36:56 - INFO - ✅ Đã cập nhật 1 máy chấm công từ ERPNext
+2025-06-04 19:36:56 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 19:36:56 - INFO - ✅ Tất cả kết nối đã sẵn sàng
+2025-06-04 19:36:56 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 19:37:55 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 19:37:55 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 19:37:56 - INFO - ✅ Đã làm mới danh sách 724 nhân viên
+2025-06-04 19:38:43 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 19:38:43 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 19:38:44 - INFO - ✅ Đã làm mới danh sách 724 nhân viên
+2025-06-04 19:38:48 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 19:50:25 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 19:50:25 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 19:50:25 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 19:50:25 - INFO - ✅ Đã tải 1 máy chấm công từ file local
+2025-06-04 19:50:25 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 19:53:23 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 19:53:24 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 19:53:24 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 19:53:24 - INFO - ✅ Đã tải 1 máy chấm công từ file local
+2025-06-04 19:53:24 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 19:53:25 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 19:53:25 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 19:53:25 - WARNING - ❌ Chưa có kết nối nào - Vui lòng kết nối thiết bị để sử dụng
+2025-06-04 19:53:25 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 19:53:25 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 19:53:47 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 19:53:47 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 19:53:47 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 19:53:48 - INFO - ⚠️ Chỉ Scanner được kết nối - Có thể quét vân tay nhưng không thể đồng bộ với ERPNext
+2025-06-04 19:53:50 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 19:53:50 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 19:53:50 - INFO - ✅ DocType 'Attendance Machine' đã tồn tại
+2025-06-04 19:53:51 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 19:53:51 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 19:53:51 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 19:53:51 - INFO - ✅ Tất cả kết nối đã sẵn sàng - Có thể thực hiện đầy đủ chức năng
+2025-06-04 19:53:51 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 19:53:54 - INFO - 🔄 Đang tải danh sách máy chấm công từ ERPNext...
+2025-06-04 19:53:54 - INFO - ✅ Lấy được 1 máy chấm công từ ERPNext Attendance Machine
+2025-06-04 19:53:54 - INFO - ✅ Đã lưu 1 máy chấm công vào file local
+2025-06-04 19:53:54 - INFO - ✅ Đã tải 1 máy chấm công từ ERPNext
+2025-06-04 19:53:54 - INFO - 🔍 Đang kiểm tra kết nối đến các máy chấm công...
+2025-06-04 19:53:54 - INFO - ✅ Thiết bị Máy 8 (10.0.1.48) - Kết nối thành công
+2025-06-04 19:53:54 - INFO - 📊 Hoàn thành kiểm tra: 1/1 thiết bị kết nối
+2025-06-04 19:53:54 - INFO - ✅ Hoàn thành tải và kiểm tra máy chấm công
+2025-06-04 19:53:54 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 19:54:37 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 19:54:37 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 19:54:37 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 19:54:37 - INFO - ✅ Đã tải 1 máy chấm công từ file local
+2025-06-04 19:54:37 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 19:54:38 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 19:54:38 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 19:54:38 - WARNING - ❌ Chưa có kết nối nào - Vui lòng kết nối thiết bị để sử dụng
+2025-06-04 19:54:38 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 19:54:38 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 19:54:45 - INFO - 🔄 Bắt đầu làm mới danh sách máy chấm công...
+2025-06-04 19:54:45 - WARNING - ⚠️ Chưa kết nối ERPNext, thử kết nối...
+2025-06-04 19:54:45 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 19:54:45 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 19:54:45 - INFO - ✅ DocType 'Attendance Machine' đã tồn tại
+2025-06-04 19:54:45 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 19:54:45 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 19:54:45 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 19:54:45 - INFO - 🔄 Đang tải danh sách máy chấm công từ ERPNext...
+2025-06-04 19:54:45 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 19:55:04 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 19:55:04 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 19:55:04 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 19:55:04 - INFO - ✅ Đã tải 1 máy chấm công từ file local
+2025-06-04 19:55:04 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 19:55:05 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 19:55:05 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 19:55:05 - WARNING - ❌ Chưa có kết nối nào - Vui lòng kết nối thiết bị để sử dụng
+2025-06-04 19:55:05 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 19:55:05 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 19:55:13 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 19:55:13 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 19:55:13 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 19:55:13 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 19:55:13 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 19:55:13 - INFO - ✅ DocType 'Attendance Machine' đã tồn tại
+2025-06-04 19:55:13 - INFO - ✅ Tất cả kết nối đã sẵn sàng - Có thể thực hiện đầy đủ chức năng
+2025-06-04 19:55:36 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 19:55:36 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 19:55:36 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 19:55:36 - INFO - ✅ Đã tải 1 máy chấm công từ file local
+2025-06-04 19:55:36 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 19:55:37 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 19:55:37 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 19:55:37 - WARNING - ❌ Chưa có kết nối nào - Vui lòng kết nối thiết bị để sử dụng
+2025-06-04 19:55:37 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 19:55:37 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 19:55:40 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 19:55:40 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 19:55:40 - INFO - ✅ DocType 'Attendance Machine' đã tồn tại
+2025-06-04 19:55:40 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 19:55:40 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 19:55:40 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 19:55:40 - INFO - ⚠️ Chỉ ERPNext được kết nối - Có thể quản lý dữ liệu nhưng không thể quét vân tay
+2025-06-04 19:55:40 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 19:55:48 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 19:55:48 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 19:55:50 - INFO - ✅ Đã làm mới danh sách 724 nhân viên
+2025-06-04 19:56:04 - INFO - 📱 Đã chọn thiết bị: Máy 8 (ID: 1)
+2025-06-04 19:57:41 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 19:57:41 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 19:57:41 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 19:57:41 - INFO - ✅ Đã tải 1 máy chấm công từ file local
+2025-06-04 19:57:41 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 19:57:43 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 19:57:43 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 19:57:43 - WARNING - ❌ Chưa có kết nối nào - Vui lòng kết nối thiết bị để sử dụng
+2025-06-04 19:57:43 - INFO - 📋 Đã cập nhật danh sách 1 thiết bị
+2025-06-04 19:57:43 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 20:14:53 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 20:15:39 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 20:15:40 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 20:15:40 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 20:15:40 - INFO - ✅ Đã tải 1 máy chấm công từ file local
+2025-06-04 20:15:40 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 20:15:41 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 20:15:41 - WARNING - ❌ Chưa có kết nối nào - Vui lòng kết nối thiết bị để sử dụng
+2025-06-04 20:15:41 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 20:15:49 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 20:15:49 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 20:15:49 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 20:15:49 - INFO - ⚠️ Chỉ Scanner được kết nối - Có thể quét vân tay nhưng không thể đồng bộ với ERPNext
+2025-06-04 20:15:51 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 20:15:51 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 20:15:51 - INFO - ✅ DocType 'Attendance Machine' đã tồn tại
+2025-06-04 20:15:52 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 20:15:52 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 20:15:52 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 20:15:52 - INFO - ✅ Tất cả kết nối đã sẵn sàng - Có thể thực hiện đầy đủ chức năng
+2025-06-04 20:15:52 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 20:15:56 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 20:15:56 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 20:15:57 - INFO - ✅ Đã làm mới danh sách 724 nhân viên
+2025-06-04 20:15:58 - INFO - 🔄 Đang tải danh sách máy chấm công từ ERPNext...
+2025-06-04 20:15:59 - INFO - ✅ Lấy được 1 máy chấm công từ ERPNext Attendance Machine
+2025-06-04 20:15:59 - INFO - ✅ Đã lưu 1 máy chấm công vào file local
+2025-06-04 20:15:59 - INFO - ✅ Đã tải 1 máy chấm công từ ERPNext
+2025-06-04 20:15:59 - INFO - 🔍 Đang kiểm tra kết nối đến các máy chấm công...
+2025-06-04 20:15:59 - INFO - ✅ Máy 8 (10.0.1.48) - Kết nối thành công
+2025-06-04 20:15:59 - INFO - ✅ Hoàn thành tải và kiểm tra máy chấm công
+2025-06-04 20:15:59 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 20:29:28 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 20:29:28 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 20:29:28 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 20:29:28 - INFO - ✅ Đã tải 1 máy chấm công từ file local
+2025-06-04 20:29:28 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 20:29:28 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 20:29:28 - WARNING - ❌ Chưa có kết nối nào - Vui lòng kết nối thiết bị để sử dụng
+2025-06-04 20:29:28 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 20:29:34 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 20:29:34 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 20:29:34 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 20:29:34 - INFO - ⚠️ Chỉ Scanner được kết nối - Có thể quét vân tay nhưng không thể đồng bộ với ERPNext
+2025-06-04 20:29:38 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 20:29:38 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 20:29:38 - INFO - ✅ DocType 'Attendance Machine' đã tồn tại
+2025-06-04 20:29:38 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 20:29:38 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 20:29:38 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 20:29:38 - INFO - ✅ Tất cả kết nối đã sẵn sàng - Có thể thực hiện đầy đủ chức năng
+2025-06-04 20:29:38 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 20:29:46 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 20:29:58 - INFO - 🔄 Bắt đầu kết nối máy chấm công...
+2025-06-04 20:29:58 - INFO - 🔄 Đang tải danh sách máy chấm công từ ERPNext...
+2025-06-04 20:29:59 - INFO - ✅ Lấy được 1 máy chấm công từ ERPNext Attendance Machine
+2025-06-04 20:29:59 - INFO - ✅ Đã lưu 1 máy chấm công vào file local
+2025-06-04 20:29:59 - INFO - ✅ Đã tải 1 máy chấm công từ ERPNext
+2025-06-04 20:29:59 - INFO - 🔍 Đang kiểm tra kết nối đến các máy chấm công...
+2025-06-04 20:29:59 - INFO - ✅ Đã tải danh sách máy chấm công
+2025-06-04 20:30:13 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 20:30:13 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 20:30:13 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 20:30:13 - INFO - ✅ Đã tải 1 máy chấm công từ file local
+2025-06-04 20:30:13 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 20:30:14 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 20:30:14 - WARNING - ❌ Chưa có kết nối nào - Vui lòng kết nối thiết bị để sử dụng
+2025-06-04 20:30:14 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 20:31:08 - INFO - 🔄 Bắt đầu kết nối máy chấm công...
+2025-06-04 20:31:08 - WARNING - ⚠️ Chưa kết nối ERPNext, thử kết nối...
+2025-06-04 20:31:09 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 20:31:09 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 20:31:09 - INFO - ✅ DocType 'Attendance Machine' đã tồn tại
+2025-06-04 20:31:09 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 20:31:09 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 20:31:09 - INFO - ✅ Đã tải 724 nhân viên từ ERPNext
+2025-06-04 20:31:09 - INFO - 🔄 Đang tải danh sách máy chấm công từ ERPNext...
+2025-06-04 20:31:09 - INFO - ✅ Lấy được 1 máy chấm công từ ERPNext Attendance Machine
+2025-06-04 20:31:09 - INFO - ✅ Đã lưu 1 máy chấm công vào file local
+2025-06-04 20:31:09 - INFO - ✅ Đã tải 1 máy chấm công từ ERPNext
+2025-06-04 20:31:09 - INFO - 🔍 Đang kiểm tra kết nối đến các máy chấm công...
+2025-06-04 20:31:09 - INFO - ✅ Đã tải danh sách máy chấm công
+2025-06-04 20:38:24 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 20:38:24 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 20:38:24 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 20:38:24 - INFO - ✅ Đã tải 1 máy chấm công từ file local
+2025-06-04 20:38:24 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 20:38:25 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 20:38:25 - WARNING - ❌ Chưa có kết nối nào - Vui lòng kết nối thiết bị để sử dụng
+2025-06-04 20:38:25 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 20:38:28 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 20:38:28 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 20:38:28 - INFO - ✅ DocType 'Attendance Machine' đã tồn tại
+2025-06-04 20:38:28 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 20:38:28 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 20:38:28 - ERROR - ❌ Lỗi kết nối ERPNext: 'FingerprintApp' object has no attribute 'save_employees_to_local'
+2025-06-04 20:38:28 - WARNING - ❌ Chưa có kết nối nào - Vui lòng kết nối thiết bị để sử dụng
+2025-06-04 20:38:33 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 20:38:33 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 20:38:35 - INFO - ✅ Đã làm mới danh sách 724 nhân viên
+2025-06-04 20:38:39 - INFO - 🔄 Đang tải danh sách máy chấm công từ ERPNext...
+2025-06-04 20:38:39 - INFO - ✅ Lấy được 1 máy chấm công từ ERPNext Attendance Machine
+2025-06-04 20:38:39 - INFO - ✅ Đã lưu 1 máy chấm công vào file local
+2025-06-04 20:38:39 - INFO - ✅ Đã tải 1 máy chấm công từ ERPNext
+2025-06-04 20:38:39 - INFO - 🔍 Đang kiểm tra kết nối đến các máy chấm công...
+2025-06-04 20:38:39 - INFO - ✅ Máy 8 (10.0.1.48) - Kết nối thành công
+2025-06-04 20:38:39 - INFO - ✅ Hoàn thành tải và kiểm tra máy chấm công
+2025-06-04 20:38:39 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 20:39:18 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 20:39:18 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 20:39:18 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 20:39:18 - INFO - ✅ Đã tải 1 máy chấm công từ file local
+2025-06-04 20:39:18 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 20:39:19 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 20:39:19 - WARNING - ❌ Chưa có kết nối nào - Vui lòng kết nối thiết bị để sử dụng
+2025-06-04 20:39:19 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 20:39:33 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 20:39:33 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 20:39:33 - INFO - ✅ DocType 'Attendance Machine' đã tồn tại
+2025-06-04 20:39:33 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 20:39:33 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 20:39:33 - ERROR - ❌ Lỗi kết nối ERPNext: 'FingerprintApp' object has no attribute 'save_employees_to_local'
+2025-06-04 20:39:33 - WARNING - ❌ Chưa có kết nối nào - Vui lòng kết nối thiết bị để sử dụng
+2025-06-04 20:39:38 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 20:39:38 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 20:39:39 - INFO - ✅ Đã làm mới danh sách 724 nhân viên
+2025-06-04 20:39:43 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 20:40:10 - INFO - 🔄 Đang tải danh sách máy chấm công từ ERPNext...
+2025-06-04 20:40:11 - INFO - ✅ Lấy được 1 máy chấm công từ ERPNext Attendance Machine
+2025-06-04 20:40:11 - INFO - ✅ Đã lưu 1 máy chấm công vào file local
+2025-06-04 20:40:11 - INFO - ✅ Đã tải 1 máy chấm công từ ERPNext
+2025-06-04 20:40:11 - INFO - 🔍 Đang kiểm tra kết nối đến các máy chấm công...
+2025-06-04 20:40:11 - INFO - ✅ Máy 8 (10.0.1.48) - Kết nối thành công
+2025-06-04 20:40:11 - INFO - ✅ Hoàn thành tải và kiểm tra máy chấm công
+2025-06-04 20:40:11 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 20:42:09 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 20:42:09 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 20:42:09 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 20:42:09 - INFO - ✅ Đã tải 1 máy chấm công từ file local
+2025-06-04 20:42:09 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 20:42:10 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 20:42:10 - WARNING - ❌ Chưa có kết nối nào - Vui lòng kết nối thiết bị để sử dụng
+2025-06-04 20:42:10 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 20:43:02 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 20:43:02 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 20:43:02 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 20:43:02 - INFO - ⚠️ Chỉ Scanner được kết nối - Có thể quét vân tay nhưng không thể đồng bộ với ERPNext
+2025-06-04 20:43:07 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 20:43:07 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 20:43:07 - INFO - ✅ DocType 'Attendance Machine' đã tồn tại
+2025-06-04 20:43:07 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 20:43:07 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 20:43:07 - ERROR - ❌ Lỗi kết nối ERPNext: 'FingerprintApp' object has no attribute 'save_employees_to_local'
+2025-06-04 20:43:07 - INFO - ⚠️ Chỉ Scanner được kết nối - Có thể quét vân tay nhưng không thể đồng bộ với ERPNext
+2025-06-04 20:43:39 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 20:43:39 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 20:43:41 - INFO - ✅ Đã làm mới danh sách 724 nhân viên
+2025-06-04 20:44:01 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 20:44:03 - INFO - 👆 Đã chọn ngón tay: Ngón giữa phải
+2025-06-04 20:44:04 - INFO - 📷 Quét lần 1/3
+2025-06-04 20:44:04 - INFO - 🔍 Đang chờ quét vân tay lần 1/3...
+2025-06-04 20:44:11 - INFO - ✅ Đã chụp vân tay lần 1.
+2025-06-04 20:44:11 - INFO - 👆 Vui lòng nhấc ngón tay và đặt lại
+2025-06-04 20:44:13 - INFO - 📷 Quét lần 2/3
+2025-06-04 20:44:13 - INFO - 🔍 Đang chờ quét vân tay lần 2/3...
+2025-06-04 20:44:13 - INFO - ✅ Đã chụp vân tay lần 2.
+2025-06-04 20:44:13 - INFO - 👆 Vui lòng nhấc ngón tay và đặt lại
+2025-06-04 20:44:15 - INFO - 📷 Quét lần 3/3
+2025-06-04 20:44:15 - INFO - 🔍 Đang chờ quét vân tay lần 3/3...
+2025-06-04 20:44:17 - INFO - ✅ Đã chụp vân tay lần 3.
+2025-06-04 20:44:17 - INFO - 🔄 Đang merge 3 mẫu vân tay...
+2025-06-04 20:44:17 - INFO - ✅ Merge vân tay thành công! Kích thước template: 1064 bytes.
+2025-06-04 20:44:17 - INFO - ✅ Đã quét thành công vân tay Ngón giữa phải cho TIQN-28-0001
+2025-06-04 20:44:20 - INFO - ✅ Đã lưu 1 nhân viên vào file local
+2025-06-04 20:44:21 - INFO - ✅ Lưu vân tay thành công cho TIQN-28-0001 - Ngón 2
+2025-06-04 20:44:21 - INFO - ✅ Lưu vân tay thành công cho TIQN-28-0001 - Ngón 7
+2025-06-04 20:44:21 - INFO - ✅ Đã lưu dữ liệu vân tay vào ERPNext
+2025-06-04 20:44:22 - INFO - ✅ Đã lưu dữ liệu vân tay
+2025-06-04 20:44:24 - INFO - 📋 Đã chọn nhân viên: Nguyễn Thị Quỳnh Nga (TIQN-1466)
+2025-06-04 20:44:25 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 20:44:26 - INFO - 👆 Đã chọn ngón tay: Ngón út trái
+2025-06-04 20:44:38 - INFO - ✅ Đã ngắt kết nối scanner thành công.
+2025-06-04 20:44:38 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 20:44:41 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 20:44:41 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 20:44:41 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 20:44:41 - INFO - ✅ Đã tải 1 máy chấm công từ file local
+2025-06-04 20:44:41 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 20:44:42 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 20:44:42 - WARNING - ❌ Chưa có kết nối nào - Vui lòng kết nối thiết bị để sử dụng
+2025-06-04 20:44:42 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 20:44:52 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 20:44:52 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 20:44:52 - INFO - ✅ DocType 'Attendance Machine' đã tồn tại
+2025-06-04 20:44:52 - INFO - ✅ DocType 'Sync History' đã tồn tại
+2025-06-04 20:44:52 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 20:44:52 - ERROR - ❌ Lỗi kết nối ERPNext: 'FingerprintApp' object has no attribute 'save_employees_to_local'
+2025-06-04 20:44:52 - WARNING - ❌ Chưa có kết nối nào - Vui lòng kết nối thiết bị để sử dụng
+2025-06-04 20:45:00 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 20:45:00 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 20:45:03 - INFO - ✅ Đã làm mới danh sách 724 nhân viên
+2025-06-04 21:11:54 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 21:12:06 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 21:18:18 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 21:18:18 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 21:18:18 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 21:18:18 - INFO - ✅ Đã tải 1 máy chấm công từ file local
+2025-06-04 21:18:18 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 21:18:18 - INFO - 📝 Chưa có file danh sách nhân viên local
+2025-06-04 21:19:03 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 21:19:03 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 21:19:03 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 21:19:03 - INFO - ✅ Đã tải 1 máy chấm công từ file local
+2025-06-04 21:19:03 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 21:19:03 - INFO - 📝 Chưa có file danh sách nhân viên local
+2025-06-04 21:19:04 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 21:19:04 - WARNING - ❌ Chưa có kết nối nào - Vui lòng kết nối thiết bị để sử dụng
+2025-06-04 21:19:04 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 21:19:12 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 21:19:12 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 21:19:12 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 21:19:12 - INFO - ⚠️ Chỉ Scanner được kết nối - Có thể quét vân tay nhưng không thể đồng bộ với ERPNext
+2025-06-04 21:19:15 - ERROR - ❌ Lỗi kết nối ERPNext: 'ERPNextAPI' object has no attribute 'connect'
+2025-06-04 21:19:15 - INFO - ⚠️ Chỉ Scanner được kết nối - Có thể quét vân tay nhưng không thể đồng bộ với ERPNext
+2025-06-04 21:19:24 - ERROR - ❌ Lỗi kết nối ERPNext: 'ERPNextAPI' object has no attribute 'connect'
+2025-06-04 21:19:24 - INFO - ⚠️ Chỉ Scanner được kết nối - Có thể quét vân tay nhưng không thể đồng bộ với ERPNext
+2025-06-04 21:19:29 - WARNING - ⚠️ Chưa kết nối ERPNext, thử kết nối...
+2025-06-04 21:19:29 - ERROR - ❌ Lỗi kết nối ERPNext: 'ERPNextAPI' object has no attribute 'connect'
+2025-06-04 21:19:29 - ERROR - ❌ Không thể kết nối ERPNext
+2025-06-04 21:19:42 - WARNING - ⚠️ Chưa kết nối ERPNext, thử kết nối...
+2025-06-04 21:19:42 - ERROR - ❌ Lỗi kết nối ERPNext: 'ERPNextAPI' object has no attribute 'connect'
+2025-06-04 21:19:42 - ERROR - ❌ Không thể kết nối ERPNext
+2025-06-04 21:20:05 - ERROR - ❌ Lỗi kết nối ERPNext: 'ERPNextAPI' object has no attribute 'connect'
+2025-06-04 21:20:05 - INFO - ⚠️ Chỉ Scanner được kết nối - Có thể quét vân tay nhưng không thể đồng bộ với ERPNext
+2025-06-04 21:20:10 - WARNING - ⚠️ Chưa kết nối ERPNext, thử kết nối...
+2025-06-04 21:20:10 - ERROR - ❌ Lỗi kết nối ERPNext: 'ERPNextAPI' object has no attribute 'connect'
+2025-06-04 21:20:10 - ERROR - ❌ Không thể kết nối ERPNext
+2025-06-04 21:20:22 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 21:20:22 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 21:20:22 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 21:20:22 - INFO - ✅ Đã tải 1 máy chấm công từ file local
+2025-06-04 21:20:22 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 21:20:22 - INFO - 📝 Chưa có file danh sách nhân viên local
+2025-06-04 21:20:23 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 21:20:23 - WARNING - ❌ Chưa có kết nối nào - Vui lòng kết nối thiết bị để sử dụng
+2025-06-04 21:20:23 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 21:20:54 - ERROR - ❌ Lỗi kết nối ERPNext: 'ERPNextAPI' object has no attribute 'connect'
+2025-06-04 21:20:54 - WARNING - ❌ Chưa có kết nối nào - Vui lòng kết nối thiết bị để sử dụng
+2025-06-04 21:22:17 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 21:22:17 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 21:22:17 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 21:22:17 - INFO - ✅ Đã tải 1 máy chấm công từ file local
+2025-06-04 21:22:17 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 21:22:17 - INFO - 📝 Chưa có file danh sách nhân viên local
+2025-06-04 21:22:18 - INFO - 📋 Đã cập nhật danh sách 0 nhân viên
+2025-06-04 21:22:18 - WARNING - ❌ Chưa có kết nối nào - Vui lòng kết nối thiết bị để sử dụng
+2025-06-04 21:22:18 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 21:22:27 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 21:22:27 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 21:22:27 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 21:22:28 - INFO - ✅ Đã lưu 724 nhân viên vào file local
+2025-06-04 21:22:28 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 21:22:28 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 21:22:28 - INFO - ⚠️ Chỉ ERPNext được kết nối - Có thể quản lý dữ liệu nhưng không thể quét vân tay
+2025-06-04 21:22:28 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 21:22:31 - INFO - 🔄 Đang tải danh sách máy chấm công từ ERPNext...
+2025-06-04 21:22:32 - INFO - ✅ Lấy được 1 máy chấm công từ ERPNext Attendance Machine
+2025-06-04 21:22:32 - INFO - ✅ Đã lưu 1 máy chấm công vào file local
+2025-06-04 21:22:32 - INFO - ✅ Đã tải 1 máy chấm công từ ERPNext
+2025-06-04 21:22:32 - INFO - 🔍 Đang kiểm tra kết nối đến các máy chấm công...
+2025-06-04 21:22:32 - INFO - ✅ Máy 8 (10.0.1.48) - Kết nối thành công
+2025-06-04 21:22:32 - INFO - ✅ Hoàn thành tải và kiểm tra máy chấm công
+2025-06-04 21:22:32 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 21:22:32 - INFO - ⚠️ Chỉ ERPNext được kết nối - Có thể quản lý dữ liệu nhưng không thể quét vân tay
+2025-06-04 21:22:34 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 21:23:01 - INFO - 👋 Đã đóng ứng dụng
+2025-06-04 21:23:10 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 21:23:10 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 21:23:10 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 21:23:10 - INFO - ✅ Đã tải 1 máy chấm công từ file local
+2025-06-04 21:23:10 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 21:23:10 - INFO - ✅ Đã tải 724 nhân viên từ file local
+2025-06-04 21:23:11 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 21:23:11 - WARNING - ❌ Chưa có kết nối nào - Vui lòng kết nối thiết bị để sử dụng
+2025-06-04 21:23:11 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 21:23:11 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 21:23:21 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 21:23:21 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 21:23:21 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 21:23:21 - INFO - ✅ Đã lưu 724 nhân viên vào file local
+2025-06-04 21:23:21 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 21:23:21 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 21:23:21 - INFO - ⚠️ Chỉ ERPNext được kết nối - Có thể quản lý dữ liệu nhưng không thể quét vân tay
+2025-06-04 21:23:21 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 21:23:24 - INFO - 🔄 Đang tải danh sách máy chấm công từ ERPNext...
+2025-06-04 21:23:24 - INFO - ✅ Lấy được 1 máy chấm công từ ERPNext Attendance Machine
+2025-06-04 21:23:24 - INFO - ✅ Đã lưu 1 máy chấm công vào file local
+2025-06-04 21:23:24 - INFO - ✅ Đã tải 1 máy chấm công từ ERPNext
+2025-06-04 21:23:24 - INFO - 🔍 Đang kiểm tra kết nối đến các máy chấm công...
+2025-06-04 21:23:24 - INFO - ✅ Máy 8 (10.0.1.48) - Kết nối thành công
+2025-06-04 21:23:24 - INFO - ✅ Hoàn thành tải và kiểm tra máy chấm công
+2025-06-04 21:23:25 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 21:23:25 - INFO - ⚠️ Chỉ ERPNext được kết nối - Có thể quản lý dữ liệu nhưng không thể quét vân tay
+2025-06-04 21:23:30 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 21:23:32 - INFO - 🔄 Đang tải danh sách máy chấm công từ ERPNext...
+2025-06-04 21:23:33 - INFO - ✅ Lấy được 1 máy chấm công từ ERPNext Attendance Machine
+2025-06-04 21:23:33 - INFO - ✅ Đã lưu 1 máy chấm công vào file local
+2025-06-04 21:23:33 - INFO - ✅ Đã tải 1 máy chấm công từ ERPNext
+2025-06-04 21:23:33 - INFO - 🔍 Đang kiểm tra kết nối đến các máy chấm công...
+2025-06-04 21:23:33 - INFO - ✅ Máy 8 (10.0.1.48) - Kết nối thành công
+2025-06-04 21:23:33 - INFO - ✅ Hoàn thành tải và kiểm tra máy chấm công
+2025-06-04 21:23:33 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 21:23:33 - INFO - ⚠️ Chỉ ERPNext được kết nối - Có thể quản lý dữ liệu nhưng không thể quét vân tay
+2025-06-04 21:23:38 - INFO - 🔄 Bắt đầu đồng bộ đến 1 thiết bị
+2025-06-04 21:23:38 - INFO - 🔄 Đồng bộ đến thiết bị: Máy 8
+2025-06-04 21:23:38 - INFO - 🎯 Đồng bộ đến: Máy 8
+2025-06-04 21:23:38 - INFO - ============================================================
+2025-06-04 21:23:38 - INFO - 🔌 Đang kết nối với Máy 8 (10.0.1.48)...
+2025-06-04 21:23:38 - INFO - 🔌 Đang kết nối với Máy 8 (10.0.1.48:4370)...
+2025-06-04 21:23:41 - INFO - ✅ Kết nối thành công với Máy 8
+2025-06-04 21:23:41 - INFO -    📱 Model: F21Lite/ID
+2025-06-04 21:23:41 - INFO -    🔢 Serial: AG8S205060162
+2025-06-04 21:23:41 - INFO -    👥 Số người dùng: 894
+2025-06-04 21:23:41 - INFO - 👤 Đang xử lý nhân viên: TIQN-28-0001 - scsaascf (ID: 2222)
+2025-06-04 21:23:43 - INFO - ➕ Tạo mới user 2222...
+2025-06-04 21:23:45 - INFO -    ✅ Chuẩn bị template cho ngón 2
+2025-06-04 21:23:45 - INFO -    ✅ Chuẩn bị template cho ngón 7
+2025-06-04 21:23:45 - INFO - 📤 Gửi 2 template vân tay lên máy chấm công...
+2025-06-04 21:23:45 - INFO - ✅ Đã gửi thành công 2 template cho user 2222
+2025-06-04 21:23:46 - ERROR - ❌ Lỗi ghi log đồng bộ: 417
+2025-06-04 21:23:46 - INFO - ✅ Đã đồng bộ thành công nhân viên TIQN-28-0001 - scsaascf
+2025-06-04 21:23:46 - INFO - ✅ Đã ngắt kết nối thiết bị ID: 1
+2025-06-04 21:25:50 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 21:25:50 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 21:25:50 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 21:25:50 - INFO - ✅ Đã tải 1 máy chấm công từ file local
+2025-06-04 21:25:50 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 21:25:50 - INFO - ✅ Đã tải 724 nhân viên từ file local
+2025-06-04 21:25:50 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 21:25:50 - WARNING - ❌ Chưa có kết nối nào - Vui lòng kết nối thiết bị để sử dụng
+2025-06-04 21:25:50 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 21:25:50 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 21:25:59 - WARNING - ⚠️ Chưa kết nối ERPNext, thử kết nối...
+2025-06-04 21:25:59 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 21:25:59 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 21:25:59 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 21:25:59 - INFO - ✅ Đã lưu 724 nhân viên vào file local
+2025-06-04 21:25:59 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 21:25:59 - INFO - 🔄 Đang tải danh sách máy chấm công từ ERPNext...
+2025-06-04 21:25:59 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 21:25:59 - INFO - ✅ Lấy được 1 máy chấm công từ ERPNext Attendance Machine
+2025-06-04 21:25:59 - INFO - ✅ Đã lưu 1 máy chấm công vào file local
+2025-06-04 21:25:59 - INFO - ✅ Đã tải 1 máy chấm công từ ERPNext
+2025-06-04 21:25:59 - INFO - 🔍 Đang kiểm tra kết nối đến các máy chấm công...
+2025-06-04 21:25:59 - INFO - ✅ Máy 8 (10.0.1.48) - Kết nối thành công
+2025-06-04 21:25:59 - INFO - ✅ Hoàn thành tải và kiểm tra máy chấm công
+2025-06-04 21:25:59 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 21:25:59 - INFO - ⚠️ Chỉ ERPNext được kết nối - Có thể quản lý dữ liệu nhưng không thể quét vân tay
+2025-06-04 21:26:33 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 21:26:33 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 21:26:33 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 21:26:33 - INFO - ✅ Tất cả kết nối đã sẵn sàng - Có thể thực hiện đầy đủ chức năng
+2025-06-04 21:26:35 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 21:30:48 - INFO - 🚀 Logger đã được khởi tạo
+2025-06-04 21:30:48 - INFO - FingerprintScanner đã được khởi tạo.
+2025-06-04 21:30:48 - INFO - ✅ Đã tải 1 nhân viên từ dữ liệu local
+2025-06-04 21:30:48 - INFO - ✅ Đã tải 1 máy chấm công từ file local
+2025-06-04 21:30:48 - INFO - ✅ Đã tải 1 máy chấm công từ config
+2025-06-04 21:30:48 - INFO - ✅ Đã tải 724 nhân viên từ file local
+2025-06-04 21:30:48 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 21:30:48 - WARNING - ❌ Chưa có kết nối nào - Vui lòng kết nối thiết bị để sử dụng
+2025-06-04 21:30:48 - INFO - 🚀 Ứng dụng đã khởi tạo thành công
+2025-06-04 21:30:48 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 21:31:00 - WARNING - ⚠️ Chưa kết nối ERPNext, thử kết nối...
+2025-06-04 21:31:01 - INFO - ✅ Kết nối ERPNext thành công! User: Administrator
+2025-06-04 21:31:01 - INFO - ✅ Đã kết nối ERPNext
+2025-06-04 21:31:01 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 21:31:01 - INFO - ✅ Đã lưu 724 nhân viên vào file local
+2025-06-04 21:31:01 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 21:31:01 - INFO - 🔄 Đang tải danh sách máy chấm công từ ERPNext...
+2025-06-04 21:31:01 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 21:31:01 - INFO - ✅ Lấy được 1 máy chấm công từ ERPNext Attendance Machine
+2025-06-04 21:31:01 - INFO - ✅ Đã lưu 1 máy chấm công vào file local
+2025-06-04 21:31:01 - INFO - ✅ Đã tải 1 máy chấm công từ ERPNext
+2025-06-04 21:31:01 - INFO - 🔍 Đang kiểm tra kết nối đến các máy chấm công...
+2025-06-04 21:31:01 - INFO - ✅ Máy 8 (10.0.1.48) - Kết nối thành công
+2025-06-04 21:31:01 - INFO - ✅ Hoàn thành tải và kiểm tra máy chấm công
+2025-06-04 21:31:01 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 21:31:01 - INFO - ⚠️ Chỉ ERPNext được kết nối - Có thể quản lý dữ liệu nhưng không thể quét vân tay
+2025-06-04 21:31:04 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 21:31:15 - INFO - 📷 Kích thước ảnh: 288x375, DPI: 0
+2025-06-04 21:31:15 - INFO - ✅ Đã kết nối thành công với thiết bị quét vân tay (tìm thấy 1 thiết bị).
+2025-06-04 21:31:15 - INFO - ✅ Đã kết nối máy quét vân tay
+2025-06-04 21:31:15 - INFO - ✅ Tất cả kết nối đã sẵn sàng - Có thể thực hiện đầy đủ chức năng
+2025-06-04 21:31:30 - INFO - 📋 Đã chọn nhân viên: Nguyễn Thị Quỳnh Nga (TIQN-1466)
+2025-06-04 21:31:31 - INFO - 📋 Đã chọn nhân viên: Lê Thị Tiên (TIQN-1465)
+2025-06-04 21:31:31 - INFO - 📋 Đã chọn nhân viên: Cao Thị Huyền Sâm (TIQN-1463)
+2025-06-04 21:31:31 - INFO - 📋 Đã chọn nhân viên: Nguyễn Hồng Tài (TIQN-1459)
+2025-06-04 21:31:32 - INFO - 📋 Đã chọn nhân viên: Lê Thị Kim Thúy (TIQN-1454)
+2025-06-04 21:31:33 - INFO - 📋 Đã chọn nhân viên: Nguyễn Hồng Tài (TIQN-1459)
+2025-06-04 21:31:33 - INFO - 📋 Đã chọn nhân viên: Cao Thị Huyền Sâm (TIQN-1463)
+2025-06-04 21:31:33 - INFO - 📋 Đã chọn nhân viên: Lê Thị Tiên (TIQN-1465)
+2025-06-04 21:31:34 - INFO - 📋 Đã chọn nhân viên: Nguyễn Thị Quỳnh Nga (TIQN-1466)
+2025-06-04 21:31:35 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 21:32:25 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 21:32:25 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 21:32:26 - INFO - ✅ Đã làm mới danh sách 724 nhân viên
+2025-06-04 21:32:35 - INFO - 📋 Đã chọn nhân viên: Lê Thị Kim Thúy (TIQN-1454)
+2025-06-04 21:32:36 - INFO - 📋 Đã chọn nhân viên: Nguyễn Tấn Đức (TIQN-1452)
+2025-06-04 21:32:36 - INFO - 📋 Đã chọn nhân viên: Nguyễn Tấn Đức (TIQN-1452)
+2025-06-04 21:32:37 - INFO - 📋 Đã chọn nhân viên: Trần Thị Minh Mẫn (TIQN-1451)
+2025-06-04 21:32:37 - INFO - 📋 Đã chọn nhân viên: Trương Thị Thúy Hằng (TIQN-1449)
+2025-06-04 21:32:37 - INFO - 📋 Đã chọn nhân viên: Trần Thị Minh Mẫn (TIQN-1451)
+2025-06-04 21:32:38 - INFO - 📋 Đã chọn nhân viên: Nguyễn Tấn Đức (TIQN-1452)
+2025-06-04 21:32:38 - INFO - 📋 Đã chọn nhân viên: Lê Thị Kim Thúy (TIQN-1454)
+2025-06-04 21:32:42 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 21:33:54 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 21:33:54 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 21:33:58 - INFO - ✅ Đã làm mới danh sách 724 nhân viên
+2025-06-04 21:34:08 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 21:34:08 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 21:34:13 - INFO - ✅ Đã làm mới danh sách 724 nhân viên
+2025-06-04 21:34:15 - INFO - 👆 Đã chọn ngón tay: Ngón trỏ trái
+2025-06-04 21:34:16 - INFO - 📋 Đã chọn nhân viên: Phạm Thị Thanh Hảo (TIQN-1460)
+2025-06-04 21:34:16 - INFO - 📋 Đã chọn nhân viên: Lê Thị Kim Thúy (TIQN-1454)
+2025-06-04 21:34:17 - INFO - 📋 Đã chọn nhân viên: Trương Thị Thúy Hằng (TIQN-1449)
+2025-06-04 21:34:17 - INFO - 📋 Đã chọn nhân viên: Nguyễn Hồng Tài (TIQN-1459)
+2025-06-04 21:34:17 - INFO - 📋 Đã chọn nhân viên: Lê Hữu Nghĩa (TIQN-1464)
+2025-06-04 21:34:18 - INFO - ✅ Lấy được 724 nhân viên từ ERPNext
+2025-06-04 21:34:18 - INFO - 📋 Đã cập nhật danh sách 724 nhân viên
+2025-06-04 21:34:25 - INFO - ✅ Đã làm mới danh sách 724 nhân viên
+2025-06-04 21:34:35 - INFO - 📋 Đã chọn nhân viên: Nguyễn Thị Quỳnh Nga (TIQN-1466)
+2025-06-04 21:34:35 - INFO - 📋 Đã chọn nhân viên: Phạm Thị Thanh Hảo (TIQN-1460)
+2025-06-04 21:34:36 - INFO - 📋 Đã chọn nhân viên: Trần Thanh Viên (TIQN-1456)
+2025-06-04 21:34:36 - INFO - 📋 Đã chọn nhân viên: Trần Minh Quang (TIQN-1450)
+2025-06-04 21:34:36 - INFO - 📋 Đã chọn nhân viên: Nguyễn Hồng Tài (TIQN-1459)
+2025-06-04 21:34:37 - INFO - 📋 Đã chọn nhân viên: Phạm Thị Thanh Hảo (TIQN-1460)
+2025-06-04 21:34:38 - INFO - 📋 Đã chọn nhân viên: Lê Thị Kim Thúy (TIQN-1454)
+2025-06-04 21:34:38 - INFO - 📋 Đã chọn nhân viên: Trương Thị Thúy Hằng (TIQN-1449)
+2025-06-04 21:34:38 - INFO - 📋 Đã chọn nhân viên: Lê Thị Quá (TIQN-1458)
+2025-06-04 21:34:39 - INFO - 📋 Đã chọn nhân viên: Nguyễn Tấn Đức (TIQN-1452)
+2025-06-04 21:34:39 - INFO - 📋 Đã chọn nhân viên: Trương Thị Thúy Hằng (TIQN-1449)
+2025-06-04 21:34:40 - INFO - 📋 Đã chọn nhân viên: Nguyễn Hồng Tài (TIQN-1459)
+2025-06-04 21:34:41 - INFO - 📋 Đã chọn nhân viên: Nguyễn Thị Mỹ Sang (TIQN-1462)
+2025-06-04 21:34:41 - INFO - 📋 Đã chọn nhân viên: Nguyễn Thị Thu Nhi (TIQN-1457)
+2025-06-04 21:34:42 - INFO - 📋 Đã chọn nhân viên: Nguyễn Tấn Đức (TIQN-1452)
+2025-06-04 21:34:42 - INFO - 📋 Đã chọn nhân viên: Nguyễn Thị Thu Nhi (TIQN-1457)
+2025-06-04 21:34:43 - INFO - 📋 Đã chọn nhân viên: Nguyễn Hồng Tài (TIQN-1459)
+2025-06-04 21:34:43 - INFO - 📋 Đã chọn nhân viên: Phạm Thị Thanh Hảo (TIQN-1460)
+2025-06-04 21:34:43 - INFO - 📋 Đã chọn nhân viên: Nguyễn Tấn Đức (TIQN-1452)
+2025-06-04 21:34:44 - INFO - 📋 Đã chọn nhân viên: Lê Thị Quá (TIQN-1458)
+2025-06-04 21:34:44 - INFO - 📋 Đã chọn nhân viên: Phạm Thị Thanh Hảo (TIQN-1460)
+2025-06-04 21:34:45 - INFO - 📋 Đã chọn nhân viên: Nguyễn Thị Mỹ Sang (TIQN-1462)
+2025-06-04 21:34:46 - INFO - 📋 Đã chọn nhân viên: scsaascf (TIQN-28-0001)
+2025-06-04 21:34:49 - INFO - 👆 Đã chọn ngón tay: Ngón áp út trái
+2025-06-04 21:34:50 - INFO - 👆 Đã chọn ngón tay: Ngón áp út trái
+2025-06-04 21:34:50 - INFO - 👆 Đã chọn ngón tay: Ngón út trái
+2025-06-04 21:34:51 - INFO - 👆 Đã chọn ngón tay: Ngón út phải
+2025-06-04 21:34:51 - INFO - 👆 Đã chọn ngón tay: Ngón áp út phải
+2025-06-04 21:34:52 - INFO - 👆 Đã chọn ngón tay: Ngón cái phải
+2025-06-04 21:34:52 - INFO - 👆 Đã chọn ngón tay: Ngón cái trái
+2025-06-04 21:34:53 - INFO - 👆 Đã chọn ngón tay: Ngón út phải
+2025-06-04 21:34:54 - INFO - 👆 Đã chọn ngón tay: Ngón út trái
+2025-06-04 21:34:54 - INFO - 👆 Đã chọn ngón tay: Ngón áp út trái
+2025-06-04 21:34:55 - INFO - 👆 Đã chọn ngón tay: Ngón áp út phải
+2025-06-04 21:34:55 - INFO - 👆 Đã chọn ngón tay: Ngón giữa trái
+2025-06-04 21:34:55 - INFO - 👆 Đã chọn ngón tay: Ngón trỏ trái
+2025-06-04 21:34:57 - INFO - 👆 Đã chọn ngón tay: Ngón giữa trái
+2025-06-04 21:35:00 - INFO - 👆 Đã chọn ngón tay: Ngón giữa trái
+2025-06-04 21:35:00 - INFO - 👆 Đã chọn ngón tay: Ngón giữa trái
+2025-06-04 21:35:10 - INFO - 👆 Đã chọn ngón tay: Ngón giữa trái
+2025-06-04 21:35:10 - INFO - 👆 Đã chọn ngón tay: Ngón giữa trái
+2025-06-04 21:35:46 - INFO - 👆 Đã chọn ngón tay: Ngón giữa trái
+2025-06-04 21:35:46 - INFO - 👆 Đã chọn ngón tay: Ngón giữa trái

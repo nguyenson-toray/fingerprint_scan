@@ -52,16 +52,117 @@ class ERPNextAPI:
             self.is_connected = False
             return False
     
+    def check_required_doctypes(self) -> Dict[str, bool]:
+        """
+        Kiểm tra các DocType cần thiết có tồn tại trong ERPNext hay không
+        
+        Returns:
+            Dict với key là tên DocType, value là True/False tùy vào DocType có tồn tại
+        """
+        required_doctypes = [
+            "Attendance Machine",
+            "Sync History"
+        ]
+        
+        doctypes_status = {}
+        
+        for doctype_name in required_doctypes:
+            try:
+                # Kiểm tra xem DocType có tồn tại không
+                response = self.session.get(
+                    f"{self.base_url}/api/resource/DocType/{doctype_name}"
+                )
+                
+                if response.status_code == 200:
+                    doctypes_status[doctype_name] = True
+                    logger.info(f"✅ DocType '{doctype_name}' đã tồn tại")
+                elif response.status_code == 404:
+                    doctypes_status[doctype_name] = False
+                    logger.warning(f"⚠️ DocType '{doctype_name}' chưa tồn tại")
+                else:
+                    doctypes_status[doctype_name] = False
+                    logger.error(f"❌ Lỗi kiểm tra DocType '{doctype_name}': {response.status_code}")
+                    
+            except Exception as e:
+                doctypes_status[doctype_name] = False
+                logger.error(f"❌ Lỗi khi kiểm tra DocType '{doctype_name}': {str(e)}")
+        
+        return doctypes_status
+    
+    def get_attendance_machines(self) -> List[Dict[str, Any]]:
+        """
+        Lấy danh sách máy chấm công từ ERPNext
+        
+        Returns:
+            Danh sách thông tin máy chấm công
+        """
+        try:
+            # Kiểm tra DocType Attendance Machine tồn tại trước
+            check_response = self.session.get(
+                f"{self.base_url}/api/resource/DocType/Attendance Machine"
+            )
+            
+            if check_response.status_code == 404:
+                logger.warning("⚠️ DocType 'Attendance Machine' không tồn tại trong ERPNext")
+                logger.info("💡 Để sử dụng tính năng này, vui lòng tạo DocType 'Attendance Machine' trong ERPNext")
+                return []
+            
+            # Lấy danh sách từ DocType Attendance Machine
+            response = self.session.get(
+                f"{self.base_url}/api/resource/Attendance Machine",
+                params={
+                    "fields": json.dumps([
+                        "name", "id", "device_name", "ip_address", "port", 
+                        "model", "location", "enable", "timeout", "force_udp", "ommit_ping"
+                    ]),
+                    "filters": json.dumps([["enable", "=", 1]]),
+                    "order_by": "id"
+                }
+            )
+            
+            if response.status_code == 200:
+                devices_data = response.json().get("data", [])
+                
+                # Convert to standard format expected by the app
+                devices = []
+                for device_data in devices_data:
+                    # Map fields correctly từ ERPNext sang format của app
+                    device = {
+                        'id': device_data.get('id', 1),
+                        'name': device_data.get('name', ''),  # ERPNext document name
+                        'device_name': device_data.get('device_name', f'Device {device_data.get("id", 1)}'),
+                        'ip': device_data.get('ip_address', ''),  # Map ip_address -> ip
+                        'port': device_data.get('port', 4370),
+                        'model': device_data.get('model', 'ZKTeco F21lite'),
+                        'location': device_data.get('location', 'Unknown'),
+                        'timeout': device_data.get('timeout', 10),
+                        'force_udp': bool(device_data.get('force_udp', 1)),
+                        'ommit_ping': bool(device_data.get('ommit_ping', 1)),
+                        'enable': bool(device_data.get('enable', 1))
+                    }
+                    devices.append(device)
+                
+                logger.info(f"✅ Lấy được {len(devices)} máy chấm công từ ERPNext Attendance Machine")
+                return devices
+            else:
+                logger.error(f"❌ Lỗi khi lấy danh sách máy chấm công: HTTP {response.status_code}")
+                logger.error(f"Response: {response.text}")
+                return []
+                
+        except Exception as e:
+            logger.error(f"❌ Lỗi khi lấy danh sách máy chấm công: {str(e)}")
+            return []
+    
     def get_all_employees(self) -> List[Dict[str, Any]]:
         """Lấy danh sách tất cả nhân viên từ HRMS"""
         try:
-            # Lấy danh sách employee
+            # Lấy danh sách employee với custom_group thay vì department
             response = self.session.get(
                 f"{self.base_url}/api/resource/Employee",
                 params={
                     "fields": json.dumps([
                         "name", "employee_name", "employee", 
-                        "attendance_device_id", "department", 
+                        "attendance_device_id", "custom_group", 
                         "designation", "status"
                     ]),
                     "filters": json.dumps([["status", "=", "Active"]]),
@@ -120,6 +221,75 @@ class ERPNextAPI:
         except Exception as e:
             logger.error(f"❌ Lỗi khi lấy dữ liệu vân tay: {str(e)}")
             return []
+    
+    def save_fingerprint_to_employee(self, employee_name: str, finger_index: int, 
+                                   template_data: bytes, quality_score: int = 0) -> bool:
+        """
+        Lưu dữ liệu vân tay vào ERPNext thông qua child table của Employee
+        
+        Args:
+            employee_name: Tên của nhân viên (doc.name trong ERPNext)
+            finger_index: Chỉ số ngón tay (0-9)
+            template_data: Dữ liệu template vân tay
+            quality_score: Điểm chất lượng vân tay
+            
+        Returns:
+            True nếu lưu thành công, False nếu thất bại
+        """
+        try:
+            # Encode template data to base64
+            template_b64 = base64.b64encode(template_data).decode('utf-8')
+            
+            # Lấy thông tin nhân viên hiện tại
+            emp_response = self.session.get(f"{self.base_url}/api/resource/Employee/{employee_name}")
+            
+            if emp_response.status_code != 200:
+                logger.error(f"❌ Không thể lấy thông tin nhân viên: {employee_name}")
+                return False
+            
+            employee_doc = emp_response.json().get("data", {})
+            
+            # Lấy danh sách vân tay hiện tại (nếu có child table)
+            current_fingerprints = employee_doc.get("custom_fingerprint_data", [])
+            
+            # Tìm và cập nhật vân tay hiện có hoặc thêm mới
+            found = False
+            for fp in current_fingerprints:
+                if fp.get("finger_index") == finger_index:
+                    fp["template_data"] = template_b64
+                    fp["quality_score"] = quality_score
+                    fp["last_updated"] = datetime.now().isoformat()
+                    found = True
+                    break
+            
+            if not found:
+                # Thêm vân tay mới
+                current_fingerprints.append({
+                    "finger_index": finger_index,
+                    "template_data": template_b64,
+                    "quality_score": quality_score,
+                    "enrolled_date": datetime.now().isoformat(),
+                    "last_updated": datetime.now().isoformat()
+                })
+            
+            # Cập nhật Employee document
+            update_response = self.session.put(
+                f"{self.base_url}/api/resource/Employee/{employee_name}",
+                json={
+                    "custom_fingerprint_data": current_fingerprints
+                }
+            )
+            
+            if update_response.status_code == 200:
+                logger.info(f"✅ Lưu vân tay thành công cho {employee_name} - Ngón {finger_index}")
+                return True
+            else:
+                logger.error(f"❌ Lỗi cập nhật vân tay: {update_response.status_code} - {update_response.text}")
+                return False
+                
+        except Exception as e:
+            logger.error(f"❌ Lỗi khi lưu vân tay: {str(e)}")
+            return False
     
     def save_fingerprint(self, employee_id: str, finger_index: int, 
                         template_data: bytes, quality_score: int = 0) -> bool:
@@ -327,137 +497,4 @@ class ERPNextAPI:
                 
         except Exception as e:
             logger.error(f"❌ Lỗi khi ghi log đồng bộ: {str(e)}")
-            return False
-    
-    def create_custom_doctypes(self) -> bool:
-        """
-        Tạo các DocType tùy chỉnh nếu chưa tồn tại
-        """
-        try:
-            # DocType cho Fingerprint Data (chỉ giữ lại để có thể xóa nếu cần, không dùng để lưu template)
-            fingerprint_doctype = {
-                "doctype": "DocType",
-                "name": "Fingerprint Data",
-                "module": "HR",
-                "custom": 1,
-                "fields": [
-                    {
-                        "fieldname": "employee",
-                        "fieldtype": "Link",
-                        "label": "Employee",
-                        "options": "Employee",
-                        "reqd": 1
-                    },
-                    {
-                        "fieldname": "finger_index",
-                        "fieldtype": "Int",
-                        "label": "Finger Index",
-                        "reqd": 1
-                    },
-                    {
-                        "fieldname": "template_data", # Giữ lại field này nhưng không sử dụng để lưu template
-                        "fieldtype": "Long Text",
-                        "label": "Template Data",
-                        "reqd": 0 # Make it optional
-                    },
-                    {
-                        "fieldname": "quality_score",
-                        "fieldtype": "Int",
-                        "label": "Quality Score"
-                    },
-                    {
-                        "fieldname": "enrolled_date",
-                        "fieldtype": "Datetime",
-                        "label": "Enrolled Date"
-                    },
-                    {
-                        "fieldname": "last_updated",
-                        "fieldtype": "Datetime",
-                        "label": "Last Updated"
-                    }
-                ]
-            }
-            
-            # DocType cho Sync History
-            sync_history_doctype = {
-                "doctype": "DocType",
-                "name": "Sync History",
-                "module": "HR",
-                "custom": 1,
-                "fields": [
-                    {
-                        "fieldname": "sync_type",
-                        "fieldtype": "Select",
-                        "label": "Sync Type",
-                        "options": "fingerprint\nattendance",
-                        "reqd": 1
-                    },
-                    {
-                        "fieldname": "device_name",
-                        "fieldtype": "Data",
-                        "label": "Device Name",
-                        "reqd": 1
-                    },
-                    {
-                        "fieldname": "employee_count",
-                        "fieldtype": "Int",
-                        "label": "Employee Count"
-                    },
-                    {
-                        "fieldname": "status",
-                        "fieldtype": "Select",
-                        "label": "Status",
-                        "options": "success\nfailed",
-                        "reqd": 1
-                    },
-                    {
-                        "fieldname": "sync_datetime",
-                        "fieldtype": "Datetime",
-                        "label": "Sync DateTime",
-                        "reqd": 1
-                    },
-                    {
-                        "fieldname": "message",
-                        "fieldtype": "Text",
-                        "label": "Message"
-                    }
-                ]
-            }
-            
-            # Kiểm tra và tạo DocType nếu chưa tồn tại
-            doctypes_to_create = [
-                ("Fingerprint Data", fingerprint_doctype),
-                ("Sync History", sync_history_doctype)
-            ]
-            
-            for doctype_name, doctype_def in doctypes_to_create:
-                try:
-                    # Kiểm tra xem DocType đã tồn tại chưa
-                    check_response = self.session.get(
-                        f"{self.base_url}/api/resource/DocType/{doctype_name}"
-                    )
-                    
-                    if check_response.status_code == 404:
-                        # Tạo mới DocType
-                        create_response = self.session.post(
-                            f"{self.base_url}/api/resource/DocType",
-                            json=doctype_def
-                        )
-                        
-                        if create_response.status_code == 200:
-                            logger.info(f"✅ Tạo DocType '{doctype_name}' thành công")
-                        else:
-                            logger.error(f"❌ Lỗi tạo DocType '{doctype_name}': {create_response.status_code}")
-                            return False
-                    else:
-                        logger.info(f"ℹ️ DocType '{doctype_name}' đã tồn tại")
-                        
-                except Exception as e:
-                    logger.error(f"❌ Lỗi khi kiểm tra/tạo DocType '{doctype_name}': {str(e)}")
-                    return False
-            
-            return True
-            
-        except Exception as e:
-            logger.error(f"❌ Lỗi khi tạo custom doctypes: {str(e)}")
             return False

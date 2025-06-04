@@ -1,4 +1,4 @@
-# attendance_sync.py
+# attendance_device_sync.py
 """
 Module đồng bộ dữ liệu vân tay đến máy chấm công ZKTeco
 """
@@ -12,7 +12,7 @@ import time
 from zk import ZK, const
 from zk.base import Finger
 from config import ATTENDANCE_DEVICES, FINGERPRINT_CONFIG
-from erpnext_api import ERPNextAPI
+from core.erpnext_api import ERPNextAPI
 
 logger = logging.getLogger(__name__)
 
@@ -35,25 +35,33 @@ class AttendanceDeviceSync:
             ZK object nếu kết nối thành công, None nếu thất bại
         """
         try:
-            logger.info(f"🔌 Đang kết nối với {device_config['name']} ({device_config['ip']})...")
+            device_name = device_config.get('device_name', device_config.get('name', f"Device_{device_config.get('id', 1)}"))
+            device_ip = device_config.get('ip', device_config.get('ip_address', ''))
+            device_port = device_config.get('port', 4370)
             
-            # Tạo instance ZK
+            logger.info(f"🔌 Đang kết nối với {device_name} ({device_ip}:{device_port})...")
+            
+            if not device_ip:
+                logger.error(f"❌ Thiết bị {device_name} không có địa chỉ IP")
+                return None
+            
+            # Tạo instance ZK với thông tin từ config
             zk = ZK(
-                device_config['ip'], 
-                port=4370, 
-                timeout=10,
-                password=0,
-                force_udp=True,
-                ommit_ping=True
+                device_ip, 
+                port=device_port, 
+                timeout=device_config.get('timeout', 10),
+                password=device_config.get('password', 0),
+                force_udp=device_config.get('force_udp', True),
+                ommit_ping=device_config.get('ommit_ping', True)
             )
             
             # Kiểm tra kết nối mạng
             try:
                 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                 sock.settimeout(5)
-                result = sock.connect_ex((device_config['ip'], 4370))
+                result = sock.connect_ex((device_ip, device_port))
                 if result != 0:
-                    logger.error(f"❌ Không thể kết nối đến {device_config['ip']}:{4370} - Lỗi: {result}")
+                    logger.error(f"❌ Không thể kết nối đến {device_ip}:{device_port} - Lỗi: {result}")
                     return None
                 sock.close()
             except Exception as e:
@@ -87,13 +95,14 @@ class AttendanceDeviceSync:
                     'fingerprints': conn.get_fp_version()
                 }
                 
-                logger.info(f"✅ Kết nối thành công với {device_config['name']}")
+                logger.info(f"✅ Kết nối thành công với {device_name}")
                 logger.info(f"   📱 Model: {device_info['device_name']}")
                 logger.info(f"   🔢 Serial: {device_info['serial']}")
                 logger.info(f"   👥 Số người dùng: {device_info['users']}")
                 
                 # Lưu connection
-                self.connected_devices[device_config['id']] = conn
+                device_id = device_config.get('id', 1)
+                self.connected_devices[device_id] = conn
                 
                 return conn
             except Exception as e:
@@ -101,7 +110,7 @@ class AttendanceDeviceSync:
                 return None
                 
         except Exception as e:
-            logger.error(f"❌ Lỗi kết nối với {device_config['name']}: {str(e)}")
+            logger.error(f"❌ Lỗi kết nối với {device_name}: {str(e)}")
             return None
     
     def disconnect_device(self, device_id: int):
@@ -239,215 +248,6 @@ class AttendanceDeviceSync:
             logger.error(f"❌ Lỗi đồng bộ nhân viên {employee_data.get('employee', 'Unknown')}: {str(e)}")
             return False
     
-    def sync_all_to_device(self, device_config: Dict, employees_to_sync: List[Dict]) -> Tuple[int, int]:
-        """
-        Đồng bộ danh sách nhân viên cụ thể đến một thiết bị
-        
-        Args:
-            device_config: Thông tin cấu hình thiết bị
-            employees_to_sync: Danh sách nhân viên cần đồng bộ (đã có vân tay trong current_fingerprints)
-            
-        Returns:
-            Tuple (số nhân viên thành công, tổng số nhân viên)
-        """
-        success_count = 0
-        total_count = len(employees_to_sync)
-        
-        # Kết nối thiết bị
-        zk = self.connect_device(device_config)
-        if not zk:
-            return 0, 0
-        
-        try:
-            logger.info(f"📊 Bắt đầu đồng bộ {total_count} nhân viên đến {device_config['name']}")
-            
-            # Đồng bộ từng nhân viên
-            for i, employee in enumerate(employees_to_sync, 1):
-                logger.info(f"\n[{i}/{total_count}] Đang xử lý {employee['employee']} - {employee['employee_name']}")
-                
-                # Lấy dữ liệu vân tay từ employee object
-                fingerprints = employee.get('fingerprints', [])
-                
-                # Kiểm tra dữ liệu vân tay
-                if not fingerprints:
-                    logger.warning(f"   ⚠️ Nhân viên không có dữ liệu vân tay để đồng bộ")
-                    continue
-                    
-                # Kiểm tra template data
-                valid_fingerprints = []
-                for fp in fingerprints:
-                    if not isinstance(fp, dict):
-                        logger.error(f"   ❌ Dữ liệu vân tay không hợp lệ: {type(fp)}")
-                        continue
-                        
-                    template_data = fp.get('template_data')
-                    if not template_data:
-                        logger.error(f"   ❌ Không có template data cho ngón {fp.get('finger_index', 'Unknown')}")
-                        continue
-                        
-                    valid_fingerprints.append(fp)
-                
-                if not valid_fingerprints:
-                    logger.warning(f"   ⚠️ Không có vân tay hợp lệ để đồng bộ")
-                    continue
-                    
-                # Đồng bộ
-                if self.sync_employee_to_device(zk, employee, valid_fingerprints):
-                    success_count += 1
-                    logger.info(f"   ✅ Đã đồng bộ thành công")
-                else:
-                    logger.error(f"   ❌ Đồng bộ thất bại")
-            
-            # Ghi log đồng bộ tổng
-            try:
-                self.erpnext_api.log_sync_history(
-                    sync_type="fingerprint_sync_to_device",
-                    device_name=device_config['name'],
-                    employee_count=success_count,
-                    status="success" if success_count > 0 else "failed",
-                    message=f"Đồng bộ thành công {success_count}/{total_count} nhân viên"
-                )
-            except Exception as e:
-                logger.error(f"❌ Lỗi ghi log đồng bộ: {str(e)}")
-            
-            logger.info(f"\n✅ Hoàn thành đồng bộ: {success_count}/{total_count} nhân viên")
-            
-        except Exception as e:
-            logger.error(f"❌ Lỗi trong quá trình đồng bộ: {str(e)}")
-            
-        finally:
-            # Ngắt kết nối
-            self.disconnect_device(device_config['id'])
-            
-        return success_count, total_count
-    
-    def sync_to_all_devices(self, employees_to_sync: List[Dict]) -> Dict[str, Tuple[int, int]]:
-        """
-        Đồng bộ danh sách nhân viên cụ thể đến tất cả các thiết bị
-        
-        Args:
-            employees_to_sync: Danh sách nhân viên cần đồng bộ
-            
-        Returns:
-            Dict với key là tên thiết bị, value là (success_count, total_count)
-        """
-        results = {}
-        
-        logger.info(f"🔄 Bắt đầu đồng bộ đến {len(ATTENDANCE_DEVICES)} thiết bị")
-        
-        for device in ATTENDANCE_DEVICES:
-            logger.info(f"\n{'='*60}")
-            logger.info(f"🎯 Đồng bộ đến: {device['name']}")
-            logger.info(f"{'='*60}")
-            
-            success, total = self.sync_all_to_device(device, employees_to_sync)
-            results[device['name']] = (success, total)
-        
-        # Tổng kết
-        logger.info(f"\n{'='*60}")
-        logger.info(f"📊 TỔNG KẾT ĐỒNG BỘ")
-        logger.info(f"{'='*60}")
-        
-        for device_name, (success, total) in results.items():
-            logger.info(f"✅ {device_name}: {success}/{total} nhân viên")
-        
-        return results
-    
-    def delete_employee_from_device(self, zk: ZK, user_id: int) -> bool:
-        """
-        Xóa nhân viên khỏi thiết bị
-        
-        Args:
-            zk: ZK connection object
-            user_id: ID của nhân viên trên thiết bị
-            
-        Returns:
-            True nếu xóa thành công
-        """
-        try:
-            logger.info(f"🗑️ Đang xóa user ID: {user_id}")
-            
-            # Xóa user
-            zk.delete_user(uid=user_id)
-            
-            logger.info(f"✅ Đã xóa user ID: {user_id}")
-            return True
-            
-        except Exception as e:
-            logger.error(f"❌ Lỗi xóa user: {str(e)}")
-            return False
-    
-    def get_device_users(self, device_config: Dict) -> List[Dict]:
-        """
-        Lấy danh sách users từ thiết bị
-        
-        Args:
-            device_config: Thông tin cấu hình thiết bị
-            
-        Returns:
-            Danh sách thông tin users
-        """
-        users_list = []
-        
-        zk = self.connect_device(device_config)
-        if not zk:
-            return users_list
-        
-        try:
-            users = zk.get_users()
-            
-            for user in users:
-                user_info = {
-                    'user_id': user.user_id,
-                    'uid': user.uid,
-                    'name': user.name,
-                    'privilege': user.privilege,
-                    'password': user.password,
-                    'group_id': user.group_id,
-                    'card': user.card
-                }
-                users_list.append(user_info)
-            
-            logger.info(f"✅ Lấy được {len(users_list)} users từ {device_config['name']}")
-            
-        except Exception as e:
-            logger.error(f"❌ Lỗi lấy danh sách users: {str(e)}")
-            
-        finally:
-            self.disconnect_device(device_config['id'])
-        
-        return users_list
-    
-    def clear_device_data(self, device_config: Dict) -> bool:
-        """
-        Xóa toàn bộ dữ liệu users và vân tay trên thiết bị
-        
-        Args:
-            device_config: Thông tin cấu hình thiết bị
-            
-        Returns:
-            True nếu xóa thành công
-        """
-        zk = self.connect_device(device_config)
-        if not zk:
-            return False
-        
-        try:
-            logger.warning(f"⚠️ Đang xóa toàn bộ dữ liệu trên {device_config['name']}...")
-            
-            # Xóa tất cả users
-            zk.clear_data()
-            
-            logger.info(f"✅ Đã xóa toàn bộ dữ liệu trên {device_config['name']}")
-            return True
-            
-        except Exception as e:
-            logger.error(f"❌ Lỗi xóa dữ liệu: {str(e)}")
-            return False
-            
-        finally:
-            self.disconnect_device(device_config['id'])
-
     def sync_to_device(self, device_config: dict, employees: List[dict]) -> Tuple[int, int]:
         """
         Đồng bộ dữ liệu vân tay đến một thiết bị cụ thể
@@ -459,8 +259,8 @@ class AttendanceDeviceSync:
         Returns:
             Tuple[int, int]: (số nhân viên đồng bộ thành công, tổng số nhân viên)
         """
-        device_name = device_config['name']
-        device_ip = device_config['ip']
+        device_name = device_config.get('device_name', device_config.get('name', f"Device_{device_config.get('id', 1)}"))
+        device_ip = device_config.get('ip', device_config.get('ip_address', ''))
         
         logger.info(f"🎯 Đồng bộ đến: {device_name}")
         logger.info("=" * 60)
@@ -533,4 +333,222 @@ class AttendanceDeviceSync:
             
         finally:
             # Ngắt kết nối thiết bị
-            self.disconnect_device(device_config['id'])
+            device_id = device_config.get('id', 1)
+            self.disconnect_device(device_id)
+    
+    def sync_all_to_device(self, device_config: Dict, employees_to_sync: List[Dict]) -> Tuple[int, int]:
+        """
+        Đồng bộ danh sách nhân viên cụ thể đến một thiết bị
+        
+        Args:
+            device_config: Thông tin cấu hình thiết bị
+            employees_to_sync: Danh sách nhân viên cần đồng bộ (đã có vân tay trong current_fingerprints)
+            
+        Returns:
+            Tuple (số nhân viên thành công, tổng số nhân viên)
+        """
+        success_count = 0
+        total_count = len(employees_to_sync)
+        
+        # Kết nối thiết bị
+        zk = self.connect_device(device_config)
+        if not zk:
+            return 0, 0
+        
+        try:
+            device_name = device_config.get('device_name', device_config.get('name', f"Device_{device_config.get('id', 1)}"))
+            logger.info(f"📊 Bắt đầu đồng bộ {total_count} nhân viên đến {device_name}")
+            
+            # Đồng bộ từng nhân viên
+            for i, employee in enumerate(employees_to_sync, 1):
+                logger.info(f"\n[{i}/{total_count}] Đang xử lý {employee['employee']} - {employee['employee_name']}")
+                
+                # Lấy dữ liệu vân tay từ employee object
+                fingerprints = employee.get('fingerprints', [])
+                
+                # Kiểm tra dữ liệu vân tay
+                if not fingerprints:
+                    logger.warning(f"   ⚠️ Nhân viên không có dữ liệu vân tay để đồng bộ")
+                    continue
+                    
+                # Kiểm tra template data
+                valid_fingerprints = []
+                for fp in fingerprints:
+                    if not isinstance(fp, dict):
+                        logger.error(f"   ❌ Dữ liệu vân tay không hợp lệ: {type(fp)}")
+                        continue
+                        
+                    template_data = fp.get('template_data')
+                    if not template_data:
+                        logger.error(f"   ❌ Không có template data cho ngón {fp.get('finger_index', 'Unknown')}")
+                        continue
+                        
+                    valid_fingerprints.append(fp)
+                
+                if not valid_fingerprints:
+                    logger.warning(f"   ⚠️ Không có vân tay hợp lệ để đồng bộ")
+                    continue
+                    
+                # Đồng bộ
+                if self.sync_employee_to_device(zk, employee, valid_fingerprints):
+                    success_count += 1
+                    logger.info(f"   ✅ Đã đồng bộ thành công")
+                else:
+                    logger.error(f"   ❌ Đồng bộ thất bại")
+            
+            # Ghi log đồng bộ tổng
+            try:
+                device_name = device_config.get('device_name', device_config.get('name', f"Device_{device_config.get('id', 1)}"))
+                self.erpnext_api.log_sync_history(
+                    sync_type="fingerprint_sync_to_device",
+                    device_name=device_name,
+                    employee_count=success_count,
+                    status="success" if success_count > 0 else "failed",
+                    message=f"Đồng bộ thành công {success_count}/{total_count} nhân viên"
+                )
+            except Exception as e:
+                logger.error(f"❌ Lỗi ghi log đồng bộ: {str(e)}")
+            
+            logger.info(f"\n✅ Hoàn thành đồng bộ: {success_count}/{total_count} nhân viên")
+            
+        except Exception as e:
+            logger.error(f"❌ Lỗi trong quá trình đồng bộ: {str(e)}")
+            
+        finally:
+            # Ngắt kết nối
+            device_id = device_config.get('id', 1)
+            self.disconnect_device(device_id)
+            
+        return success_count, total_count
+    
+    def sync_to_all_devices(self, employees_to_sync: List[Dict]) -> Dict[str, Tuple[int, int]]:
+        """
+        Đồng bộ danh sách nhân viên cụ thể đến tất cả các thiết bị
+        
+        Args:
+            employees_to_sync: Danh sách nhân viên cần đồng bộ
+            
+        Returns:
+            Dict với key là tên thiết bị, value là (success_count, total_count)
+        """
+        results = {}
+        
+        logger.info(f"🔄 Bắt đầu đồng bộ đến {len(ATTENDANCE_DEVICES)} thiết bị")
+        
+        for device in ATTENDANCE_DEVICES:
+            device_name = device.get('device_name', device.get('name', f"Device_{device.get('id', 1)}"))
+            logger.info(f"\n{'='*60}")
+            logger.info(f"🎯 Đồng bộ đến: {device_name}")
+            logger.info(f"{'='*60}")
+            
+            success, total = self.sync_all_to_device(device, employees_to_sync)
+            results[device_name] = (success, total)
+        
+        # Tổng kết
+        logger.info(f"\n{'='*60}")
+        logger.info(f"📊 TỔNG KẾT ĐỒNG BỘ")
+        logger.info(f"{'='*60}")
+        
+        for device_name, (success, total) in results.items():
+            logger.info(f"✅ {device_name}: {success}/{total} nhân viên")
+        
+        return results
+    
+    def delete_employee_from_device(self, zk: ZK, user_id: int) -> bool:
+        """
+        Xóa nhân viên khỏi thiết bị
+        
+        Args:
+            zk: ZK connection object
+            user_id: ID của nhân viên trên thiết bị
+            
+        Returns:
+            True nếu xóa thành công
+        """
+        try:
+            logger.info(f"🗑️ Đang xóa user ID: {user_id}")
+            
+            # Xóa user
+            zk.delete_user(uid=user_id)
+            
+            logger.info(f"✅ Đã xóa user ID: {user_id}")
+            return True
+            
+        except Exception as e:
+            logger.error(f"❌ Lỗi xóa user: {str(e)}")
+            return False
+    
+    def get_device_users(self, device_config: Dict) -> List[Dict]:
+        """
+        Lấy danh sách users từ thiết bị
+        
+        Args:
+            device_config: Thông tin cấu hình thiết bị
+            
+        Returns:
+            Danh sách thông tin users
+        """
+        users_list = []
+        
+        zk = self.connect_device(device_config)
+        if not zk:
+            return users_list
+        
+        try:
+            users = zk.get_users()
+            
+            for user in users:
+                user_info = {
+                    'user_id': user.user_id,
+                    'uid': user.uid,
+                    'name': user.name,
+                    'privilege': user.privilege,
+                    'password': user.password,
+                    'group_id': user.group_id,
+                    'card': user.card
+                }
+                users_list.append(user_info)
+            
+            device_name = device_config.get('device_name', device_config.get('name', f"Device_{device_config.get('id', 1)}"))
+            logger.info(f"✅ Lấy được {len(users_list)} users từ {device_name}")
+            
+        except Exception as e:
+            logger.error(f"❌ Lỗi lấy danh sách users: {str(e)}")
+            
+        finally:
+            device_id = device_config.get('id', 1)
+            self.disconnect_device(device_id)
+        
+        return users_list
+    
+    def clear_device_data(self, device_config: Dict) -> bool:
+        """
+        Xóa toàn bộ dữ liệu users và vân tay trên thiết bị
+        
+        Args:
+            device_config: Thông tin cấu hình thiết bị
+            
+        Returns:
+            True nếu xóa thành công
+        """
+        zk = self.connect_device(device_config)
+        if not zk:
+            return False
+        
+        try:
+            device_name = device_config.get('device_name', device_config.get('name', f"Device_{device_config.get('id', 1)}"))
+            logger.warning(f"⚠️ Đang xóa toàn bộ dữ liệu trên {device_name}...")
+            
+            # Xóa tất cả users
+            zk.clear_data()
+            
+            logger.info(f"✅ Đã xóa toàn bộ dữ liệu trên {device_name}")
+            return True
+            
+        except Exception as e:
+            logger.error(f"❌ Lỗi xóa dữ liệu: {str(e)}")
+            return False
+            
+        finally:
+            device_id = device_config.get('id', 1)
+            self.disconnect_device(device_id)

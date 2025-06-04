@@ -75,6 +75,9 @@ class FingerprintApp:
         # Tạo giao diện
         self.create_ui()
         
+        # Set fullscreen
+        self.root.after(100, self.set_fullscreen)
+        
         logger.info("🚀 Ứng dụng đã khởi tạo thành công")
     
     def load_initial_data(self):
@@ -344,7 +347,6 @@ class FingerprintApp:
                     
                     # Cập nhật UI
                     self.root.after(0, lambda: [
-                        messagebox.showinfo("Thành công", f"Đã quét thành công vân tay {finger_name}!"),
                         self.employee_tab.update_fingerprint_display() if hasattr(self.employee_tab, 'update_fingerprint_display') else None
                     ])
                     
@@ -382,8 +384,7 @@ class FingerprintApp:
             if self.erpnext_connected:
                 self.save_to_erpnext()
             
-            messagebox.showinfo("Thành công", "Đã lưu dữ liệu vân tay thành công!")
-            logger.info("✅ Đã lưu dữ liệu vân tay")
+            logger.info("✅ Đã lưu dữ liệu vân tay thành công")
             
         except Exception as e:
             logger.error(f"❌ Lỗi lưu dữ liệu: {str(e)}")
@@ -483,12 +484,11 @@ class FingerprintApp:
                     success, total = self.device_sync.sync_to_device(device, employees_to_sync)
                     results[device_name] = (success, total)
                 
-                # Hiển thị kết quả
+                # Log kết quả
                 result_text = "Kết quả đồng bộ:\n"
                 for device_name, (success, total) in results.items():
                     result_text += f"• {device_name}: {success}/{total} nhân viên\n"
-                
-                self.root.after(0, lambda: messagebox.showinfo("Hoàn thành", result_text))
+                logger.info(result_text)
                 
             except Exception as e:
                 logger.error(f"❌ Lỗi đồng bộ: {str(e)}")
@@ -505,17 +505,32 @@ class FingerprintApp:
         except Exception as e:
             logger.error(f"❌ Lỗi chạy ứng dụng: {str(e)}")
     
+    def set_fullscreen(self):
+        """Set cửa sổ full màn hình"""
+        try:
+            self.root.state('zoomed')  # Windows
+        except:
+            try:
+                self.root.attributes('-zoomed', True)  # Linux
+            except:
+                try:
+                    self.root.attributes('-fullscreen', True)  # macOS
+                except:
+                    logger.warning("Không thể set fullscreen")
+    
     def on_closing(self):
         """Xử lý khi đóng ứng dụng"""
         try:
-            # Ngắt kết nối các thiết bị
-            if self.scanner_connected:
-                self.scanner.disconnect()
-            
-            self.device_sync.disconnect_all_devices()
-            
-            logger.info("👋 Đã đóng ứng dụng")
-            self.root.destroy()
+            # Hiển thị hộp thoại xác nhận
+            if messagebox.askyesno("Xác nhận", "Bạn có chắc muốn thoát ứng dụng?"):
+                # Ngắt kết nối các thiết bị
+                if self.scanner_connected:
+                    self.scanner.disconnect()
+                
+                self.device_sync.disconnect_all_devices()
+                
+                logger.info("👋 Đã đóng ứng dụng")
+                self.root.destroy()
             
         except Exception as e:
             logger.error(f"❌ Lỗi khi đóng ứng dụng: {str(e)}")

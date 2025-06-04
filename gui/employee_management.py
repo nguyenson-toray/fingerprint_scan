@@ -149,6 +149,8 @@ class EmployeeTab:
                 command=lambda idx=i: self.select_finger(idx)
             )
             btn.pack(pady=2, padx=5)
+            # Thêm binding cho double click
+            btn.bind('<Double-Button-1>', lambda e, idx=i: self.on_finger_button_double_click(idx))
             self.finger_buttons[i] = btn
         
         # Right hand fingers (5-9)
@@ -161,6 +163,8 @@ class EmployeeTab:
                 command=lambda idx=i: self.select_finger(idx)
             )
             btn.pack(pady=2, padx=5)
+            # Thêm binding cho double click
+            btn.bind('<Double-Button-1>', lambda e, idx=i: self.on_finger_button_double_click(idx))
             self.finger_buttons[i] = btn
         
         # Action buttons with icons - horizontal layout
@@ -679,3 +683,26 @@ class EmployeeTab:
         """Cập nhật hiển thị vân tay (placeholder for future enhancement)"""
         # Update finger button colors when fingerprints change
         self.update_finger_button_colors()
+
+    def on_finger_button_double_click(self, finger_index):
+        """Xử lý sự kiện double click vào nút vân tay"""
+        if not self.main_app.selected_employee:
+            messagebox.showwarning("Cảnh báo", "Vui lòng chọn nhân viên trước!")
+            return
+            
+        employee_id = self.main_app.selected_employee['employee']
+        if employee_id not in self.main_app.current_fingerprints:
+            return
+            
+        # Xác nhận xóa
+        finger_name = FINGER_MAPPING.get(finger_index, f"Ngón {finger_index}")
+        if messagebox.askyesno("Xác nhận", f"Bạn có chắc muốn xóa vân tay {finger_name}?"):
+            # Xóa vân tay
+            fingerprints = self.main_app.current_fingerprints[employee_id]['fingerprints']
+            self.main_app.current_fingerprints[employee_id]['fingerprints'] = [
+                fp for fp in fingerprints if fp['finger_index'] != finger_index
+            ]
+            
+            # Cập nhật UI
+            self.update_finger_button_colors()
+            logger.info(f"✅ Đã xóa vân tay {finger_name} của {employee_id}")

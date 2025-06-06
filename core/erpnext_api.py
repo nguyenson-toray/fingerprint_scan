@@ -61,6 +61,7 @@ class ERPNextAPI:
         """
         required_doctypes = [
             "Attendance Machine",
+            "Fingerprint Data",
             "Sync History"
         ]
         
@@ -88,6 +89,37 @@ class ERPNextAPI:
                 logger.error(f"❌ Lỗi khi kiểm tra DocType '{doctype_name}': {str(e)}")
         
         return doctypes_status
+    
+    def get_all_employees(self) -> List[Dict[str, Any]]:
+        """Lấy danh sách tất cả nhân viên từ HRMS"""
+        try:
+            # Lấy danh sách employee với custom_group thay vì department
+            response = self.session.get(
+                f"{self.base_url}/api/resource/Employee",
+                params={
+                    "fields": json.dumps([
+                        "name", "employee_name", "employee", 
+                        "attendance_device_id", "custom_group", 
+                        "designation", "status", "custom_attendance_password",
+                        "custom_attendance_privilege"
+                    ]),
+                    "filters": json.dumps([["status", "=", "Active"]]),
+                    "order_by": "employee desc",
+                    "limit_page_length": 1000
+                }
+            )
+            
+            if response.status_code == 200:
+                employees = response.json().get("data", [])
+                logger.info(f"✅ Lấy được {len(employees)} nhân viên từ ERPNext")
+                return employees
+            else:
+                logger.error(f"❌ Lỗi khi lấy danh sách nhân viên: {response.status_code}")
+                return []
+                
+        except Exception as e:
+            logger.error(f"❌ Lỗi khi lấy danh sách nhân viên: {str(e)}")
+            return []
     
     def get_attendance_machines(self) -> List[Dict[str, Any]]:
         """
@@ -152,264 +184,7 @@ class ERPNextAPI:
         except Exception as e:
             logger.error(f"❌ Lỗi khi lấy danh sách máy chấm công: {str(e)}")
             return []
-    
-    def get_all_employees(self) -> List[Dict[str, Any]]:
-        """Lấy danh sách tất cả nhân viên từ HRMS"""
-        try:
-            # Lấy danh sách employee với custom_group thay vì department
-            response = self.session.get(
-                f"{self.base_url}/api/resource/Employee",
-                params={
-                    "fields": json.dumps([
-                        "name", "employee_name", "employee", 
-                        "attendance_device_id", "custom_group", 
-                        "designation", "status"
-                    ]),
-                    "filters": json.dumps([["status", "=", "Active"]]),
-                    "order_by": "employee desc",
-                    "limit_page_length": 1000
-                }
-            )
             
-            if response.status_code == 200:
-                employees = response.json().get("data", [])
-                logger.info(f"✅ Lấy được {len(employees)} nhân viên từ ERPNext")
-                return employees
-            else:
-                logger.error(f"❌ Lỗi khi lấy danh sách nhân viên: {response.status_code}")
-                return []
-                
-        except Exception as e:
-            logger.error(f"❌ Lỗi khi lấy danh sách nhân viên: {str(e)}")
-            return []
-    
-    def get_employee_fingerprints(self, employee_id: str) -> List[Dict[str, Any]]:
-        """
-        Lấy dữ liệu vân tay của nhân viên
-        
-        Args:
-            employee_id: Mã nhân viên
-            
-        Returns:
-            Danh sách dữ liệu vân tay
-        """
-        # Chức năng này sẽ không được sử dụng để tải template từ ERPNext theo yêu cầu mới
-        # Tuy nhiên, giữ lại để có thể tải thông tin về ngón tay đã đăng ký nếu cần
-        try:
-            # Lấy dữ liệu từ bảng Fingerprint Data
-            response = self.session.get(
-                f"{self.base_url}/api/resource/Fingerprint Data",
-                params={
-                    "fields": json.dumps([
-                        "name", "employee", "finger_index", 
-                        "quality_score", # Không lấy template_data nữa
-                        "enrolled_date", "last_updated"
-                    ]),
-                    "filters": json.dumps([["employee", "=", employee_id]]),
-                    "order_by": "finger_index"
-                }
-            )
-            
-            if response.status_code == 200:
-                fingerprints = response.json().get("data", [])
-                logger.info(f"✅ Lấy được {len(fingerprints)} vân tay của nhân viên {employee_id}")
-                return fingerprints
-            else:
-                logger.error(f"❌ Lỗi khi lấy dữ liệu vân tay: {response.status_code}")
-                return []
-                
-        except Exception as e:
-            logger.error(f"❌ Lỗi khi lấy dữ liệu vân tay: {str(e)}")
-            return []
-    
-    def save_fingerprint_to_employee(self, employee_name: str, finger_index: int, 
-                                   template_data: bytes, quality_score: int = 0) -> bool:
-        """
-        Lưu dữ liệu vân tay vào ERPNext thông qua child table của Employee
-        
-        Args:
-            employee_name: Tên của nhân viên (doc.name trong ERPNext)
-            finger_index: Chỉ số ngón tay (0-9)
-            template_data: Dữ liệu template vân tay
-            quality_score: Điểm chất lượng vân tay
-            
-        Returns:
-            True nếu lưu thành công, False nếu thất bại
-        """
-        try:
-            # Encode template data to base64
-            template_b64 = base64.b64encode(template_data).decode('utf-8')
-            
-            # Lấy thông tin nhân viên hiện tại
-            emp_response = self.session.get(f"{self.base_url}/api/resource/Employee/{employee_name}")
-            
-            if emp_response.status_code != 200:
-                logger.error(f"❌ Không thể lấy thông tin nhân viên: {employee_name}")
-                return False
-            
-            employee_doc = emp_response.json().get("data", {})
-            
-            # Lấy danh sách vân tay hiện tại (nếu có child table)
-            current_fingerprints = employee_doc.get("custom_fingerprint_data", [])
-            
-            # Tìm và cập nhật vân tay hiện có hoặc thêm mới
-            found = False
-            for fp in current_fingerprints:
-                if fp.get("finger_index") == finger_index:
-                    fp["template_data"] = template_b64
-                    fp["quality_score"] = quality_score
-                    fp["last_updated"] = datetime.now().isoformat()
-                    found = True
-                    break
-            
-            if not found:
-                # Thêm vân tay mới
-                current_fingerprints.append({
-                    "finger_index": finger_index,
-                    "template_data": template_b64,
-                    "quality_score": quality_score,
-                    "enrolled_date": datetime.now().isoformat(),
-                    "last_updated": datetime.now().isoformat()
-                })
-            
-            # Cập nhật Employee document
-            update_response = self.session.put(
-                f"{self.base_url}/api/resource/Employee/{employee_name}",
-                json={
-                    "custom_fingerprint_data": current_fingerprints
-                }
-            )
-            
-            if update_response.status_code == 200:
-                logger.info(f"✅ Lưu vân tay thành công cho {employee_name} - Ngón {finger_index}")
-                return True
-            else:
-                logger.error(f"❌ Lỗi cập nhật vân tay: {update_response.status_code} - {update_response.text}")
-                return False
-                
-        except Exception as e:
-            logger.error(f"❌ Lỗi khi lưu vân tay: {str(e)}")
-            return False
-    
-    def save_fingerprint(self, employee_id: str, finger_index: int, 
-                        template_data: bytes, quality_score: int = 0) -> bool:
-        """
-        Lưu dữ liệu vân tay vào ERPNext
-        
-        Args:
-            employee_id: Mã nhân viên
-            finger_index: Chỉ số ngón tay (0-9)
-            template_data: Dữ liệu template vân tay
-            quality_score: Điểm chất lượng vân tay
-            
-        Returns:
-            True nếu lưu thành công, False nếu thất bại
-        """
-        try:
-            # Encode template data to base64
-            template_b64 = base64.b64encode(template_data).decode('utf-8')
-            
-            # Kiểm tra xem đã có dữ liệu vân tay này chưa
-            existing = self.session.get(
-                f"{self.base_url}/api/resource/Fingerprint Data",
-                params={
-                    "filters": json.dumps([
-                        ["employee", "=", employee_id],
-                        ["finger_index", "=", finger_index]
-                    ])
-                }
-            )
-            
-            if existing.status_code == 200 and existing.json().get("data"):
-                # Update existing record
-                doc_name = existing.json()["data"][0]["name"]
-                
-                response = self.session.put(
-                    f"{self.base_url}/api/resource/Fingerprint Data/{doc_name}",
-                    json={
-                        "template_data": template_b64,
-                        "quality_score": quality_score,
-                        "last_updated": datetime.now().isoformat()
-                    }
-                )
-                
-                if response.status_code == 200:
-                    logger.info(f"✅ Cập nhật vân tay thành công cho {employee_id} - Ngón {finger_index}")
-                    return True
-                else:
-                    logger.error(f"❌ Lỗi cập nhật vân tay: {response.status_code}")
-                    return False
-            else:
-                # Create new record
-                response = self.session.post(
-                    f"{self.base_url}/api/resource/Fingerprint Data",
-                    json={
-                        "doctype": "Fingerprint Data",
-                        "employee": employee_id,
-                        "finger_index": finger_index,
-                        "template_data": template_b64,
-                        "quality_score": quality_score,
-                        "enrolled_date": datetime.now().isoformat(),
-                        "last_updated": datetime.now().isoformat()
-                    }
-                )
-                
-                if response.status_code == 200:
-                    logger.info(f"✅ Lưu vân tay mới thành công cho {employee_id} - Ngón {finger_index}")
-                    return True
-                else:
-                    logger.error(f"❌ Lỗi lưu vân tay: {response.status_code} - {response.text}")
-                    return False
-                    
-        except Exception as e:
-            logger.error(f"❌ Lỗi khi lưu vân tay: {str(e)}")
-            return False
-    
-    def delete_fingerprint(self, employee_id: str, finger_index: int) -> bool:
-        """
-        Xóa dữ liệu vân tay
-        
-        Args:
-            employee_id: Mã nhân viên
-            finger_index: Chỉ số ngón tay (0-9)
-            
-        Returns:
-            True nếu xóa thành công, False nếu thất bại
-        """
-        try:
-            # Tìm record cần xóa
-            existing = self.session.get(
-                f"{self.base_url}/api/resource/Fingerprint Data",
-                params={
-                    "filters": json.dumps([
-                        ["employee", "=", employee_id],
-                        ["finger_index", "=", finger_index]
-                    ])
-                }
-            )
-            
-            if existing.status_code == 200 and existing.json().get("data"):
-                doc_name = existing.json()["data"][0]["name"]
-                
-                # Xóa record
-                response = self.session.delete(
-                    f"{self.base_url}/api/resource/Fingerprint Data/{doc_name}"
-                )
-                
-                if response.status_code == 200:
-                    logger.info(f"✅ Xóa vân tay thành công cho {employee_id} - Ngón {finger_index}")
-                    return True
-                else:
-                    logger.error(f"❌ Lỗi xóa vân tay: {response.status_code}")
-                    return False
-            else:
-                logger.warning(f"⚠️ Không tìm thấy vân tay để xóa")
-                return True
-                
-        except Exception as e:
-            logger.error(f"❌ Lỗi khi xóa vân tay: {str(e)}")
-            return False
-    
     def update_employee_attendance_device_id(self, employee_name: str, attendance_device_id: int) -> bool:
         """
         Cập nhật attendance_device_id cho nhân viên trên ERPNext.
@@ -436,7 +211,7 @@ class ERPNextAPI:
         except Exception as e:
             logger.error(f"❌ Lỗi khi cập nhật attendance_device_id cho {employee_name}: {str(e)}")
             return False
-
+    
     def get_attendance_device_mapping(self) -> Dict[str, str]:
         """
         Lấy mapping giữa employee và attendance_device_id

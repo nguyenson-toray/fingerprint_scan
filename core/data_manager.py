@@ -40,18 +40,43 @@ class DataManager:
             return {}
     
     def save_local_fingerprints(self, fingerprints_data: Dict[str, Any]):
-        """Lưu dữ liệu vân tay vào file local"""
+        """Lưu dữ liệu vân tay vào file local với đảm bảo tính nhất quán"""
         try:
             # Chuyển đổi từ dict sang list để tương thích với format cũ
             data_list = list(fingerprints_data.values())
+            
+            # Đảm bảo tính nhất quán với employees.json
+            employees = self.load_employees_from_local()
+            emp_dict = {emp.get('employee'): emp for emp in employees}
+            
+            for fp_data in data_list:
+                employee_id = fp_data.get('employee')
+                if employee_id in emp_dict:
+                    # Đồng bộ các trường giữa hai file
+                    fp_data['attendance_device_id'] = emp_dict[employee_id].get('attendance_device_id', '')
+                    fp_data['name'] = emp_dict[employee_id].get('name', '')
             
             with open(DATA_PATHS["fingerprints"], 'w', encoding='utf-8') as f:
                 json.dump(data_list, f, ensure_ascii=False, indent=4)
             
             logger.info(f"✅ Đã lưu {len(data_list)} nhân viên vào file local")
+            
         except Exception as e:
             logger.error(f"❌ Lỗi lưu dữ liệu vân tay local: {str(e)}")
             raise
+        
+    def load_employees_from_local(self) -> List[Dict[str, Any]]:
+        """Tải danh sách nhân viên từ file local"""
+        try:
+            if os.path.exists("data/employees.json"):
+                with open("data/employees.json", 'r', encoding='utf-8') as f:
+                    employees = json.load(f)
+                return employees
+            else:
+                return []
+        except Exception as e:
+            logger.error(f"❌ Lỗi tải danh sách nhân viên local: {str(e)}")
+            return []
     
     def load_device_config(self) -> List[Dict[str, Any]]:
         """Tải cấu hình máy chấm công từ file local hoặc config.py"""

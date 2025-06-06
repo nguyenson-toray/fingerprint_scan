@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "att_machine-1",
-        "device_name": "Máy 8",
+        "device_name": "Máy 8 - test",
         "ip": "10.0.1.48",
         "port": 4370,
         "model": "ZKTeco F21Lite/ID",

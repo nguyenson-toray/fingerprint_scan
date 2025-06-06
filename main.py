@@ -255,7 +255,7 @@ class FingerprintApp:
                 if employees:
                     self.employees = employees
                     self.save_employees_to_local()
-                    logger.info(f"✅ Lấy được {len(employees)} nhân viên từ ERPNext")
+                    logger.info(f"✅ Lấy được {len(employees)} nhân viên từ ERPNext") 
                     # Cập nhật UI
                     self.root.after(0, lambda: self.employee_tab.update_employee_list())
                 return True
@@ -379,17 +379,13 @@ class FingerprintApp:
             
             # Lưu vào file local
             self.data_manager.save_local_fingerprints(self.current_fingerprints)
-            
-            # Lưu vào ERPNext nếu có kết nối
-            if self.erpnext_connected:
-                self.save_to_erpnext()
-            
-            logger.info("✅ Đã lưu dữ liệu vân tay thành công")
+            logger.info("✅ Đã lưu dữ liệu vân tay vào file local thành công")
+            messagebox.showinfo("Thành công", "Đã lưu dữ liệu vân tay vào file local thành công")
             
         except Exception as e:
             logger.error(f"❌ Lỗi lưu dữ liệu: {str(e)}")
             messagebox.showerror("Lỗi", f"Lỗi lưu dữ liệu: {str(e)}")
-    
+
     def assign_attendance_ids(self, employees_without_id):
         """Gán attendance_device_id tự động"""
         try:

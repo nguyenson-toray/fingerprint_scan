@@ -180,7 +180,9 @@ class AttendanceDeviceSync:
             
             # Tạo user mới
             logger.info(f"➕ Tạo mới user {uid_int}...")
-            zk.set_user(uid=uid_int, name=f"{employee_data['employee_name'][:24]}", privilege=const.USER_DEFAULT)
+            shortened_name = self.shorten_employee_name(employee_data['employee_name'])
+            zk.set_user(uid=uid_int, name=shortened_name, privilege=const.USER_DEFAULT)
+            # zk.set_user(uid=uid_int, name=f"{employee_data['employee_name'][:24]}", privilege=const.USER_DEFAULT)
             
             # Lấy lại thông tin user sau khi tạo
             users = zk.get_users()
@@ -552,3 +554,35 @@ class AttendanceDeviceSync:
         finally:
             device_id = device_config.get('id', 1)
             self.disconnect_device(device_id)
+    def shorten_employee_name(full_name, max_length=24):
+        """
+        Rút gọn tên nhân viên nếu vượt quá độ dài tối đa
+        
+        Args:
+            full_name: Tên đầy đủ của nhân viên
+            max_length: Độ dài tối đa cho phép
+            
+        Returns:
+            Tên đã rút gọn
+        """
+        if not full_name or len(full_name) <= max_length:
+            return full_name
+            
+        # Tách các phần trong tên
+        name_parts = full_name.split()
+        
+        if len(name_parts) <= 2:
+            # Nếu chỉ có 1-2 phần, cắt ngắn đơn giản
+            return full_name[:max_length]
+        
+        # Lấy chữ cái đầu của các phần trừ phần cuối
+        initials = ''.join(part[0] for part in name_parts[:-1])
+        
+        # Kết hợp chữ cái đầu với phần cuối
+        shortened_name = f"{initials} {name_parts[-1]}"
+        
+        # Nếu vẫn dài quá, cắt ngắn
+        if len(shortened_name) > max_length:
+            return shortened_name[:max_length]
+        
+        return shortened_name           

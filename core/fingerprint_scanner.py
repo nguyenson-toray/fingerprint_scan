@@ -199,6 +199,9 @@ class FingerprintScanner:
             start_time = time.time()
             timeout = SCANNER_CONFIG.get('timeout', 30)
             
+            # Hiển thị thông báo rõ ràng hơn
+            logger.info(f"👆 Vui lòng đặt ngón tay lên máy quét (lần {scan_number}/{self.merge_count})")
+            
             while time.time() - start_time < timeout:
                 ret = self.zkfp.ZKFPM_AcquireFingerprint(
                     self.handle,
@@ -210,7 +213,7 @@ class FingerprintScanner:
                 
                 if ret == 0:
                     template_data = bytes(template_buf[:template_len.value])
-                    logger.info(f"✅ Đã chụp vân tay lần {scan_number}.")
+                    logger.info(f"✅ Đã chụp vân tay lần {scan_number} thành công.")
                     return template_data
                     
                 time.sleep(0.1)

@@ -419,8 +419,7 @@ class EmployeeTab:
         handler.setFormatter(logging.Formatter('%(asctime)s - %(message)s'))
         logger.addHandler(handler)
     def load_fingerprints_from_device(self):
-        """Tải vân tay từ máy chấm công và tự động merge với dữ liệu nhân viên"""
-        # Import required modules
+        """Tải vân tay từ máy chấm công với tối ưu tốc độ - chỉ load user có trong employees.json"""
         import os
         import base64
         import json
@@ -438,18 +437,63 @@ class EmployeeTab:
                                 "Bạn có muốn tiếp tục không?"):
             return
         
-        self.load_from_device_btn.configure(text="Đang tải...", state="disabled")
+        self.load_from_device_btn.configure(text="⏳ Đang tải...", state="disabled")
         
         def load_thread():
             try:
-                # Khởi tạo đối tượng AttendanceDeviceSync
+                # 1. Load danh sách employees từ employees.json để lọc
+                employees_to_load = []
+                attendance_device_mapping = {}  # Map attendance_device_id -> employee info
+                
+                try:
+                    if os.path.exists("data/employees.json"):
+                        with open("data/employees.json", 'r', encoding='utf-8') as f:
+                            all_employees = json.load(f)
+                        
+                        # Lọc chỉ những nhân viên có attendance_device_id > 0
+                        for emp in all_employees:
+                            attendance_id = emp.get('attendance_device_id')
+                            if attendance_id and str(attendance_id).strip() and attendance_id != "0":
+                                try:
+                                    attendance_id_int = int(attendance_id)
+                                    if attendance_id_int > 0:
+                                        employees_to_load.append(emp)
+                                        attendance_device_mapping[attendance_id] = emp
+                                except ValueError:
+                                    continue
+                        
+                        logger.info(f"📋 Sẽ load vân tay cho {len(employees_to_load)} nhân viên có attendance_device_id hợp lệ")
+                    else:
+                        logger.warning("⚠️ Không tìm thấy file employees.json")
+                        self.main_app.root.after(0, lambda: [
+                            self.load_from_device_btn.configure(text="📥 Tải vân tay từ MCC", state="normal"),
+                            messagebox.showwarning("Cảnh báo", "Không tìm thấy file employees.json!")
+                        ])
+                        return
+                        
+                except Exception as e:
+                    logger.error(f"❌ Lỗi đọc file employees.json: {str(e)}")
+                    self.main_app.root.after(0, lambda: [
+                        self.load_from_device_btn.configure(text="📥 Tải vân tay từ MCC", state="normal"),
+                        messagebox.showerror("Lỗi", f"Lỗi đọc file employees.json: {str(e)}")
+                    ])
+                    return
+                
+                if not employees_to_load:
+                    self.main_app.root.after(0, lambda: [
+                        self.load_from_device_btn.configure(text="📥 Tải vân tay từ MCC", state="normal"),
+                        messagebox.showinfo("Thông báo", "Không có nhân viên nào có attendance_device_id hợp lệ để load!")
+                    ])
+                    return
+                
+                # 2. Kết nối và load dữ liệu từ từng thiết bị
                 device_sync = self.main_app.device_sync
                 fingerprints_from_device = {}
+                total_loaded = 0
                 
-                # Kết nối và tải dữ liệu từ từng thiết bị
                 for device in self.main_app.attendance_devices:
                     device_name = device.get('device_name', device.get('name', f"Device_{device.get('id', 1)}"))
-                    logger.info(f"🔄 Đang tải vân tay từ {device_name}...")
+                    logger.info(f"🔄 Đang kết nối với {device_name}...")
                     
                     # Kết nối thiết bị
                     zk = device_sync.connect_device(device)
@@ -458,46 +502,43 @@ class EmployeeTab:
                         continue
                     
                     try:
-                        # Lấy danh sách users
-                        users = zk.get_users()
-                        logger.info(f"✅ Lấy được {len(users)} users từ {device_name}")
+                        # Lấy danh sách users từ thiết bị
+                        device_users = zk.get_users()
+                        logger.info(f"✅ Lấy được {len(device_users)} users từ {device_name}")
                         
-                        # Xử lý từng user
-                        for user in users:
-                            user_id = user.uid
+                        # Lọc chỉ những users có trong attendance_device_mapping
+                        target_users = []
+                        for user in device_users:
+                            if user.user_id in attendance_device_mapping:
+                                target_users.append(user)
+                        
+                        logger.info(f"🎯 Sẽ load vân tay cho {len(target_users)} users từ {device_name}")
+                        
+                        # Load vân tay cho từng user
+                        for i, user in enumerate(target_users, 1):
+                            uid = int(user.uid)
+                            user_id = user.user_id
+                            employee_info = attendance_device_mapping[user_id]
                             
-                            # Tìm employee tương ứng
-                            employee = None
-                            for emp in self.main_app.employees:
-                                if emp.get('attendance_device_id') == str(user_id):
-                                    employee = emp
-                                    break
+                            logger.info(f"   👤 [{i}/{len(target_users)}] Đang load vân tay cho User {user_id} - {employee_info['employee_name']}")
                             
-                            # Nếu không tìm thấy, tạo thông tin cơ bản
-                            if not employee:
-                                employee = {
-                                    'employee': f"UNKNOWN_{user_id}",
-                                    'employee_name': user.name,
+                            # Tạo cấu trúc dữ liệu cho nhân viên
+                            if employee_info['employee'] not in fingerprints_from_device:
+                                fingerprints_from_device[employee_info['employee']] = {
+                                    'name': employee_info.get('name', ''),
+                                    'employee': employee_info['employee'],
+                                    'employee_name': employee_info['employee_name'],
                                     'attendance_device_id': str(user_id),
-                                    'name': f"UNKNOWN_{user_id}"
-                                }
-                            
-                            # Thêm vào fingerprints_from_device
-                            if employee['employee'] not in fingerprints_from_device:
-                                fingerprints_from_device[employee['employee']] = {
-                                    'name': employee.get('name', ''),
-                                    'employee': employee['employee'],
-                                    'employee_name': employee['employee_name'],
-                                    'attendance_device_id': str(user_id),
-                                    'password': user.password or '123456',
+                                    'password': user.password or '',
                                     'privilege': user.privilege or 0,
                                     'fingerprints': []
                                 }
                             
-                            # Lấy vân tay cho từng ngón
-                            for finger_idx in range(10):  # 10 ngón tay (0-9)
+                            # Load vân tay cho tất cả 10 ngón tay
+                            fingerprint_count = 0
+                            for finger_idx in range(10):  # 0-9
                                 try:
-                                    template = zk.get_user_template(user_id, finger_idx)
+                                    template = zk.get_user_template(uid, finger_idx)
                                     
                                     if template and hasattr(template, 'template') and template.template:
                                         # Convert template to base64
@@ -507,173 +548,69 @@ class EmployeeTab:
                                         finger_name = FINGER_MAPPING.get(finger_idx, f"Ngón {finger_idx}")
                                         
                                         # Add to fingerprints
-                                        fingerprints_from_device[employee['employee']]['fingerprints'].append({
+                                        fingerprints_from_device[employee_info['employee']]['fingerprints'].append({
                                             'finger_index': finger_idx,
                                             'finger_name': finger_name,
                                             'template_data': template_b64,
                                             'quality_score': 70
                                         })
                                         
-                                        logger.info(f"✅ Đã lấy template cho ngón {finger_idx} của user {user_id}")
+                                        fingerprint_count += 1
+                                        
                                 except Exception as finger_err:
-                                    # Skip this finger
+                                    # Skip lỗi ngón tay cụ thể
                                     pass
-                        
+                            
+                            if fingerprint_count > 0:
+                                logger.info(f"   ✅ Đã load {fingerprint_count} vân tay cho {employee_info['employee']}")
+                                total_loaded += 1
+                            else:
+                                logger.warning(f"   ⚠️ Không có vân tay nào cho {employee_info['employee']}")
+                    
                     except Exception as device_err:
-                        logger.error(f"❌ Lỗi khi tải dữ liệu từ {device_name}: {str(device_err)}")
+                        logger.error(f"❌ Lỗi khi load dữ liệu từ {device_name}: {str(device_err)}")
                     finally:
                         # Ngắt kết nối
                         device_id = device.get('id', 1)
                         device_sync.disconnect_device(device_id)
                 
-                # Lưu vào file
+                # 3. Lưu dữ liệu tạm thời vào all_fingerprints_from_machine.json
                 try:
-                    # Ensure data directory exists
                     os.makedirs("data", exist_ok=True)
                     
-                    # Save to file
+                    # Convert dict to list để lưu file
+                    fingerprints_list = list(fingerprints_from_device.values())
+                    
                     with open("data/all_fingerprints_from_machine.json", 'w', encoding='utf-8') as f:
-                        json.dump(list(fingerprints_from_device.values()), f, ensure_ascii=False, indent=4)
+                        json.dump(fingerprints_list, f, ensure_ascii=False, indent=4)
                     
-                    logger.info(f"✅ Đã lưu {len(fingerprints_from_device)} nhân viên vào file all_fingerprints_from_machine.json")
+                    logger.info(f"✅ Đã lưu {len(fingerprints_list)} nhân viên vào all_fingerprints_from_machine.json")
                     
-                    # MERGE DATA SECTION
-                    # Function to merge fingerprint data
-                    def merge_fingerprints_data():
-                        # Load employees data
-                        employees = []
-                        if os.path.exists("data/employees.json"):
-                            with open("data/employees.json", 'r', encoding='utf-8') as f:
-                                employees = json.load(f)
-                            logger.info(f"✅ Đã tải {len(employees)} nhân viên từ employees.json")
-                        else:
-                            logger.warning("⚠️ Không tìm thấy file employees.json")
-                        
-                        # Create dictionary of employees by ID for quick lookup
-                        employees_dict = {emp.get('employee'): emp for emp in employees}
-                        employees_by_device_id = {emp.get('attendance_device_id'): emp for emp in employees 
-                                                if emp.get('attendance_device_id')}
-                        
-                        # Load existing fingerprints data (if any)
-                        current_fingerprints = []
-                        if os.path.exists("data/all_fingerprints.json"):
-                            with open("data/all_fingerprints.json", 'r', encoding='utf-8') as f:
-                                current_fingerprints = json.load(f)
-                            logger.info(f"✅ Đã tải {len(current_fingerprints)} nhân viên từ all_fingerprints.json")
-                        
-                        # Create dictionary of current fingerprints by employee ID
-                        current_fingerprints_dict = {fp.get('employee'): fp for fp in current_fingerprints}
-                        
-                        # Load fingerprints from machine
-                        fingerprints_from_machine = list(fingerprints_from_device.values())
-                        
-                        # Process and merge data
-                        merged_fingerprints = {}
-                        
-                        # First, add all current fingerprints to the merged data
-                        for fp in current_fingerprints:
-                            employee_id = fp.get('employee')
-                            if employee_id:
-                                merged_fingerprints[employee_id] = fp
-                        
-                        # Next, process fingerprints from machine and merge
-                        for fp_machine in fingerprints_from_machine:
-                            employee_id = fp_machine.get('employee')
-                            device_id = fp_machine.get('attendance_device_id')
-                            
-                            # Skip if no employee ID or device ID
-                            if not employee_id or not device_id:
-                                continue
-                            
-                            # Handle UNKNOWN entries by trying to match with employee data
-                            if employee_id.startswith("UNKNOWN_"):
-                                # Try to find matching employee by device ID
-                                if device_id in employees_by_device_id:
-                                    matched_emp = employees_by_device_id[device_id]
-                                    employee_id = matched_emp.get('employee')
-                                    logger.info(f"✅ Matched UNKNOWN_{device_id} to employee {employee_id}")
-                                    
-                                    # Update the employee_id in fp_machine
-                                    fp_machine['employee'] = employee_id
-                                    fp_machine['name'] = matched_emp.get('name', '')
-                                    fp_machine['employee_name'] = matched_emp.get('employee_name', fp_machine.get('employee_name', ''))
-                            
-                            # If employee exists in our records
-                            if employee_id in employees_dict:
-                                emp_data = employees_dict[employee_id]
-                                
-                                # If we already have fingerprint data for this employee
-                                if employee_id in merged_fingerprints:
-                                    # Get existing fingerprint data
-                                    existing_fp = merged_fingerprints[employee_id]
-                                    
-                                    # Update the consistent fields
-                                    existing_fp['attendance_device_id'] = device_id
-                                    existing_fp['name'] = emp_data.get('name', '')
-                                    existing_fp['employee_name'] = emp_data.get('employee_name', '')
-                                    
-                                    # Merge fingerprints arrays - add only new fingerprints
-                                    existing_fingers = {f.get('finger_index'): f for f in existing_fp.get('fingerprints', [])}
-                                    
-                                    for new_finger in fp_machine.get('fingerprints', []):
-                                        finger_idx = new_finger.get('finger_index')
-                                        if finger_idx is not None and finger_idx not in existing_fingers:
-                                            if not existing_fp.get('fingerprints'):
-                                                existing_fp['fingerprints'] = []
-                                            existing_fp.get('fingerprints', []).append(new_finger)
-                                    
-                                    # Update password and privilege if they exist in the machine data
-                                    if 'password' in fp_machine:
-                                        existing_fp['password'] = fp_machine['password']
-                                    if 'privilege' in fp_machine:
-                                        existing_fp['privilege'] = fp_machine['privilege']
-                                    
-                                else:
-                                    # Create new entry using machine data but ensure consistent fields
-                                    new_fp = fp_machine.copy()
-                                    new_fp['employee'] = employee_id
-                                    new_fp['name'] = emp_data.get('name', '')
-                                    new_fp['employee_name'] = emp_data.get('employee_name', '')
-                                    new_fp['attendance_device_id'] = device_id
-                                    
-                                    merged_fingerprints[employee_id] = new_fp
-                            else:
-                                # Employee not in our records - just add the machine data as is
-                                merged_fingerprints[employee_id] = fp_machine
-                        
-                        # Convert dictionary back to list for saving
-                        merged_fingerprints_list = list(merged_fingerprints.values())
-                        
-                        # Save the merged data
-                        with open("data/all_fingerprints.json", 'w', encoding='utf-8') as f:
-                            json.dump(merged_fingerprints_list, f, ensure_ascii=False, indent=4)
-                        
-                        logger.info(f"✅ Đã lưu {len(merged_fingerprints_list)} nhân viên vào all_fingerprints.json")
-                        return len(merged_fingerprints_list)
+                    # 4. Merge dữ liệu với employees.json vào all_fingerprints.json
+                    merged_count = self.merge_fingerprints_data(fingerprints_from_device)
                     
-                    # Execute the merge
-                    merged_count = merge_fingerprints_data()
+                    # 5. Load lại dữ liệu vân tay trong ứng dụng
+                    self.main_app.current_fingerprints = self.main_app.data_manager.load_local_fingerprints()
                     
-                    # Update current fingerprints in the application
-                    self.main_app.load_fingerprints()
-                    
-                    # Update UI
+                    # 6. Update UI
                     self.main_app.root.after(0, lambda: [
                         self.load_from_device_btn.configure(text="📥 Tải vân tay từ MCC", state="normal"),
+                        self.update_finger_button_colors(),  # Refresh finger buttons
+                        self.update_employee_list(),  # Refresh employee list if needed
                         messagebox.showinfo("Thành công", 
-                                        f"Đã tải và merge dữ liệu vân tay thành công!\n"
-                                        f"- Số nhân viên từ máy chấm công: {len(fingerprints_from_device)}\n"
-                                        f"- Tổng số nhân viên sau khi merge: {merged_count}")
+                                        f"Đã tải và merge dữ liệu vân tay thành công!"
+                                        f"📊 Kết quả:"
+                                        f"• Nhân viên cần load: {len(employees_to_load)}"
+                                        f"• Nhân viên có vân tay: {total_loaded}"
+                                        f"• Tổng sau khi merge: {merged_count}")
+                                       ])
+                    
+                except Exception as save_err:
+                    logger.error(f"❌ Lỗi lưu/merge dữ liệu: {str(save_err)}")
+                    self.main_app.root.after(0, lambda: [
+                        self.load_from_device_btn.configure(text="📥 Tải vân tay từ MCC", state="normal"),
+                        messagebox.showerror("Lỗi", f"Lỗi lưu/merge dữ liệu: {str(save_err)}")
                     ])
-                    
-                except Exception as e:
-                    logger.error(f"❌ Lỗi lưu dữ liệu: {str(e)}")
-                    
-                    def update_ui_save_error():
-                        self.load_from_device_btn.configure(text="📥 Tải vân tay từ MCC", state="normal")
-                        messagebox.showerror("Lỗi", f"Lỗi lưu dữ liệu: {str(e)}")
-                    
-                    self.main_app.root.after(0, update_ui_save_error)
                     
             except Exception as e:
                 logger.error(f"❌ Lỗi tải vân tay từ máy chấm công: {str(e)}")
@@ -996,3 +933,111 @@ class EmployeeTab:
             self.update_finger_button_colors()
             logger.info(f"✅ Đã xóa vân tay {finger_name} của {employee_id}")
             
+    def merge_fingerprints_data(self, fingerprints_from_machine):
+        """
+        Merge dữ liệu từ máy chấm công với employees.json vào all_fingerprints.json
+        
+        Args:
+            fingerprints_from_machine: Dict dữ liệu vân tay từ máy chấm công
+            
+        Returns:
+            int: Số lượng nhân viên sau khi merge
+        """
+        try:
+            import os
+            import json
+            
+            # Load employees data
+            employees = []
+            if os.path.exists("data/employees.json"):
+                with open("data/employees.json", 'r', encoding='utf-8') as f:
+                    employees = json.load(f)
+                logger.info(f"✅ Đã load {len(employees)} nhân viên từ employees.json")
+            else:
+                logger.warning("⚠️ Không tìm thấy file employees.json")
+            
+            # Create dictionary of employees by ID for quick lookup
+            employees_dict = {emp.get('employee'): emp for emp in employees}
+            employees_by_device_id = {emp.get('attendance_device_id'): emp for emp in employees 
+                                    if emp.get('attendance_device_id')}
+            
+            # Load existing fingerprints data (if any)
+            current_fingerprints = []
+            if os.path.exists("data/all_fingerprints.json"):
+                with open("data/all_fingerprints.json", 'r', encoding='utf-8') as f:
+                    current_fingerprints = json.load(f)
+                logger.info(f"✅ Đã load {len(current_fingerprints)} nhân viên từ all_fingerprints.json")
+            
+            # Create dictionary of current fingerprints by employee ID
+            current_fingerprints_dict = {fp.get('employee'): fp for fp in current_fingerprints}
+            
+            # Process and merge data
+            merged_fingerprints = {}
+            
+            # First, add all current fingerprints to the merged data
+            for fp in current_fingerprints:
+                employee_id = fp.get('employee')
+                if employee_id:
+                    merged_fingerprints[employee_id] = fp
+            
+            # Next, process fingerprints from machine and merge
+            for employee_id, fp_machine in fingerprints_from_machine.items():
+                device_id = fp_machine.get('attendance_device_id')
+                
+                # Skip if no employee ID or device ID
+                if not employee_id or not device_id:
+                    continue
+                
+                # If employee exists in our records
+                if employee_id in employees_dict:
+                    emp_data = employees_dict[employee_id]
+                    
+                    # If we already have fingerprint data for this employee
+                    if employee_id in merged_fingerprints:
+                        # Get existing fingerprint data
+                        existing_fp = merged_fingerprints[employee_id]
+                        
+                        # Update the consistent fields
+                        existing_fp['attendance_device_id'] = device_id
+                        existing_fp['name'] = emp_data.get('name', '')
+                        existing_fp['employee_name'] = emp_data.get('employee_name', '')
+                        
+                        # Merge fingerprints arrays - replace with new data from machine
+                        existing_fp['fingerprints'] = fp_machine.get('fingerprints', [])
+                        
+                        # Update password and privilege if they exist in the machine data
+                        if 'password' in fp_machine:
+                            existing_fp['password'] = fp_machine['password']
+                        if 'privilege' in fp_machine:
+                            existing_fp['privilege'] = fp_machine['privilege']
+                        
+                        logger.info(f"🔄 Updated existing fingerprint data for {employee_id}")
+                        
+                    else:
+                        # Create new entry using machine data but ensure consistent fields
+                        new_fp = fp_machine.copy()
+                        new_fp['employee'] = employee_id
+                        new_fp['name'] = emp_data.get('name', '')
+                        new_fp['employee_name'] = emp_data.get('employee_name', '')
+                        new_fp['attendance_device_id'] = device_id
+                        
+                        merged_fingerprints[employee_id] = new_fp
+                        logger.info(f"➕ Added new fingerprint data for {employee_id}")
+                else:
+                    # Employee not in our records - just add the machine data as is
+                    merged_fingerprints[employee_id] = fp_machine
+                    logger.warning(f"⚠️ Employee {employee_id} not found in employees.json, added anyway")
+            
+            # Convert dictionary back to list for saving
+            merged_fingerprints_list = list(merged_fingerprints.values())
+            
+            # Save the merged data
+            with open("data/all_fingerprints.json", 'w', encoding='utf-8') as f:
+                json.dump(merged_fingerprints_list, f, ensure_ascii=False, indent=4)
+            
+            logger.info(f"✅ Đã merge và lưu {len(merged_fingerprints_list)} nhân viên vào all_fingerprints.json")
+            return len(merged_fingerprints_list)
+            
+        except Exception as e:
+            logger.error(f"❌ Lỗi merge dữ liệu: {str(e)}")
+            raise e

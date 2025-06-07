@@ -11,5 +11,18 @@
         "force_udp": true,
         "ommit_ping": true,
         "enable": true
+    },
+    {
+        "id": 2,
+        "name": "att_machine_2",
+        "device_name": "Máy 1- test",
+        "ip": "10.0.1.41",
+        "port": 4370,
+        "model": "ZKTeco F21Lite/ID",
+        "location": "Văn phòng",
+        "timeout": 10,
+        "force_udp": true,
+        "ommit_ping": true,
+        "enable": true
     }
 ]

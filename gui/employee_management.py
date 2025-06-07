@@ -419,11 +419,12 @@ class EmployeeTab:
         handler.setFormatter(logging.Formatter('%(asctime)s - %(message)s'))
         logger.addHandler(handler)
     def load_fingerprints_from_device(self):
-        """Tải vân tay từ máy chấm công với tối ưu tốc độ - chỉ load user có trong employees.json"""
+        """Tải vân tay từ máy chấm công với tối ưu tốc độ - Strategy hybrid"""
         import os
         import base64
         import json
         import threading
+        import concurrent.futures
         from tkinter import messagebox
         from config import FINGER_MAPPING
         
@@ -442,42 +443,7 @@ class EmployeeTab:
         def load_thread():
             try:
                 # 1. Load danh sách employees từ employees.json để lọc
-                employees_to_load = []
-                attendance_device_mapping = {}  # Map attendance_device_id -> employee info
-                
-                try:
-                    if os.path.exists("data/employees.json"):
-                        with open("data/employees.json", 'r', encoding='utf-8') as f:
-                            all_employees = json.load(f)
-                        
-                        # Lọc chỉ những nhân viên có attendance_device_id > 0
-                        for emp in all_employees:
-                            attendance_id = emp.get('attendance_device_id')
-                            if attendance_id and str(attendance_id).strip() and attendance_id != "0":
-                                try:
-                                    attendance_id_int = int(attendance_id)
-                                    if attendance_id_int > 0:
-                                        employees_to_load.append(emp)
-                                        attendance_device_mapping[attendance_id] = emp
-                                except ValueError:
-                                    continue
-                        
-                        logger.info(f"📋 Sẽ load vân tay cho {len(employees_to_load)} nhân viên có attendance_device_id hợp lệ")
-                    else:
-                        logger.warning("⚠️ Không tìm thấy file employees.json")
-                        self.main_app.root.after(0, lambda: [
-                            self.load_from_device_btn.configure(text="📥 Tải vân tay từ MCC", state="normal"),
-                            messagebox.showwarning("Cảnh báo", "Không tìm thấy file employees.json!")
-                        ])
-                        return
-                        
-                except Exception as e:
-                    logger.error(f"❌ Lỗi đọc file employees.json: {str(e)}")
-                    self.main_app.root.after(0, lambda: [
-                        self.load_from_device_btn.configure(text="📥 Tải vân tay từ MCC", state="normal"),
-                        messagebox.showerror("Lỗi", f"Lỗi đọc file employees.json: {str(e)}")
-                    ])
-                    return
+                employees_to_load, attendance_device_mapping = self._prepare_employee_mapping()
                 
                 if not employees_to_load:
                     self.main_app.root.after(0, lambda: [
@@ -486,7 +452,7 @@ class EmployeeTab:
                     ])
                     return
                 
-                # 2. Kết nối và load dữ liệu từ từng thiết bị
+                # 2. Load dữ liệu từ từng thiết bị với strategy tối ưu
                 device_sync = self.main_app.device_sync
                 fingerprints_from_device = {}
                 total_loaded = 0
@@ -502,71 +468,21 @@ class EmployeeTab:
                         continue
                     
                     try:
-                        # Lấy danh sách users từ thiết bị
+                        # Lấy users và map với attendance_device_id
                         device_users = zk.get_users()
-                        logger.info(f"✅ Lấy được {len(device_users)} users từ {device_name}")
-                        
-                        # Lọc chỉ những users có trong attendance_device_mapping
-                        target_users = []
-                        for user in device_users:
-                            if user.user_id in attendance_device_mapping:
-                                target_users.append(user)
+                        target_users = [user for user in device_users if user.user_id in attendance_device_mapping]
                         
                         logger.info(f"🎯 Sẽ load vân tay cho {len(target_users)} users từ {device_name}")
                         
-                        # Load vân tay cho từng user
-                        for i, user in enumerate(target_users, 1):
-                            uid = int(user.uid)
-                            user_id = user.user_id
-                            employee_info = attendance_device_mapping[user_id]
-                            
-                            logger.info(f"   👤 [{i}/{len(target_users)}] Đang load vân tay cho User {user_id} - {employee_info['employee_name']}")
-                            
-                            # Tạo cấu trúc dữ liệu cho nhân viên
-                            if employee_info['employee'] not in fingerprints_from_device:
-                                fingerprints_from_device[employee_info['employee']] = {
-                                    'name': employee_info.get('name', ''),
-                                    'employee': employee_info['employee'],
-                                    'employee_name': employee_info['employee_name'],
-                                    'attendance_device_id': str(user_id),
-                                    'password': user.password or '',
-                                    'privilege': user.privilege or 0,
-                                    'fingerprints': []
-                                }
-                            
-                            # Load vân tay cho tất cả 10 ngón tay
-                            fingerprint_count = 0
-                            for finger_idx in range(10):  # 0-9
-                                try:
-                                    template = zk.get_user_template(uid, finger_idx)
-                                    
-                                    if template and hasattr(template, 'template') and template.template:
-                                        # Convert template to base64
-                                        template_b64 = base64.b64encode(template.template).decode('utf-8')
-                                        
-                                        # Get finger name
-                                        finger_name = FINGER_MAPPING.get(finger_idx, f"Ngón {finger_idx}")
-                                        
-                                        # Add to fingerprints
-                                        fingerprints_from_device[employee_info['employee']]['fingerprints'].append({
-                                            'finger_index': finger_idx,
-                                            'finger_name': finger_name,
-                                            'template_data': template_b64,
-                                            'quality_score': 70
-                                        })
-                                        
-                                        fingerprint_count += 1
-                                        
-                                except Exception as finger_err:
-                                    # Skip lỗi ngón tay cụ thể
-                                    pass
-                            
-                            if fingerprint_count > 0:
-                                logger.info(f"   ✅ Đã load {fingerprint_count} vân tay cho {employee_info['employee']}")
-                                total_loaded += 1
-                            else:
-                                logger.warning(f"   ⚠️ Không có vân tay nào cho {employee_info['employee']}")
-                    
+                        # Load fingerprints với strategy tối ưu
+                        device_fingerprints = self._load_fingerprints_optimized(
+                            zk, target_users, attendance_device_mapping, device_name
+                        )
+                        
+                        # Merge dữ liệu
+                        fingerprints_from_device.update(device_fingerprints)
+                        total_loaded += len([fp for fp in device_fingerprints.values() if fp.get('fingerprints')])
+                        
                     except Exception as device_err:
                         logger.error(f"❌ Lỗi khi load dữ liệu từ {device_name}: {str(device_err)}")
                     finally:
@@ -574,55 +490,287 @@ class EmployeeTab:
                         device_id = device.get('id', 1)
                         device_sync.disconnect_device(device_id)
                 
-                # 3. Lưu dữ liệu tạm thời vào all_fingerprints_from_machine.json
-                try:
-                    os.makedirs("data", exist_ok=True)
-                    
-                    # Convert dict to list để lưu file
-                    fingerprints_list = list(fingerprints_from_device.values())
-                    
-                    with open("data/all_fingerprints_from_machine.json", 'w', encoding='utf-8') as f:
-                        json.dump(fingerprints_list, f, ensure_ascii=False, indent=4)
-                    
-                    logger.info(f"✅ Đã lưu {len(fingerprints_list)} nhân viên vào all_fingerprints_from_machine.json")
-                    
-                    # 4. Merge dữ liệu với employees.json vào all_fingerprints.json
-                    merged_count = self.merge_fingerprints_data(fingerprints_from_device)
-                    
-                    # 5. Load lại dữ liệu vân tay trong ứng dụng
-                    self.main_app.current_fingerprints = self.main_app.data_manager.load_local_fingerprints()
-                    
-                    # 6. Update UI
-                    self.main_app.root.after(0, lambda: [
-                        self.load_from_device_btn.configure(text="📥 Tải vân tay từ MCC", state="normal"),
-                        self.update_finger_button_colors(),  # Refresh finger buttons
-                        self.update_employee_list(),  # Refresh employee list if needed
-                        messagebox.showinfo("Thành công", 
-                                        f"Đã tải và merge dữ liệu vân tay thành công!"
-                                        f"📊 Kết quả:"
-                                        f"• Nhân viên cần load: {len(employees_to_load)}"
-                                        f"• Nhân viên có vân tay: {total_loaded}"
-                                        f"• Tổng sau khi merge: {merged_count}")
-                                       ])
-                    
-                except Exception as save_err:
-                    logger.error(f"❌ Lỗi lưu/merge dữ liệu: {str(save_err)}")
-                    self.main_app.root.after(0, lambda: [
-                        self.load_from_device_btn.configure(text="📥 Tải vân tay từ MCC", state="normal"),
-                        messagebox.showerror("Lỗi", f"Lỗi lưu/merge dữ liệu: {str(save_err)}")
-                    ])
-                    
+                # 3. Lưu và merge dữ liệu
+                self._save_and_merge_fingerprints(fingerprints_from_device, len(employees_to_load), total_loaded)
+                
             except Exception as e:
                 logger.error(f"❌ Lỗi tải vân tay từ máy chấm công: {str(e)}")
-                
-                def update_ui_error():
-                    self.load_from_device_btn.configure(text="📥 Tải vân tay từ MCC", state="normal")
+                self.main_app.root.after(0, lambda: [
+                    self.load_from_device_btn.configure(text="📥 Tải vân tay từ MCC", state="normal"),
                     messagebox.showerror("Lỗi", f"Lỗi tải vân tay từ máy chấm công: {str(e)}")
-                
-                self.main_app.root.after(0, update_ui_error)
+                ])
         
         # Run in thread
         threading.Thread(target=load_thread, daemon=True).start()
+
+    def _prepare_employee_mapping(self):
+        """Chuẩn bị mapping employees và attendance_device_id"""
+        import os
+        import json
+        
+        employees_to_load = []
+        attendance_device_mapping = {}
+        
+        try:
+            if os.path.exists("data/employees.json"):
+                with open("data/employees.json", 'r', encoding='utf-8') as f:
+                    all_employees = json.load(f)
+                
+                # Lọc nhân viên có attendance_device_id hợp lệ
+                for emp in all_employees:
+                    attendance_id = emp.get('attendance_device_id')
+                    if attendance_id and str(attendance_id).strip() and attendance_id != "0":
+                        try:
+                            attendance_id_int = int(attendance_id)
+                            if attendance_id_int > 0:
+                                employees_to_load.append(emp)
+                                attendance_device_mapping[attendance_id] = emp
+                        except ValueError:
+                            continue
+                
+                logger.info(f"📋 Sẽ load vân tay cho {len(employees_to_load)} nhân viên có attendance_device_id hợp lệ")
+            else:
+                logger.warning("⚠️ Không tìm thấy file employees.json")
+                
+        except Exception as e:
+            logger.error(f"❌ Lỗi đọc file employees.json: {str(e)}")
+            raise e
+        
+        return employees_to_load, attendance_device_mapping
+
+    def _load_fingerprints_optimized(self, zk, target_users, attendance_device_mapping, device_name):
+        """Load fingerprints với strategy tối ưu - Hybrid approach"""
+        import base64
+        from config import FINGER_MAPPING
+        
+        fingerprints_result = {}
+        
+        try:
+            # === STRATEGY 1: Bulk load toàn bộ templates ===
+            logger.info(f"🚀 [{device_name}] Thử load toàn bộ templates (Strategy 1)...")
+            
+            # Load toàn bộ templates một lần
+            all_templates = zk.get_templates()
+            logger.info(f"✅ [{device_name}] Đã load {len(all_templates)} templates")
+            
+            # Group templates theo user_id
+            templates_by_user = {}
+            for template in all_templates:
+                uid = template.uid
+                if uid not in templates_by_user:
+                    templates_by_user[uid] = []
+                templates_by_user[uid].append(template)
+            
+            logger.info(f"📊 [{device_name}] Grouped templates cho {len(templates_by_user)} users")
+            
+            # Process chỉ target users
+            processed_count = 0
+            for user in target_users:
+                uid = int(user.uid)
+                user_id = user.user_id
+                employee_info = attendance_device_mapping[user_id]
+                
+                if uid in templates_by_user:
+                    fingerprint_count = self._process_user_templates(
+                        templates_by_user[uid], employee_info, fingerprints_result
+                    )
+                    
+                    if fingerprint_count > 0:
+                        processed_count += 1
+                        logger.info(f"   ✅ [{processed_count}/{len(target_users)}] {employee_info['employee']} - {fingerprint_count} vân tay")
+                    else:
+                        logger.warning(f"   ⚠️ [{processed_count + 1}/{len(target_users)}] {employee_info['employee']} - Không có vân tay")
+                else:
+                    logger.warning(f"   ❌ User {user_id} (UID: {uid}) không có templates")
+            
+            logger.info(f"✅ [{device_name}] Strategy 1 thành công - Processed {processed_count} users")
+            return fingerprints_result
+            
+        except Exception as bulk_error:
+            logger.warning(f"⚠️ [{device_name}] Strategy 1 failed: {str(bulk_error)}")
+            
+            # === STRATEGY 2: Fallback to individual loading ===
+            logger.info(f"🔄 [{device_name}] Fallback to Strategy 2 (individual loading)...")
+            
+            try:
+                return self._load_fingerprints_individual(zk, target_users, attendance_device_mapping, device_name)
+            except Exception as fallback_error:
+                logger.error(f"❌ [{device_name}] Strategy 2 cũng failed: {str(fallback_error)}")
+                return {}
+
+    def _process_user_templates(self, templates, employee_info, fingerprints_result):
+        """Process templates của 1 user"""
+        import base64
+        from config import FINGER_MAPPING
+        
+        employee_id = employee_info['employee']
+        
+        # Khởi tạo cấu trúc dữ liệu cho nhân viên
+        if employee_id not in fingerprints_result:
+            fingerprints_result[employee_id] = {
+                'name': employee_info.get('name', ''),
+                'employee': employee_id,
+                'employee_name': employee_info['employee_name'],
+                'attendance_device_id': employee_info.get('attendance_device_id', ''),
+                'password': '',  # Sẽ được set từ user data
+                'privilege': 0,  # Sẽ được set từ user data
+                'fingerprints': []
+            }
+        
+        fingerprint_count = 0
+        
+        # Process từng template
+        for template in templates:
+            try:
+                if hasattr(template, 'template') and template.template:
+                    finger_idx = template.fid  # finger ID
+                    
+                    # Validate finger index
+                    if 0 <= finger_idx <= 9:
+                        # Convert template to base64
+                        template_b64 = base64.b64encode(template.template).decode('utf-8')
+                        
+                        # Get finger name
+                        finger_name = FINGER_MAPPING.get(finger_idx, f"Ngón {finger_idx}")
+                        
+                        # Add to fingerprints
+                        fingerprints_result[employee_id]['fingerprints'].append({
+                            'finger_index': finger_idx,
+                            'finger_name': finger_name,
+                            'template_data': template_b64,
+                            'quality_score': 70
+                        })
+                        
+                        fingerprint_count += 1
+                    
+            except Exception as template_error:
+                logger.warning(f"   ⚠️ Lỗi xử lý template finger {template.fid}: {str(template_error)}")
+                continue
+        
+        return fingerprint_count
+
+    def _load_fingerprints_individual(self, zk, target_users, attendance_device_mapping, device_name):
+        """Fallback strategy: Load individual với threading có giới hạn"""
+        import concurrent.futures
+        import base64
+        from config import FINGER_MAPPING
+        
+        fingerprints_result = {}
+        
+        def safe_get_template(uid, finger_idx):
+            """Wrapper an toàn cho get_user_template"""
+            try:
+                return zk.get_user_template(uid, finger_idx)
+            except Exception as e:
+                logger.debug(f"   Template UID {uid} finger {finger_idx} failed: {str(e)}")
+                return None
+        
+        # Process từng user với limited threading
+        for i, user in enumerate(target_users, 1):
+            uid = int(user.uid)
+            user_id = user.user_id
+            employee_info = attendance_device_mapping[user_id]
+            
+            logger.info(f"   👤 [{i}/{len(target_users)}] Loading {employee_info['employee']} (UID: {uid})")
+            
+            # Khởi tạo data structure
+            employee_id = employee_info['employee']
+            if employee_id not in fingerprints_result:
+                fingerprints_result[employee_id] = {
+                    'name': employee_info.get('name', ''),
+                    'employee': employee_id,
+                    'employee_name': employee_info['employee_name'],
+                    'attendance_device_id': str(user_id),
+                    'password': user.password or '',
+                    'privilege': user.privilege or 0,
+                    'fingerprints': []
+                }
+            
+            # Load 10 fingers với threading
+            fingerprint_count = 0
+            with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+                future_to_finger = {
+                    executor.submit(safe_get_template, uid, finger_idx): finger_idx 
+                    for finger_idx in range(10)
+                }
+                
+                for future in concurrent.futures.as_completed(future_to_finger, timeout=30):
+                    finger_idx = future_to_finger[future]
+                    try:
+                        template = future.result(timeout=5)
+                        
+                        if template and hasattr(template, 'template') and template.template:
+                            # Convert template to base64
+                            template_b64 = base64.b64encode(template.template).decode('utf-8')
+                            finger_name = FINGER_MAPPING.get(finger_idx, f"Ngón {finger_idx}")
+                            
+                            fingerprints_result[employee_id]['fingerprints'].append({
+                                'finger_index': finger_idx,
+                                'finger_name': finger_name,
+                                'template_data': template_b64,
+                                'quality_score': 70
+                            })
+                            
+                            fingerprint_count += 1
+                            
+                    except Exception as finger_error:
+                        logger.debug(f"   Finger {finger_idx} processing failed: {str(finger_error)}")
+                        continue
+            
+            if fingerprint_count > 0:
+                logger.info(f"   ✅ Loaded {fingerprint_count} fingerprints for {employee_id}")
+            else:
+                logger.warning(f"   ⚠️ No fingerprints found for {employee_id}")
+        
+        return fingerprints_result
+
+    def _save_and_merge_fingerprints(self, fingerprints_from_device, total_employees, total_loaded):
+        """Lưu và merge dữ liệu fingerprints"""
+        import os
+        import json
+        
+        try:
+            os.makedirs("data", exist_ok=True)
+            
+            # Convert dict to list để lưu file
+            fingerprints_list = list(fingerprints_from_device.values())
+            
+            with open("data/all_fingerprints_from_machine.json", 'w', encoding='utf-8') as f:
+                json.dump(fingerprints_list, f, ensure_ascii=False, indent=4)
+            
+            logger.info(f"✅ Đã lưu {len(fingerprints_list)} nhân viên vào all_fingerprints_from_machine.json")
+            
+            # Merge dữ liệu với employees.json vào all_fingerprints.json
+            merged_count = self.merge_fingerprints_data(fingerprints_from_device)
+            
+            # Load lại dữ liệu vân tay trong ứng dụng
+            self.main_app.current_fingerprints = self.main_app.data_manager.load_local_fingerprints()
+            
+            # Update UI
+            success_msg = (
+                f"🚀 Load dữ liệu vân tay thành công!\n\n"
+                f"📊 Kết quả chi tiết:\n"
+                f"• Nhân viên cần load: {total_employees}\n"
+                f"• Nhân viên có vân tay: {total_loaded}\n"
+                f"• Tổng sau khi merge: {merged_count}\n\n"
+                f"✅ Đã sử dụng strategy tối ưu bulk-load!"
+            )
+            
+            self.main_app.root.after(0, lambda: [
+                self.load_from_device_btn.configure(text="📥 Tải vân tay từ MCC", state="normal"),
+                self.update_finger_button_colors(),
+                self.update_employee_list(),
+                messagebox.showinfo("Thành công", success_msg)
+            ])
+            
+        except Exception as save_err:
+            logger.error(f"❌ Lỗi lưu/merge dữ liệu: {str(save_err)}")
+            self.main_app.root.after(0, lambda: [
+                self.load_from_device_btn.configure(text="📥 Tải vân tay từ MCC", state="normal"),
+                messagebox.showerror("Lỗi", f"Lỗi lưu/merge dữ liệu: {str(save_err)}")
+            ])
+
+
     def manual_connect_scanner(self):
         """Kết nối scanner thủ công"""
         if self.main_app.scanner_connected:

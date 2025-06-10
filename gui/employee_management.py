@@ -189,7 +189,15 @@ class EmployeeTab:
                                     width=130)
         self.save_btn.pack(side="left", padx=(5, 10), pady=5)
         
-       
+        # Add new button for saving to ERPNext
+        self.save_to_erpnext_btn = ctk.CTkButton(
+            action_frame,
+            text="🌐 Lưu lên ERPNext",
+            command=self.main_app.save_to_erpnext,
+            height=40
+        )
+        self.save_to_erpnext_btn.pack(side="left", padx=10, pady=5, fill="x", expand=True)
+        
         # Enhanced sync section với device status display
         self.create_device_sync_section(parent)
     

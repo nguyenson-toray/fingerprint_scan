@@ -100,8 +100,8 @@ class ERPNextAPI:
                     "fields": json.dumps([
                         "name", "employee_name", "employee", 
                         "attendance_device_id", "custom_group", 
-                        "designation", "status", "custom_attendance_password",
-                        "custom_attendance_privilege"
+                        "designation", "status", "custom_password",
+                        "custom_privilege"
                     ]),
                     "filters": json.dumps([["status", "=", "Active"]]),
                     "order_by": "employee desc",
@@ -210,6 +210,52 @@ class ERPNextAPI:
                 return False
         except Exception as e:
             logger.error(f"❌ Lỗi khi cập nhật attendance_device_id cho {employee_name}: {str(e)}")
+            return False
+    
+    def update_employee_attendance(self, employee_name: str, fingerprint_data: dict) -> bool:
+        """
+        Lưu dữ liệu vân tay vào childtable "Fingerprint Data" của Employee
+
+        Args:
+            employee_name: Tên của nhân viên (doc.name trong ERPNext)
+            fingerprint_data: Dữ liệu vân tay (chứa danh sách fingerprints)
+
+        Returns:
+            True nếu cập nhật thành công, False nếu thất bại
+        """
+        try:
+            if not fingerprint_data or 'fingerprints' not in fingerprint_data:
+                logger.warning(f"⚠️ Không có dữ liệu vân tay cho nhân viên {employee_name}")
+                return False
+
+            # Chuẩn bị dữ liệu để gửi lên ERPNext
+            fingerprints = []
+            for fp in fingerprint_data.get('fingerprints', []):
+                fingerprints.append({
+                    "doctype": "Fingerprint Data", 
+                    "finger_index": fp.get('finger_index', 0),
+                    "finger_name": fp.get('finger_name', ''),
+                    "template_data": fp.get('template_data', ''),
+                    "quality_score": fp.get('quality_score', 70)
+                })
+        
+            # Sử dụng REST API standard thay vì custom method
+            response = self.session.put(
+                f"{self.base_url}/api/resource/Employee/{employee_name}",
+                json={
+                    "custom_fingerprints": fingerprints  # Tên của child table field
+                }
+            )
+        
+            if response.status_code == 200:
+                logger.info(f"✅ Đã cập nhật {len(fingerprints)} vân tay cho {employee_name}")
+                return True
+            else:
+                logger.error(f"❌ Lỗi cập nhật vân tay cho {employee_name}: {response.status_code} - {response.text}")
+                return False
+
+        except Exception as e:
+            logger.error(f"❌ Lỗi khi cập nhật vân tay cho {employee_name}: {str(e)}")
             return False
     
     def get_attendance_device_mapping(self) -> Dict[str, str]:

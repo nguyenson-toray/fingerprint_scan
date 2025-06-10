@@ -159,38 +159,38 @@ class AttendanceDeviceSync:
                 logger.error(f"❌ Nhân viên {employee_data.get('employee', 'Unknown')} chưa có attendance_device_id")
                 return False
             
-            # Chuyển đổi user_id sang số
-            try:
-                uid_int = int(user_id)
-            except ValueError:
-                logger.error(f"❌ attendance_device_id không hợp lệ: {user_id}")
-                return False
+            # # Chuyển đổi user_id sang số
+            # try:
+            #     user_id = int(user_id)
+            # except ValueError:
+            #     logger.error(f"❌ attendance_device_id không hợp lệ: {user_id}")
+            #     return False
             
-            logger.info(f"👤 Đang xử lý nhân viên: {employee_data['employee']} - {employee_data['employee_name']} (ID: {uid_int})")
+            logger.info(f"👤 Đang xử lý nhân viên: {employee_data['employee']} - {employee_data['employee_name']} (ID: {user_id})")
             
             # Kiểm tra xem user đã tồn tại chưa
             existing_users = zk.get_users()
-            user_exists = any(u.uid == uid_int for u in existing_users)
-            
+            user_exists = any(u.user_id == user_id for u in existing_users) 
             if user_exists:
-                logger.info(f"🗑️ User {uid_int} đã tồn tại. Đang xóa user cũ...")
-                zk.delete_user(uid=uid_int)
-                logger.info(f"✅ Đã xóa user {uid_int}.")
+                logger.info(f"🗑️ User {user_id} đã tồn tại. Đang xóa user cũ...")
+                zk.delete_user(user_id=user_id)
+                logger.info(f"✅ Đã xóa user {user_id}.")
                 time.sleep(0.5)  # Cho thiết bị một chút thời gian
             
             # Tạo user mới
-            logger.info(f"➕ Tạo mới user {uid_int}...")
-            shortened_name = self.shorten_employee_name(employee_data['employee_name'])
-            zk.set_user(uid=uid_int, name=shortened_name, privilege=const.USER_DEFAULT)
-            # zk.set_user(uid=uid_int, name=f"{employee_data['employee_name'][:24]}", privilege=const.USER_DEFAULT)
+            logger.info(f"➕ Tạo mới user {user_id}...") 
+            full_name = employee_data['employee_name']
+            shortened_name = self.shorted_name(full_name,24)  
+            privilege= const.USER_ADMIN if employee_data['employee_name']=='USER_ADMIN' else const.USER_DEFAULT
+            zk.set_user(user_id=user_id, name=shortened_name, privilege=privilege, password= employee_data['password']) 
             
             # Lấy lại thông tin user sau khi tạo
             users = zk.get_users()
-            user = next((u for u in users if u.uid == uid_int), None)
+            user = next((u for u in users if u.user_id == user_id), None)
             if not user:
-                logger.error(f"❌ Không thể tạo hoặc tìm thấy user {uid_int} sau khi tạo.")
+                logger.error(f"❌ Không thể tạo hoặc tìm thấy user {user_id} sau khi tạo.")
                 return False
-            
+            uid_int = user.uid
             # Chuẩn bị danh sách template để gửi
             templates_to_send = []
             success_count = 0
@@ -586,3 +586,19 @@ class AttendanceDeviceSync:
             return shortened_name[:max_length]
         
         return shortened_name           
+    def shorted_name(self, full_name: str, max_length=24):
+        # Loại bỏ khoảng trắng thừa
+        text_processed = ' '.join(full_name.split()).strip()
+
+        if len(text_processed) > max_length:
+            parts = text_processed.split()
+            if len(parts) > 1:
+                # Lấy chữ cái đầu của tất cả các phần trừ phần cuối cùng
+                initials = "".join(part[0].upper() for part in parts[:-1])
+                last_part = parts[-1]
+                return f"{initials} {last_part}"
+            else:
+                # Nếu chỉ có một từ và quá dài, trả về nguyên bản
+                return text_processed
+        else:
+            return text_processed

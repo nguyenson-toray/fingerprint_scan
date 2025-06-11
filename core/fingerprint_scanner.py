@@ -292,19 +292,3 @@ class FingerprintScanner:
         except Exception as e:
             logger.error(f"❌ Lỗi khi merge vân tay: {str(e)}")
             return None
-    
-    def verify_fingerprint(self, template_data, finger_index):
-        """
-        Verify a fingerprint against a template
-        Chức năng này có thể được implement sau nếu cần
-        """
-        logger.warning("⚠️ Chức năng verify_fingerprint chưa được implement với libzkfp.dll")
-        return False
-    
-    def identify_fingerprint(self, templates_list: List) -> Optional[str]:
-        """
-        Nhận dạng vân tay từ danh sách template
-        Chức năng này có thể được implement sau nếu cần
-        """
-        logger.warning("⚠️ Chức năng identify_fingerprint chưa được implement với libzkfp.dll")
-        return None

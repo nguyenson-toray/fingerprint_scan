@@ -52,44 +52,6 @@ class ERPNextAPI:
             self.is_connected = False
             return False
     
-    def check_required_doctypes(self) -> Dict[str, bool]:
-        """
-        Kiểm tra các DocType cần thiết có tồn tại trong ERPNext hay không
-        
-        Returns:
-            Dict với key là tên DocType, value là True/False tùy vào DocType có tồn tại
-        """
-        required_doctypes = [
-            "Attendance Machine",
-            "Fingerprint Data",
-            "Sync History"
-        ]
-        
-        doctypes_status = {}
-        
-        for doctype_name in required_doctypes:
-            try:
-                # Kiểm tra xem DocType có tồn tại không
-                response = self.session.get(
-                    f"{self.base_url}/api/resource/DocType/{doctype_name}"
-                )
-                
-                if response.status_code == 200:
-                    doctypes_status[doctype_name] = True
-                    logger.info(f"✅ DocType '{doctype_name}' đã tồn tại")
-                elif response.status_code == 404:
-                    doctypes_status[doctype_name] = False
-                    logger.warning(f"⚠️ DocType '{doctype_name}' chưa tồn tại")
-                else:
-                    doctypes_status[doctype_name] = False
-                    logger.error(f"❌ Lỗi kiểm tra DocType '{doctype_name}': {response.status_code}")
-                    
-            except Exception as e:
-                doctypes_status[doctype_name] = False
-                logger.error(f"❌ Lỗi khi kiểm tra DocType '{doctype_name}': {str(e)}")
-        
-        return doctypes_status
-    
     def get_all_employees(self) -> List[Dict[str, Any]]:
         """Lấy danh sách tất cả nhân viên từ HRMS"""
         try:
@@ -258,28 +220,6 @@ class ERPNextAPI:
             logger.error(f"❌ Lỗi khi cập nhật vân tay cho {employee_name}: {str(e)}")
             return False
     
-    def get_attendance_device_mapping(self) -> Dict[str, str]:
-        """
-        Lấy mapping giữa employee và attendance_device_id
-        
-        Returns:
-            Dict với key là employee, value là attendance_device_id
-        """
-        try:
-            employees = self.get_all_employees()
-            mapping = {}
-            
-            for emp in employees:
-                if emp.get("attendance_device_id"):
-                    mapping[emp["employee"]] = emp["attendance_device_id"]
-                    
-            logger.info(f"✅ Lấy được mapping cho {len(mapping)} nhân viên")
-            return mapping
-            
-        except Exception as e:
-            logger.error(f"❌ Lỗi khi lấy mapping: {str(e)}")
-            return {}
-    
     def log_sync_history(self, sync_type: str, device_name: str, 
                         employee_count: int, status: str, message: str = "") -> bool:
         """
@@ -313,7 +253,7 @@ class ERPNextAPI:
                 logger.info(f"✅ Ghi log đồng bộ thành công")
                 return True
             else:
-                logger.error(f"❌ Lỗi ghi log đồng bộ: {response.status_code}")
+                logger.error(f"❌ Lỗi ghi log đồng bộ: {response.status_code} - {response.text}")
                 return False
                 
         except Exception as e:
